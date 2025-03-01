@@ -1,0 +1,89 @@
+/* Headergaleri2.css */
+
+.header-containerga12 {
+  width: 100%; /* Prend toute la largeur disponible */
+  height: 80vh; /* Hauteur définie pour ton en-tête */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('/src/Images/mariage2024.jpg');
+  background-size: cover; /* Assure que l'image couvre tout le conteneur */
+  background-position: center; /* Centre l'image dans le conteneur */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  position: relative;
+}
+
+.boutton-containerga12 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  background-color: white;
+  border-radius: 8px;
+  opacity: 0.8;
+  height: 30%;
+  overflow: hidden;
+  margin-top: 20%;
+}
+
+.butga123 h1 {
+  font-size: 40px;
+  color: #1B3D71;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bouttonga123 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espace entre le texte et l'icône */
+  height: 40px;
+  margin: 10px 8px;
+  padding: 0 10px;
+  background-color: #1B3D71;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 25vw; /* Largeur fixe pour aligner les boutons */
+  font-weight: bold;
+}
+
+.bouttonga123:hover {
+  background-color: #13345A;
+  color: white;
+}
+
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+  
+  .header-containerga12 {
+    height: 50vh; /* Ajuste la hauteur pour les petits écrans */
+  }
+
+  .boutton-containerga12 {
+    width: 80%; /* Réduit la largeur pour les petits écrans */
+  }
+
+  .butga123 h1 {
+    font-size: 40px; /* Réduit la taille de la police pour les petits écrans */
+  }
+  .bouttonga123 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espace entre le texte et l'icône */
+    height: 40px;
+    margin: 10px 8px;
+    padding: 0 10px;
+    background-color: #1B3D71;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 60vw; /* Largeur fixe pour aligner les boutons */
+    font-weight: bold;
+  }
+}

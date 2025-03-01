@@ -1,0 +1,42 @@
+/* Style de la barre de navigation */
+.navbar {
+    background-color: white; /* Couleur de fond blanche */
+    box-shadow: none; /* Retirer l'ombre si besoin */
+    position: relative;
+    z-index: 1; /* S'assurer que la navbar est bien visible */
+    padding: 0 20px; /* Ajouter un padding pour éviter que les éléments touchent les bords */
+  }
+  
+  .navbar-logo {
+    flex-grow: 1; /* Le logo occupe tout l'espace disponible à gauche */
+  }
+  
+  .navbar-logo img {
+    height: 50px; /* Hauteur du logo */
+    cursor: pointer; /* Curseur pointer au survol */
+  }
+  .navbar-container{
+    width:100%;
+}
+  .MuiDrawer-paper {
+    width: 250px; /* Largeur du menu latéral */
+    background-color: white; /* Couleur de fond du menu latéral */
+  }
+  
+  .MuiListItemText-root {
+    color: black; /* Couleur des textes du menu */
+  }
+  
+  .MuiListItemText-root a {
+    text-decoration: none; /* Enlever le soulignement des liens */
+    color: black; /* Couleur des liens dans le menu */
+  }
+  
+  .MuiListItem-root:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+  }
+  
+  .MuiIconButton-root {
+    color: black; /* Couleur du bouton de menu hamburger */
+  }
+  

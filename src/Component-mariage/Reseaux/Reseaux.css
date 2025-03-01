@@ -1,0 +1,62 @@
+.facebook{
+    border: none;
+    background-color: transparent;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.whatsapp{
+    border: none;
+    background-color: transparent;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.reseaux{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+}
+
+.nos-reseaux{
+    color: #1B3D71; 
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+@media (max-width:560px){
+
+    .facebook{
+        border: none;
+        background-color: transparent;
+        margin-left: 4%;
+        margin-top: 1%;
+    }
+    
+    .whatsapp{
+        border: none;
+        background-color: transparent;
+        margin-left: 4%;
+        margin-top: 1%;
+    }
+    
+    .reseaux{
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        width: 170px;
+        margin-left: 4%;
+    }
+    
+    .nos-reseaux{
+        color: #1B3D71; 
+        font-weight: 500;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    
+}

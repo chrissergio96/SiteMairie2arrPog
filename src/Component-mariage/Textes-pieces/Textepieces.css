@@ -1,0 +1,104 @@
+
+.texte-pieces3 {
+  text-align: center;         /* Centre le texte */
+  padding: 6px;              /* Ajoute de l'espace autour du texte */
+  background-color: ffffff;  /* Couleur de fond légère */
+  border-radius: 8px;         /* Arrondit les coins */
+  max-width: 80%;           /* Limite la largeur pour une meilleure lisibilité */
+  margin: auto;             /* Centre le div horizontalement */
+  box-shadow: 0 1px 3px rgba(2, 2, 2, 2.2); /* Ajoute une ombre */
+  margin-top: 1%;
+  text-align: left;
+  font-size:20px;
+  padding: auto;
+}
+
+.boss-text3{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+
+}
+
+
+  .enfant-text3{
+    color: #1B3D71;
+    font-weight:bold;
+    margin-top: 2%;
+    margin-left: 12%;
+    font-size: 30px;
+  }
+
+  .traitt-long3{
+    width: 55%;
+    height: 3px;
+    background-color: #1B3D71;
+    margin-top: 2.5%;
+    float: right;
+    margin-right: 14%;
+}
+
+.trait-court3{
+  width: 4%;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #1B3D71;
+  margin-top: 2.5%;
+  float: left;
+}
+
+@media (max-width: 580px) {
+  .boss-texte3{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+  padding: auto;
+    }
+
+  .texte-pieces3{
+    text-align: center;         /* Centre le texte */
+    padding: 6px;              /* Ajoute de l'espace autour du texte */
+    background-color: ffffff;  /* Couleur de fond légère */
+    border-radius: 8px;         /* Arrondit les coins */
+    max-width: 95%;           /* Limite la largeur pour une meilleure lisibilité */
+    margin: auto;             /* Centre le div horizontalement */
+    box-shadow: 0 1px 3px rgba(2, 2, 2, 2.2); /* Ajoute une ombre */
+    margin-top: 1%;
+    text-align: left;
+    font-weight: 300;
+    font-size:12px;
+    padding: auto;
+      }
+  
+    
+ .enfant-text3{
+  color: #1B3D71;
+  font-weight: 500;
+  margin-top: 2%;
+  margin-left: 3%;
+  font-size: 5;
+  }
+
+  .traitt-long3{
+    width: 45%;
+    height: 3px;
+    background-color: #1B3D71;
+    margin-top: 4.3%;
+    float: right;
+    margin-right: 3%;
+  }
+
+  .trait-court3{
+  width: 4%;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #1B3D71;
+  margin-top: 4.3%;
+  float: left;
+  }
+     
+     } 

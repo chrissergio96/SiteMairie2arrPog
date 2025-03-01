@@ -1,0 +1,138 @@
+.encours{
+    justify-content:center;
+    align-items: center;
+}
+
+.containertren{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-top:10%;
+    width:82%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.barrestren{
+    display: block;  
+    width: 10%;
+}
+.trait1tren{
+    width: 50%;
+    height: 5px;
+    margin-left: 12px;
+    background-color: #1B3D71;
+    margin-bottom: 5px;
+}
+.trait2tren{
+    width: 70%;
+    height: 5px;
+    background-color: #1B3D71;
+}
+.titretren{
+    color: #1B3D71;
+    font-weight: bold;
+}
+.titrestren h1{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.lignes55tren{
+    width: 70%;
+    margin-right: 10px;
+    margin-top: 14px;
+    height: 2px;
+    background-color: #1B3D71;
+}
+
+/* Carousel container */
+.carousel-containertren {
+    width: 80%; /* Centre le carousel et limite la largeur à 80% */
+    margin: 0 auto; /* Centre le carousel */
+    margin-top:1%;
+    padding-bottom: 50px; /* Espace sous le carousel */
+    max-height: 500px; /* Limite la hauteur totale du carousel */
+    overflow: hidden; /* Cache les parties de l'image qui dépassent */
+}
+.carousel-containertren .carousel-caption{
+    background-color: white;
+    color: #1B3D71;
+    opacity:0.8;
+}
+
+/* Adjust the image size */
+.carousel img {
+    width: 100%; /* S'assure que l'image prend toute la largeur du carousel */
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: cover; /* Remplit le conteneur tout en conservant les proportions */
+    object-position: top; /* Positionne l'image pour que le haut soit visible */
+}
+div .carousel.slide{
+    min-width:20%; 
+    min-height: 20%;
+    justify-content: center;
+    align-items:center;
+}
+
+  /* Styles spécifiques pour la version mobile */
+  @media (max-width: 768px) {
+
+    .titrestren h1{
+        margin-bottom: 2px;
+        font-size: 20px;
+       }
+       .titrestren{
+        margin-right:10px;
+       }
+       .trait1tren{
+        width: 40%;
+        height: 5px;
+        margin-left: 15px;
+        background-color: #1B3D71;
+        margin-bottom: 5px;
+    }
+    .trait2tren{
+        width: 100%;
+        height: 5px;
+        background-color: #1B3D71;
+    }
+       .lignes55tren{
+        width: 40%;
+        margin-top: 10px;
+        height: 2px;
+        background-color: #1B3D71;
+    }
+      
+    .containertren{
+        display: flex;
+        margin-top:10%;
+        width:85%;
+        align-items: center;
+    }
+    .barrestren{
+        display: block;  
+        width: 14%;
+        margin-left: 6px;
+    }
+    
+    .carousel-containertren {
+        width: 80%; /* Centre le carousel et limite la largeur à 80% */
+        margin: 0 auto; /* Centre le carousel */
+        margin-top:20px;
+        padding-bottom: 50px; /* Espace sous le carousel */
+        max-height: 500px; /* Limite la hauteur totale du carousel */
+        overflow: hidden; /* Cache les parties de l'image qui dépassent */
+    }
+   
+    .carousel-containertren .carousel-caption h3{
+        font-size:10px;
+    }
+  }
+  @media (max-width: 420px) {
+    
+   
+ 
+  
+   
+  }

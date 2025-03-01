@@ -1,0 +1,135 @@
+.container1al{
+    justify-content: start;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.barreal{
+    width: 100%;
+    margin-top:2%;
+}
+.trait3sal{
+    width: 5%;
+    height: 5px;
+    margin-left: 12px;
+    background-color: #1B3D71;
+    margin-bottom: 5px;
+}
+.trait4sal{
+    width: 7%;
+    height: 5px;
+    background-color: #1B3D71;
+}
+
+ .container1al h1{
+    color: #1B3D71;
+    text-align:start;
+    
+}
+
+.contact-containeral {
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.cards1-containeral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin: auto;
+    margin-top:40px;
+}
+
+.card1al {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    width: 12%;
+    margin-right:20px;
+    margin-bottom: 10px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card1al img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card1al h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #1B2D71;
+}
+.card1al a{
+    text-decoration:none;
+
+}
+
+/* Animation au survol */
+.card1al:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+    .cards1-containeral {
+        justify-content: space-around;
+        align-items:center;
+        width: 85%;
+        display:flex;
+        margin-top: 5px;
+    }
+    
+    .container1al{
+        margin-bottom: 2%;
+        justify-content: start;
+        align-items:start;
+        margin-left:-50px;
+
+    }
+
+    .card1al {
+        width: 18%;
+        height:80px;
+        margin-bottom: 2px;
+    }
+    .card1al img{
+        width:100%;
+        height: 50px;
+    }
+    .card1al h2 {
+        font-size: 6px;
+        margin-top: 2px;
+    }
+    .container1al h1{
+        color: #1B3D71;
+        font-size:14px;
+    }
+   .barreal{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+   }
+    .trait3sal{
+        width:10px;
+    }
+    .trait4sal{
+        width: 30px;
+    }
+    .barreal{
+        width:50%;
+
+    }
+
+}

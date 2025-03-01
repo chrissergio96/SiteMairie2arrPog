@@ -1,0 +1,116 @@
+/* Headergalerie.css */
+
+.header-containerga {
+    width: 100%; /* Prend toute la largeur disponible */
+    height: 80vh; /* Hauteur définie pour ton en-tête */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/src/Images/mairietec10.jpg');
+    background-size: cover; /* Assure que l'image couvre tout le conteneur */
+    background-position: center; /* Centre l'image dans le conteneur */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    position: relative;
+  }
+  
+  .boutton-containerga1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    background-color: white;
+    border-radius: 8px;
+    opacity: 0.8;
+    height: 30%;
+    overflow: hidden;
+    margin-top: 20%;
+    
+  }
+  
+  .techserv {
+    font-size: 40px;
+    color: #1B3D71;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .bouttonga1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espace entre le texte et l'icône */
+    height: 40px;
+    margin: 10px 8px;
+    padding: 0 10px;
+    background-color: #1B3D71;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 25vw; /* Largeur fixe pour aligner les boutons */
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .bouttonga1:hover {
+    background-color: #13345A;
+    color: white;
+  }
+  
+  .arrow-icon {
+    margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
+  }
+  
+  /* Media queries pour les petits écrans */
+  @media (max-width: 768px) {
+    .header-containerga {
+      height: 50vh; /* Ajuste la hauteur pour les petits écrans */
+    }
+  
+    .boutton-containerga1 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 90%;
+      background-color: white;
+      border-radius: 8px;
+      opacity: 0.8;
+      height: 30%;
+      overflow: hidden;
+      margin-top: 30%;
+      
+    }
+    .techserv {
+      font-size: 30px;
+      color: #1B3D71;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 3%;
+    }
+    
+  .bouttonga1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espace entre le texte et l'icône */
+    height: 40px;
+    margin: 10px 8px;
+    padding: 0 10px;
+    background-color: #1B3D71;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 78vw; /* Largeur fixe pour aligner les boutons */
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .bouttonga1:hover {
+    background-color: #13345A;
+    color: white;
+  }
+  }
+  

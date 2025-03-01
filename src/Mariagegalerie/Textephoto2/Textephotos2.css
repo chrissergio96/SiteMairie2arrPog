@@ -1,0 +1,19 @@
+
+
+.barre24 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trait24s {
+    width: 100%;
+    height: 2px;
+    background-color: #1B3D71; /* Couleur du trait */
+    margin: 5px 0; /* Espace entre les traits */
+}
+
+
+
+
+

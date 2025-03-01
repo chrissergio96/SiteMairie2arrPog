@@ -1,0 +1,90 @@
+.paper1{
+    box-shadow: 0 4px 8px rgba(4, 4, 4, 4.2); /* Ajoute une ombre */
+    border: solid;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ProfilAvatar{
+    background-image: url('../../Images/eleve\ 4.jpg');
+}
+
+.profil-bosse{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1) ; 
+    border-radius: 10px ;
+    background-color: red;
+    width:80%;
+    margin-top:4%;
+    margin:2.5%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media(max-width:580px){
+
+    .paper{
+        box-shadow: 0 4px 8px rgba(4, 4, 4, 4.2); /* Ajoute une ombre */
+        border: solid;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ProfilAvatar{
+        background-image: url('../../Images/eleve\ 4.jpg');
+    }
+    
+    .profil-bosse{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+        display: block;
+        padding: 20px;
+        gap: 15px;
+        box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1) ; 
+        border-radius: 10px ;
+        background-color: red;
+        width:80%;
+        margin-top:4%;
+        margin:2.5%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    
+        .paper1{
+            box-shadow: 0 4px 8px rgba(4, 4, 4, 4.2); /* Ajoute une ombre */
+            border: solid;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            flex-direction: column;
+            overflow: hidden;
+            margin-bottom: 2%;
+        }
+    
+    
+    .paper1 img{
+        width: 100%;
+    }
+}

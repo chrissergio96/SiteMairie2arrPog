@@ -1,0 +1,52 @@
+/* Conteneur principal */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alignement vertical pour les éléments */
+    width: 100%;
+    margin: 5% auto;
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+/* Style pour les images */
+.social img {
+    width: 80%; /* Taille de l'image */
+    height: auto; /* Maintien des proportions */
+    margin: 0 5px; /* Espacement horizontal */
+    border-radius: 5px; /* Coins légèrement arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style pour le bouton */
+.services-buttons {
+    background-color: #1B3D71; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 15px 80px; /* Ajustement des dimensions internes */
+    border: none; /* Suppression de la bordure */
+    border-radius: 4px; /* Coins légèrement arrondis */
+    cursor: pointer; /* Curseur interactif */
+    font-size: 18px; /* Taille de la police */
+    transition: background-color 0.3s, transform 0.2s; /* Transition pour effet */
+    width: 100%; /* Bouton prend toute la largeur */
+    max-width: 800px; /* Largeur maximale pour éviter les excès */
+    text-align: center; /* Alignement du texte */
+}
+
+/* Effet de survol pour le bouton */
+.services-buttons:hover {
+    background-color: #16325B; /* Couleur de survol */
+    transform: scale(1.05); /* Agrandissement léger */
+}
+
+/* Adaptation responsive */
+@media (max-width: 768px) {
+    .social img {
+        width: 80%; /* Réduction de la taille de l'image pour les petits écrans */
+    }
+
+    .services-buttons {
+        font-size: 16px; /* Taille de la police réduite */
+        padding: 12px 20px; /* Ajustement des dimensions internes */
+    }
+}

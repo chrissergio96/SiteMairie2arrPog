@@ -1,0 +1,51 @@
+.outside-text {
+    width: 60%; /* ou toute autre valeur que tu préfères */
+    margin: 0 auto; /* Pour centrer la div */
+    /* Ajoute d'autres styles selon tes besoins */
+    padding-top: 70px; /* Déplace vers le bas */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Exemple de box-shadow */ 
+    width: 90%; 
+    border-radius: 15px; /* Arrondit les coins */
+    margin: 30px
+  }
+  
+  .outside-text {
+    width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+  }
+  
+  .outside-text p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  .textgal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Hauteur minimale 100% de la hauteur de la fenêtre */
+    padding: 20px; /* Ajoute un peu de marge intérieure */
+    background-color: #f5f5f5;
+  }
+  
+  .outside-text {
+    width: 80%; /* Augmente la largeur */
+    max-width: 1200px; /* Limite maximale de largeur */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+  }
+  
+  .outside-text p {
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  

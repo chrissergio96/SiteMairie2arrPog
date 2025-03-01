@@ -1,0 +1,43 @@
+/* Conteneur principal */
+.button-container-aide-social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espace entre les boutons */
+    width: 94%;
+    margin: 0 auto; /* Centre le conteneur */
+    margin-bottom: 4%;
+  }
+  
+  /* Style des boutons */
+  .dropdown-btn-aide-social {
+    display: flex;
+    justify-content: space-between; /* Espace entre le texte et la flèche */
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Effet au survol */
+  .dropdown-btn-aide-social:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icône flèche */
+  .arrow-aide-social {
+    font-size: 12px;
+    color: #666;
+  }
+  /* Rotation de la flèche */
+.arrow-aide-social.rotated {
+    transform: rotate(180deg); /* Tourne la flèche */
+  }
+  

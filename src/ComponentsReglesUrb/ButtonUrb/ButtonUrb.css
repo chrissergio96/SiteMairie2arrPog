@@ -1,0 +1,109 @@
+.buutton-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:40%;
+  }
+  .btns{
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #1B3D71;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .btn {
+    padding: 8px 50px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #1B3D71;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .previous-btn .arrow-left {
+    margin-right: 10px; /* Espace entre la flèche et le texte */
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    color:white;
+  }
+  
+  .home-btn {
+    background-color: #1B3D71;
+  }
+  
+  .home-btn:hover {
+    background-color: rgb(114, 117, 255);
+    color: white;
+  }
+  /* Responsive styles */
+@media (max-width: 576px) {
+  .buutton-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+  }
+  
+  .btn {
+
+    padding: 5px 12px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #1B3D71;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btns{
+    padding: 5px 6px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #1B3D71;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .previous-btn .arrow-left {
+    margin-right: 25px; /* Espace entre la flèche et le texte */
+
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    color:white;
+  }
+  
+  .home-btn {
+    background-color: #1B3D71;
+  }
+  
+  .home-btn:hover {
+    background-color: rgb(114, 117, 255);
+    color: white;
+  }
+}
+

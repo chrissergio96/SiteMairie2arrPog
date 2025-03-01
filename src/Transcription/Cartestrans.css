@@ -1,0 +1,105 @@
+.cards-wrapperB {
+    display: flex;
+    flex-direction: column; /* Permet d'empiler les blocs verticalement */
+    gap: 5px; /* Espace entre les blocs */
+    padding: 20px;
+  }
+  
+  .black1, .black2, .black3 {
+    display: grid;
+    padding: 15px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes par bloc */
+    margin: auto;
+  }
+  
+  /* Styles communs pour les cartes */
+  .cardB {
+    background-color: white;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 95%;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .cardB:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardB img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .cardB h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #1a73e8;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+ 
+    .cards-wrapperB {
+      flex-direction: column; /* Permet d'empiler les blocs verticalement */
+      gap: 5px; /* Espace entre les blocs */
+      padding: 20px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .black1, .black2, .black3 {
+      display: block;
+      padding: 15px;
+      justify-content: center;
+    }
+    
+    /* Styles communs pour les cartes */
+    .cardB {
+      background-color: white;
+      justify-content: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      width: 95%;
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2%;
+    }
+    
+    .cardB:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .cardB img {
+      width: 80%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      margin: 10px auto;
+    }
+    
+    .cardB h2 {
+      font-size: 16px;
+      font-weight: normal;
+      color: #1a73e8;
+      margin: 10px 0;
+    }
+
+  
+  }

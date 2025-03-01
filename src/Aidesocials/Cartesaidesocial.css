@@ -1,0 +1,78 @@
+/* Conteneur principal */
+.cards-wrapperAaide-social {
+    display: flex;
+    flex-direction: column; /* Empile les blocs verticalement */
+    gap: 5px; /* Espace entre les blocs */
+    padding: 20px;
+  }
+  
+  /* Blocs individuels */
+  .block1aide-social, .block2aide-social, .block3aide-social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes par bloc */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 15px;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  /* Styles communs pour les cartes */
+  .cardAaide-social {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    width: 95%;
+    height: 100%;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Effet au survol */
+  .cardAaide-social:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image des cartes */
+  .cardAaide-social img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  /* Titre des cartes */
+  .cardAaide-social h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #1a73e8; /* Bleu en accord avec la charte */
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  /* Adaptation pour les tablettes */
+  @media (max-width: 768px) {
+    .block1aide-social, .block2aide-social, .block3aide-social {
+      grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur tablettes */
+    }
+  }
+  
+  /* Adaptation pour les mobiles */
+  @media (max-width: 480px) {
+    .block1aide-social, .block2aide-social, .block3aide-social {
+      grid-template-columns: 1fr; /* Une colonne sur mobile */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .cardAaide-social img {
+      width: 90%; /* Ajuste la taille de l'image pour petits écrans */
+      height: auto; /* Conserve les proportions */
+    }
+  
+  }
+  

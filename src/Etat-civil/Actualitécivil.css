@@ -1,0 +1,138 @@
+.containeretc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    margin-top:4%;
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+}
+    .barreetc{
+        display: block;  
+        width: 10%;
+    }
+    .trait1etc{
+        width: 50%;
+        height: 5px;
+        margin-left: 14px;
+        background-color: #1B3D71;
+        margin-bottom: 5px;
+    }
+    .tiret2etc{
+        width: 75%;
+        height: 5px;
+        background-color: #1B3D71;
+    }
+    
+    .sous-titreetc h1{
+        color: #1B3D71;
+        font-weight: bold;
+        font-size: 30px;
+
+    }
+    .tiretetc h1{
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    .tiretetc{
+        width: 74%;
+        margin-top: 14px;
+        height: 2px;
+        background-color: #1B3D71;
+    }
+    
+
+.civiltexte{
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:2%;
+    text-align: start;
+    box-shadow: 0 4px 8px rgba(136, 85, 85, 0.2); 
+    background-color: white;
+    border-radius: 15px; 
+    padding:20px;
+}
+.mereetc{
+    width: 100%;
+}
+.civiltexte p{
+    font-size:20px;
+}
+
+.civiltexte  li {
+   
+font-weight: bold;
+color: gray;
+margin-top:20px;
+}
+/* Responsive styles */
+@media (max-width: 576px) {
+  
+    .containeretc{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+        margin-top:4%;
+        width:80%;
+        margin-right:auto;
+        margin-left:auto;
+    }
+        .barreetc{
+            display: block;  
+            width: 13%;
+        }
+        .trait1etc{
+            width: 20%;
+            height: 5px;
+            background-color: #1B3D71;
+            margin-bottom: 5px;
+        }
+        .tiret2etc{
+            width: 75%;
+            height: 5px;
+            background-color: #1B3D71;
+        }
+        .sous-titreetc{
+            color: #1B3D71;
+            font-weight: bold;
+        }
+        .sous-titreetc h1{
+            font-weight: bold;
+            font-size: 30px;
+            margin-right: 2px;
+        }
+        .tiretetc{
+            width: 30%;
+            margin-top: 14px;
+            height: 2px;
+            background-color: #1B3D71;
+        }
+        
+    
+    .civiltexte{
+        width:80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-top:2%;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(136, 85, 85, 0.2); 
+        background-color: white;
+        border-radius: 5px; 
+        padding:10px;
+        font-size: 12px;
+    
+    }
+    .civiltexte p{
+        text-align: center;
+    }
+    
+    .civiltexte  li {
+       
+    font-weight: bold;
+    color: gray;
+    margin-top:20px;
+    text-align: start;
+    }
+}

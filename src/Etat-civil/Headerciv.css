@@ -1,0 +1,121 @@
+.main10 {
+  background-image: url('../Images/photo-main.jpg');
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.boutton-container10 {
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  width: 40%;
+  background-color:white;
+  height: 30%;
+  border-radius: 8px;
+  opacity: 0.8;
+  overflow: hidden;
+}
+.butts h2{
+  font-size: 60px;
+  color:#1B3D71;
+  font-weight: bold;
+  margin: auto;
+  justify-content: center;
+}
+
+
+.boutton10 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espace entre le texte et l'icône */
+  height: 40px;
+  margin: 10px 8px;
+  padding: 0 10px;
+  background-color: #1B3D71;
+  color:white ;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 35VW; /* Largeur fixe pour aligner les boutons */
+  font-weight: bold;
+}
+
+.boutton10:hover {
+  background-color: #1B3D71;
+  color:white;
+}
+
+.arrow-icon {
+  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
+}
+
+
+/* Styles spécifiques pour la version mobile */
+@media (max-width: 768px) {
+ 
+  .main10 {
+    background-image: url('../Images/photo-main.jpg');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+.boutton-container10 {
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  width: 80%;
+  background-color:white;
+  height: 25%;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+.butts h2{
+  font-size: 30px;
+  color:#1B3D71;
+  font-weight: bold;
+}
+
+
+.boutton10 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espace entre le texte et l'icône */
+  height: 40px;
+  margin: 10px 8px;
+  padding: 0 10px;
+  background-color: #1B3D71;
+  color:white ;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 60VW; /* Largeur fixe pour aligner les boutons */
+  font-weight: bold;
+}
+
+.boutton10:hover {
+  background-color: #1B3D71;
+  color:white;
+}
+
+.arrow-icon1 {
+  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
+}
+
+}

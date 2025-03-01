@@ -1,0 +1,106 @@
+.Cartephotos-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container12 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .barre24 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trait34s, .trait44s {
+    width: 100%;
+    height: 2px;
+    background-color: #1B3D71; /* Couleur du trait */
+    margin: 5px 0; /* Espace entre les traits */
+  }
+  
+  .cards1-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+  }
+  
+  .card1, .card2 {
+    width: 200px; /* Largeur de chaque carte */
+    height: 200px; /* Hauteur de chaque carte */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card1 img, .card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+    border-radius: 10px; /* Coins arrondis */
+  }
+ 
+  /* Media queries pour les petits écrans */
+  @media (max-width: 768px) {
+   
+    .Cartephotos-container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .container12 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .barre24 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .trait34s, .trait44s {
+      width: 100%;
+      height: 2px;
+      background-color: #1B3D71; /* Couleur du trait */
+      margin: 5px 0; /* Espace entre les traits */
+    }
+    
+    .cards1-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Espace entre les cartes */
+    }
+    
+    .card1, .card2 {
+      width: 100%; /* Largeur de chaque carte */
+      height: 40%; /* Hauteur de chaque carte */
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card1 img, .card2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+      border-radius: 10px; /* Coins arrondis */
+    }
+  }
+  
+ 
+

@@ -1,0 +1,21 @@
+
+
+ /* Media queries pour les petits écrans */
+ @media (max-width: 768px) {
+   
+    .Butonbackgal{
+        width: 90%;
+        justify-content: space-around;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Butonbackgal22{
+        width: 98%;
+    }
+    .Butonbackgal44{
+        width: 95%;
+    }
+  }
+  

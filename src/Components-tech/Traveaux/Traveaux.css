@@ -1,0 +1,159 @@
+
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 0;
+  justify-content: space-around;
+}
+
+.boss-div{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* Ombre bleutée subtile */
+width: 80%;
+border-radius: 7px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 5%;
+}
+
+.travauxx{
+  color: #1B3D71;
+  font-weight: bold;
+  font-size: 30px;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide img {
+  width: 95%;
+  height: 300px; /* Hauteur fixe pour uniformiser les images */
+  max-width: 300px; /* Largeur maximale pour les images */
+  object-fit: cover; /* Recadre l'image pour remplir le conteneur */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* Ombre bleutée subtile */
+  transition: transform 0.3s ease-in-out;
+}
+
+.slick-slide img:hover {
+  transform: scale(1.05); /* Effet de zoom léger au survol */
+}
+
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF; /* Bleu pour les flèches */
+  background-color:#1B3D71;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #1B3D71; /* Bleu au survol */
+  color: white;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #1B3D71; /* Couleur bleue des points de navigation */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0044CC; /* Couleur bleue plus foncée pour le point actif */
+}
+
+@media (max-width:580px){
+
+
+  .slider-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px 0;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: auto;
+  }
+  
+  .boss-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* Ombre bleutée subtile */
+  width: 90%;
+  border-radius: 7px;
+  margin: auto;
+  margin-bottom: 5%;
+  }
+  
+  .travauxx{
+    color: #1B3D71;
+    margin: auto;
+    margin-bottom: -17px;
+    font-size: 1rem;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-slide img {
+    width: 95%;
+    height: 110px; /* Hauteur fixe pour uniformiser les images */
+    object-fit: cover; /* Recadre l'image pour remplir le conteneur */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* Ombre bleutée subtile */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slick-slide img:hover {
+    transform: scale(1.05); /* Effet de zoom léger au survol */
+  }
+  
+  .slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF; /* Bleu pour les flèches */
+  background-color:#1B3D71;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: #0000FF; /* Bleu au survol */
+    color: white;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #0000FF; /* Couleur bleue des points de navigation */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #0044CC; /* Couleur bleue plus foncée pour le point actif */
+  }
+}

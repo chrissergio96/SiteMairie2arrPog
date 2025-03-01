@@ -1,0 +1,41 @@
+/* Voirplus.css */
+
+.mereVoirplus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .containerVoirplus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .barresVoirplus {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .ligneVoirplus {
+    flex: 1; /* Permet aux lignes de prendre tout l'espace disponible */
+    height: 2px;
+    background-color: #1B3D71;
+  }
+  
+  .select-container {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Ajoute de l'espace autour du texte */
+  }
+  
+  .select-iconVoirplus {
+    font-size: 18px;
+    color: #1B3D71;
+    font-weight: bold;
+  }
+  

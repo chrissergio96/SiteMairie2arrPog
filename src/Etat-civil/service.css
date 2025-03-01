@@ -1,0 +1,156 @@
+.mere1ser {
+    display: flex;
+    width:  100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 10px; /* Diminuez encore cette valeur pour rapprocher les images */
+}
+
+.bloc1 , .bloc2 {
+    width: 40%;
+    overflow: hidden;
+    justify-content: center;
+    margin-left: 20px;
+}
+.photo{
+height:  30%;
+}
+
+.bloc1 img {
+    width: 100%;
+    height: 30%;
+}
+.legalisation , .transcription{
+    margin-top: 20px;
+
+}
+.bloc2 img{
+    width: 95%;
+    height: 30%;
+}
+.service-button {
+    background-color: #1B3D71;
+    color: white;
+    border: none;
+    border-radius: 4px; /* Ajout de coins légèrement arrondis */
+    cursor: pointer;
+    font-size: 20px; /* Augmente la taille de la police */
+    transition: background-color 0.3s;
+    width: 100%;
+    height: 50px;
+}
+.service-button p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.service-button2 {
+    background-color: #1B3D71;
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 4px; /* Ajout de coins légèrement arrondis */
+    cursor: pointer;
+    font-size: 20px; /* Augmente la taille de la police */
+    transition: background-color 0.3s;
+    width: 95%;
+}
+.service-button2 p{
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+.service-button2:hover {
+    background-color: #f2f5f8;
+    color: #1B3D71;
+}
+
+.service-button:hover {
+    background-color: #f2f5f8;
+    color: #1B3D71;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  
+    .mere1ser {
+        display: block;
+        width:  100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        justify-content: center;
+        gap: 10px; /* Diminuez encore cette valeur pour rapprocher les images */
+    }
+    
+    .bloc1 , .bloc2 {
+        margin: 0 5px; /* Réduit davantage l'espacement horizontal */
+        width: 80%;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+    .photo{
+    height:  30%;
+    }
+    
+    .bloc1 img {
+        width: 100%;
+        height: 30%;
+    }
+    .legalisation , .transcription{
+        margin-top: 20px;
+        width: 100%;
+    }
+  
+    .bloc2 img{
+        width: 100%;
+        height: 30%;
+    }
+    .service-button {
+        background-color: #1B3D71;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px; /* Augmente la taille de la police */
+        transition: background-color 0.3s;
+        width: 100%;
+        height:40px;
+    }
+    .service-button p{
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .service-button2 {
+        background-color: #1B3D71;
+        color: white;
+        height:40px;
+        border: none;
+        cursor: pointer;
+        font-size: 20px; /* Augmente la taille de la police */
+        transition: background-color 0.3s;
+        width: 100%;
+    }
+    .service-button2 p{
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 12px;
+    
+    }
+    .service-button2:hover {
+        background-color: #f2f5f8;
+        color: #1B3D71;
+    }
+    
+    .service-button:hover {
+        background-color: #f2f5f8;
+        color: #1B3D71;
+    }
+}

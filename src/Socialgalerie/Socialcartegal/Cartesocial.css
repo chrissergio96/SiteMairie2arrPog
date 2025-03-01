@@ -1,0 +1,121 @@
+/* Cartesocial.css */
+
+.Cartephotos-social {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-social {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.barre-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traitssocial, .trait24ssocial {
+    width: 100%;
+    height: 2px;
+    background-color: #1B3D71; /* Couleur du trait */
+    margin: 5px 0; /* Espace entre les traits */
+}
+
+.cards1-containersocial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+}
+
+.sos0, .sos1, .sos2, .sos3, .sos4, .sos5, .sos6, .sos7, .sos8, .sos9, .sos10, .sos11, .sos12, .sos13, .card11 {
+    width: 200px; /* Largeur de chaque carte */
+    height: 200px; /* Hauteur de chaque carte */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'animation */
+}
+
+/* Animation au survol */
+.sos0:hover, .sos1:hover, .sos2:hover, .sos3:hover, .sos4:hover, .sos5:hover, .sos6:hover, .sos7:hover, .sos8:hover, .sos9:hover, .sos10:hover, .sos11:hover, .sos12:hover, .sos13:hover, .card11:hover {
+    transform: translateY(-10px); /* Déplace la carte vers le haut */
+}
+
+.sos0 img, .sos1 img, .sos2 img, .sos3 img, .sos4 img, .sos5 img, .sos6 img, .sos7 img, .sos8 img, .sos9 img, .sos10 img, .sos11 img, .sos12 img, .sos13 img, .card11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+    
+    /* Cartesocial.css */
+
+.Cartephotos-social {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-social {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.barre-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traitssocial, .trait24ssocial {
+    width: 100%;
+    height: 2px;
+    background-color: #1B3D71; /* Couleur du trait */
+    margin: 5px 0; /* Espace entre les traits */
+}
+
+.cards1-containersocial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+}
+
+.sos0, .sos1, .sos2, .sos3, .sos4, .sos5, .sos6, .sos7, .sos8, .sos9, .sos10, .sos11, .sos12, .sos13, .card11 {
+    width: 90%; /* Largeur de chaque carte */
+    height: 60%; /* Hauteur de chaque carte */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'animation */
+}
+
+/* Animation au survol */
+.sos0:hover, .sos1:hover, .sos2:hover, .sos3:hover, .sos4:hover, .sos5:hover, .sos6:hover, .sos7:hover, .sos8:hover, .sos9:hover, .sos10:hover, .sos11:hover, .sos12:hover, .sos13:hover, .card11:hover {
+    transform: translateY(-10px); /* Déplace la carte vers le haut */
+}
+
+.sos0 img, .sos1 img, .sos2 img, .sos3 img, .sos4 img, .sos5 img, .sos6 img, .sos7 img, .sos8 img, .sos9 img, .sos10 img, .sos11 img, .sos12 img, .sos13 img, .card11 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+  }
+  

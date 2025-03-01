@@ -1,0 +1,28 @@
+.containerUrb{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top:4%;
+}
+
+ h2{
+    color: #1B3D71;
+    font-weight: bold;
+    margin-top:25px;
+    font-size: 30px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  
+    h2{
+        font-size: 20px;
+        margin-top: 15px;
+       }
+}
+
+
+
+
+

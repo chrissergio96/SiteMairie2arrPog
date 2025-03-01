@@ -1,0 +1,90 @@
+.Cartescdq-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.cardscdq-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les cartes */
+}
+
+.card1cdq, .card2cdq1, .card2cdq2, .card2cdq3, .card2cdq4, .card2cdq5, .card2cdq6, .card2cdq7, .card2cdq8, .card2cdq9, .card2cdq10, .card2cdq11, .card2cdq12, .card2cdq13, .card2cdq14 {
+    width: 200px; /* Largeur de chaque carte */
+    height: 200px; /* Hauteur de chaque carte */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'animation */
+}
+
+/* Animation au survol */
+.card1cdq:hover, .card2cdq1:hover, .card2cdq2:hover, .card2cdq3:hover, .card2cdq4:hover, .card2cdq5:hover, .card2cdq6:hover, .card2cdq7:hover, .card2cdq8:hover, .card2cdq9:hover, .card2cdq10:hover, .card2cdq11:hover, .card2cdq12:hover, .card2cdq13:hover, .card2cdq14:hover {
+    transform: translateY(-10px); /* Déplace la carte vers le haut */
+}
+
+.card1cdq img, .card2cdq1 img, .card2cdq2 img, .card2cdq3 img, .card2cdq4 img, .card2cdq5 img, .card2cdq6 img, .card2cdq7 img, .card2cdq8 img, .card2cdq9 img, .card2cdq10 img, .card2cdq11 img, .card2cdq12 img, .card2cdq13 img, .card2cdq14 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+
+  /* Media queries pour les petits écrans */
+  @media (max-width: 768px) {
+    .Cartescdq-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    
+    .cardscdq-container2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Espace entre les cartes */
+    }
+    
+    .card1cdq, .card2cdq1, .card2cdq2, .card2cdq3, .card2cdq4, .card2cdq5, .card2cdq6, .card2cdq7, .card2cdq8, .card2cdq9, .card2cdq10, .card2cdq11, .card2cdq12, .card2cdq13, .card2cdq14 {
+        width: 100%; /* Largeur de chaque carte */
+        height: 100%; /* Hauteur de chaque carte */
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease; /* Ajoute une transition pour l'animation */
+    }
+    
+    /* Animation au survol */
+    .card1cdq:hover, .card2cdq1:hover, .card2cdq2:hover, .card2cdq3:hover, .card2cdq4:hover, .card2cdq5:hover, .card2cdq6:hover, .card2cdq7:hover, .card2cdq8:hover, .card2cdq9:hover, .card2cdq10:hover, .card2cdq11:hover, .card2cdq12:hover, .card2cdq13:hover, .card2cdq14:hover {
+        transform: translateY(-10px); /* Déplace la carte vers le haut */
+    }
+    
+    .card1cdq img, .card2cdq1 img, .card2cdq2 img, .card2cdq3 img, .card2cdq4 img, .card2cdq5 img, .card2cdq6 img, .card2cdq7 img, .card2cdq8 img, .card2cdq9 img, .card2cdq10 img, .card2cdq11 img, .card2cdq12 img, .card2cdq13 img, .card2cdq14 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+        border-radius: 10px; /* Coins arrondis */
+    }
+    
+  }
+  

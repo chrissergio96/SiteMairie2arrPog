@@ -1,0 +1,121 @@
+/* Header.css */
+
+.header-containerga {
+  width: 100%; /* Prend toute la largeur disponible */
+  height: 60vh; /* Hauteur définie pour ton en-tête */
+  display: flex;
+  flex-direction: column;
+  background-image: url('/src/Images/image.mairie.jpg');
+  align-items: center;
+}
+
+.boutton-containerga {
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  width: 40%;
+  background-color:white;
+  border-radius: 8px;
+  opacity: 0.8;
+  height: 30%;
+  overflow: hidden;
+  margin-top: 20%;
+}
+.butga h1{
+  font-size: 60px;
+  color:#1B3D71;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.bouttonga {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espace entre le texte et l'icône */
+  height: 40px;
+  margin: 10px 8px;
+  padding: 0 10px;
+  background-color: #1B3D71;
+  color:white ;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 25VW; /* Largeur fixe pour aligner les boutons */
+  font-weight: bold;
+}
+
+.bouttonga:hover {
+  background-color: #1B3D71;
+  color:white;
+}
+
+.arrow-icon {
+  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+ /* Header.css */
+
+.header-containerga {
+  width: 100%; /* Prend toute la largeur disponible */
+  height: 50vh; /* Hauteur définie pour ton en-tête */
+  display: flex;
+  flex-direction: column;
+  background-image: url('/src/Images/image.mairie.jpg');
+  align-items: center;
+}
+
+.boutton-containerga {
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  width: 90%;
+  background-color:white;
+  border-radius: 8px;
+  opacity: 0.8;
+  height: 30%;
+  overflow: hidden;
+  margin-top: 20%;
+}
+.butga h1{
+  font-size: 40px;
+  color:#1B3D71;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3%;
+}
+
+
+.bouttonga {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espace entre le texte et l'icône */
+  height: 30px;
+  margin: 10px 8px;
+  padding: 0 10px;
+  background-color: #1B3D71;
+  color:white ;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  width: 50VW; /* Largeur fixe pour aligner les boutons */
+  font-weight: bold;
+}
+
+.bouttonga:hover {
+  background-color: #1B3D71;
+  color:white;
+}
+
+.arrow-icon {
+  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
+}
+
+
+}
+
+

@@ -1,0 +1,38 @@
+.mairie12 {
+    background-image: url('../../Images/hj.jpg');
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  
+  
+  /* Styles spécifiques pour la version mobile */
+  @media (max-width: 768px) {
+   
+    .mairie12 {
+      background-image: url('../../Images/elec.jpg');
+      height: 20vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      background-position: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+  }
+  @media (max-width: 420px) {
+    
+   
+ 
+  
+   
+  }

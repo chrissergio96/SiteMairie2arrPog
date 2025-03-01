@@ -1,0 +1,36 @@
+.Retour-button2 {
+    background-color: #1b3d71; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight:bold;
+    margin-top: 5%; /* Espacement entre les cartes et le bouton */
+    display: block; /* Pour le centrer sous les cartes si besoin */
+    margin-left: 8%;
+    width: fit-content; /* Ajuster la largeur du bouton au contenu */
+}
+
+.Retour-button2:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    
+    .Retour-button2{
+        width:30%;
+        height: 30px;
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+   
+    .Retour-button2{
+        width:30%;
+        height: 30px;
+        font-size: 7px;
+    }
+}

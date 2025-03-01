@@ -1,0 +1,34 @@
+.back-buttons {
+    background-color: #1b3d71; /* Couleur du bouton */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight:bold;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-top: 2%; /* Espacement entre les cartes et le bouton */
+    margin-bottom: 4%;
+    display: block; /* Pour le centrer sous les cartes si besoin */
+    width: 20%; /* Ajuster la largeur du bouton au contenu */
+}
+a{
+    text-decoration: none;
+}
+
+.back-buttons:hover {
+    background-color: yellow; /* Couleur au survol */
+}
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    
+    .back-buttons{
+        width:60%;
+        font-size: 12px;
+        margin-top: 2%; /* Espacement entre les cartes et le bouton */
+    }
+}
+
+

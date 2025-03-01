@@ -1,0 +1,186 @@
+.travauxtitre{
+    justify-content:center;
+    align-items: center;
+}
+.travauxtitre h2{
+    text-align:center;
+    font-size: 30px;
+}  
+ .travauxpar{
+    background-color:white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width:80%;
+    margin-right:auto;
+    margin-left:auto;
+    padding:2px;
+    height: 160px;
+    border-radius:8px;
+ }
+.travauxpar p{
+    text-align:center;
+    color:gray;
+} 
+.containertrurb{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    margin-top:4%;
+    width:82%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.barrestrurb{
+    display: block;  
+    width: 10%;
+}
+.trait1trurb{
+    width: 50%;
+    height: 5px;
+    margin-left: 12px;
+    background-color: #1B3D71;
+    margin-bottom: 5px;
+}
+.trait2trurb{
+    width: 70%;
+    height: 5px;
+    background-color: #1B3D71;
+}
+.titretrub{
+    color: #1B3D71;
+    font-weight: bold;
+}
+.titrestrurb h1{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.lignes55trurb{
+    width: 55%;
+    margin-right: 10px;
+    margin-top: 14px;
+    height: 2px;
+    background-color: #1B3D71;
+}
+.trurbphoto{
+    width:20%;
+    height:200px;
+}
+.trurbphoto a{
+    color:red;
+}
+.meretrurbphoto{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:2%;
+}
+.trurbphoto img{
+    width:100%;
+    height:100%;
+}
+.meretrurbphoto button{
+    width: 10%;
+    height: 30px;
+    margin-top: 15%;
+    background-color: #1B3D71;
+    border:none;
+}
+.meretrurbphoto button a{
+    color:white;
+}
+  /* Styles spécifiques pour la version mobile */
+  @media (max-width: 768px) {
+
+    .titrestrurb h1{
+        margin-bottom: 2px;
+        font-size: 20px;
+       }
+       .titrestrurb{
+        margin-right:10px;
+       }
+       .trait1trurb{
+        width: 40%;
+        height: 5px;
+        margin-left: 15px;
+        background-color: #1B3D71;
+        margin-bottom: 5px;
+    }
+    .trait2trurb{
+        width: 100%;
+        height: 5px;
+        background-color: #1B3D71;
+    }
+       .lignes55trurb{
+        width: 10%;
+        margin-top: 10px;
+        height: 2px;
+        background-color: #1B3D71;
+    }
+      
+    .containertrurb{
+        display: flex;
+        margin-top:4%;
+        width:85%;
+        align-items: center;
+    }
+    .barrestrurb{
+        display: block;  
+        width: 14%;
+        margin-left: 6px;
+    }
+    .trurbphoto{
+        width:80%;
+        height:200px;
+        margin-top: 15%;
+    }
+    .meretrurbphoto{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top:-5%;
+        flex-direction: column;
+    }
+    .trurbphoto img{
+        width:100%;
+        height:100%;
+    }
+    .trurbphoto a{
+        color:red;
+        font-size:12px;
+    }
+    .travauxpar p{
+        text-align:center;
+        color:gray;
+        font-size: 10px;
+    } 
+    .travauxpar{
+        background-color:white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width:80%;
+        margin-right:auto;
+        margin-left:auto;
+        padding:5px;
+        border-radius:8px;
+        height: 180px;
+     }
+     .meretrurbphoto button{
+        width: 30%;
+        height: 30px;
+        margin-top: 15%;
+        border:none;
+        background-color:#1B3D71;
+    }
+    .meretrurbphoto button a{
+        color: white;
+        font-size:12px;
+    }
+  }
+  @media (max-width: 420px) {
+    
+   
+ 
+  
+   
+  }

@@ -1,0 +1,82 @@
+.mot-maire-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    justify-content:center;
+   
+}
+
+.motmaire {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color:#1B3D71;
+    font-weight:bold;
+    text-align:center;
+}
+
+.maire-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    border-radius: 8px;
+    width:100%;
+}
+
+.maire-text {
+    flex-basis: 60%;
+    text-align: left;
+}
+
+.maire-text h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:yellow;
+}
+
+.maire-text p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: gray;
+}
+
+.maire-image {
+    flex-basis: 35%;
+}
+
+.maire-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .maire-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .maire-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .maire-text p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: gray;
+        text-align: center;
+    }
+    .maire-image {
+        width: 100%;
+    }
+    .mot-maire-container h1 {
+        font-size:25px ;
+        margin-bottom: 2%;
+    }
+}

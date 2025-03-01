@@ -1,0 +1,92 @@
+/* Cartephoto2024.css */
+
+.Cartephotos-container2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.cards1-container2024 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les cartes */
+}
+
+.card24p{
+    width: 200px; /* Largeur de chaque carte */
+    height: 200px; /* Hauteur de chaque carte */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'animation */
+}
+
+/* Animation au survol */
+.card24p:hover{
+    transform: translateY(-10px); /* Déplace la carte vers le haut */
+}
+
+.card24p img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+  
+   /* Cartephoto2024.css */
+
+.Cartephotos-container2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards1-container2024 {
+    justify-content: center;
+    width: 100%;
+}
+
+.card24p{
+    width: 100%; /* Largeur de chaque carte */
+    height: 100%; /* Hauteur de chaque carte */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre autour des cartes */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Ajoute une transition pour l'animation */
+}
+
+/* Animation au survol */
+.card24:hover, .card30:hover {
+    transform: translateY(-10px); /* Déplace la carte vers le haut */
+}
+
+.card24 img, .card30 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre toute la carte sans déformation */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+  }
+  

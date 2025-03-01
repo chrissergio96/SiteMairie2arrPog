@@ -1,0 +1,132 @@
+.containerAft{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top:4%;
+    width:82%;
+}
+.barresft{
+    display: block;  
+    width: 10%;
+    margin-top: 5px;
+}
+.trait1ft{
+    width: 50%;
+    height: 5px;
+    margin-left: 12px;
+    background-color: #1B3D71;
+    margin-bottom: 5px;
+}
+.trait2ft{
+    width: 70%;
+    height: 5px;
+    background-color: #1B3D71;
+}
+.titreft{
+    margin-right: 1%;
+    font-weight: bold;
+}
+.titreft h1{
+    color: #1B3D71;
+    font-weight: bold;
+    font-size: 30px;
+}
+.ligne5ft{
+    width: 20%;
+    margin-top: 20px;
+    height: 2px;
+    background-color: #1B3D71;
+}
+.texteft{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:4%;
+}
+.ft{
+    text-align:center;
+}
+
+
+.texteft button{
+    width:40%;
+    height:40px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #1B3D71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top:20px;
+    font-weight: bold;
+    font-size:12px;
+}
+.texteft button:hover{
+    background-color: yellow;
+    color: #1B3D71;
+}
+.apresb{
+    margin-top: 30px;
+}
+/* Responsive styles */
+@media (max-width: 576px) {
+   
+   .titreft h1{
+    font-size: 11px;
+    margin-top: 15px;
+   }
+   .barresft{
+    width: 10%;
+   }
+   .trait1ft{
+    width: 40%;
+   }
+   .trait2ft{
+    width: 100%;
+   }
+  
+.ligne5ft{
+    width: 2%;
+    margin-top: 14px;
+    height: 2px;
+    background-color: #1B3D71;
+}
+.containerAft{
+    display: flex;
+    justify-content: space-between;    
+    margin-top:4%;
+    width:82%;
+}
+.texteft{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:4%;
+}
+
+.texteft p{
+    font-size:8px;
+}
+.texteft button{
+    width:90%;
+    height:40px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #1B3D71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top:20px;
+    font-weight: bold;
+    font-size:10px;
+}
+.texteft a button:hover{
+    background-color: yellow;
+    color: #1B3D71;
+}
+}
+
+
+
+
+

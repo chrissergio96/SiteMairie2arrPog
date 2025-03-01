@@ -1,0 +1,86 @@
+.flotant{
+    opacity: 0.8;
+    width: 40%;
+    height: 35vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.enfant-bleu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espace entre le texte et l'icône */
+    height: 40px;
+   
+    background-color: #1B3D71;
+    color:white ;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 25VW; /* Largeur fixe pour aligner les boutons */
+    font-weight: bold;
+
+}
+
+.service-technique{
+    color:  #1B3D71;
+    font-weight: bold;
+}
+
+.bg-mariage{
+    image-rendering: crisp-edges; /* Pour les navigateurs modernes */
+    background-image: url('../../Images/Mariages1.jpg');
+}
+
+/* Styles spécifiques pour la version mobile */
+@media (max-width: 768px) {
+ 
+    .flotant{
+        opacity: 0.8;
+        width: 80%;
+        height: 30%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+    
+    .enfant-bleu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Espace entre le texte et l'icône */
+        height: 40px;
+       
+        background-color: #1B3D71;
+        color:white ;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        text-align: center;
+        width: 60VW; /* Largeur fixe pour aligner les boutons */
+        font-weight: bold;
+    
+    }
+    
+    .service-technique{
+        color:  #1B3D71;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+    .bg-mariage{
+        image-rendering: crisp-edges; /* Pour les navigateurs modernes */
+        background-image: url('../../Images/Mariages1.jpg');
+       
+    }
+    
+
+  }
+

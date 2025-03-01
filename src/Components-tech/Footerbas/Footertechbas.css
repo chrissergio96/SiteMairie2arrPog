@@ -1,0 +1,31 @@
+.abas-container {
+    display: flex;
+    justify-content: space-around; /* Centre les mots horizontalement */
+    align-items: center; /* Centre les mots verticalement */
+    background-color:#1B3D71;
+    height: 30px;
+    width:100%;
+    
+}
+
+.word {
+    font-size: 15px; /* Taille de police des mots */
+    text-align: center; /* Aligne le texte au centre */
+    color:white;
+}
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    
+   .word{
+    font-size: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   
+    .word{
+        font-size: 10px;
+       }
+    
+}
+
