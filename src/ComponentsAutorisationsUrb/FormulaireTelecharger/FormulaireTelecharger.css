@@ -34,7 +34,7 @@
     font-size: 30px;
 }
 .ligne5ft{
-    width: 20%;
+    width: 22%;
     margin-top: 20px;
     height: 2px;
     background-color: #1B3D71;
@@ -73,21 +73,25 @@
 @media (max-width: 576px) {
    
    .titreft h1{
-    font-size: 11px;
+    font-size: 12px;
     margin-top: 15px;
+    margin-left: 10px;
    }
    .barresft{
     width: 10%;
+    margin-left: 5px;
    }
    .trait1ft{
     width: 40%;
+    margin-left: 8px;
+    height: 5px;
    }
    .trait2ft{
     width: 100%;
    }
   
 .ligne5ft{
-    width: 2%;
+    width: 4%;
     margin-top: 14px;
     height: 2px;
     background-color: #1B3D71;
