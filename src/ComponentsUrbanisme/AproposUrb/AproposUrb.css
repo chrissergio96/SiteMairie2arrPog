@@ -31,17 +31,17 @@
 .titreurbu h1{
     color: #1B3D71;
     font-weight: bold;
-
+    font-size: 30px;
 }
 .ligne5{
-    width: 68%;
+    width: 72%;
     margin-top: 20px;
     height: 2px;
     background-color: #1B3D71;
 }
 .texteurb{
     width:80%;
-    height: 100px;
+    height: max-content;
     background-color:white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: auto;
@@ -62,7 +62,7 @@
         margin-right:2px;
     }
    .titreurbu h1{
-    font-size: 30px;
+    font-size: 16px;
     margin-top: 8px;
     
    }
@@ -78,7 +78,7 @@
    }
    .texteurb{
     width:80%;
-    height: 140px;
+    height: max-content;
     background-color:white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: auto;
@@ -91,10 +91,10 @@
     text-align: center;
    padding-top: 3%;
    color: gray;
-   font-size: 12px;
+   font-size: 10px;
 }
 .ligne5{
-    width: 30%;
+    width: 52%;
     margin-top: 14px;
     height: 2px;
     background-color: #1B3D71;

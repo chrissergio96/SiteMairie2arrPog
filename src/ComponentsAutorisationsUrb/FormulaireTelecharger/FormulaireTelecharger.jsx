@@ -13,14 +13,15 @@ const FormulaireTelecharger= () => {
             <div className='trait2ft'></div>
             </div>
             <div className='titreft'>
-                <h1>FORMULAIRES ET DOCUMENTS A TELECHARGER</h1>
+                <h1>FORMULAIRES ET DOCUMENTS</h1>
             </div>
             <div className='ligne5ft'>
             </div>
             </div>
             <div className='texteft'>
-              
+             <strong>
             <p className='ft'> Téléchargez les formulaires nécessaires pour vos demandes d'autorisations :</p>
+            </strong>
             <div>
             <a href="http://anuttc.ga/uploads/default/files/flm/ANUTTC_DG_DOUAF_PiecesDemandePC_29032017_VF.pdf?fbclid=IwAR3VwtoRq4cGSFGOmND9jBYELVQ6diWupVEZ_QJ2X6gdl_t1It8hB9oeuuQ" target="_blank" rel="noopener noreferrer">
            <button> Formulaire de demande de permis de construire </button>

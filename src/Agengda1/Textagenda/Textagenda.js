@@ -12,7 +12,7 @@ const Textagenda= () => {
             <div className='trait22025'></div>
             </div>
             <div className='titre2025'>
-                <h1>Agenda</h1>
+                <h1>AGENDA </h1>
             </div>
             <div className='ligne2025'>
             </div>

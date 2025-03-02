@@ -1,0 +1,129 @@
+/* Textephotos0.css */
+
+.mere2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .containerA2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 4%;
+    width: 82%;
+  }
+  
+  .barres2024 {
+    display: block;  
+    width: 10%;
+    margin-top: 5px;
+  }
+  
+  .trait12024 {
+    width: 50%;
+    height: 5px;
+    margin-left: 11px;
+    background-color: #1B3D71;
+    margin-bottom: 5px;
+  }
+  
+  .trait22024 {
+    width: 70%;
+    height: 5px;
+    background-color: #1B3D71;
+  }
+  
+  .titre2024 {
+    flex: 1; /* Permet au titre de prendre tout l'espace disponible */
+    text-align: center;
+    margin-right: 1%;
+    font-weight: bold;
+  }
+  
+  .titre2024 h1 {
+    color: #1B3D71;
+    font-weight: bold;
+    white-space: nowrap; /* Empêche le retour à la ligne du texte */
+    overflow: hidden; /* Masque le texte qui dépasse */
+    font-size: 30px;
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+  }
+  
+  .ligne52024 {
+    width: 70%;
+    margin-top: 20px;
+    height: 2px;
+    background-color: #1B3D71;
+  }
+  
+    /* Media queries pour les petits écrans */
+    @media (max-width: 768px) {
+     
+      /* Textephotos0.css */
+  
+  .mere2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: -4%;
+  }
+  
+  .containerA2024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 4%;
+    width: 90%;
+  }
+  
+  .barres2024 {
+    display: block;  
+    width: 10%;
+    margin-top: 5px;
+  }
+  
+  .trait12024 {
+    width: 30%;
+    height: 5px;
+    background-color: #1B3D71;
+    margin-bottom: 5px;
+  }
+  
+  .trait22024 {
+    width: 100%;
+    height: 5px;
+    background-color: #1B3D71;
+  }
+  
+  .titre2024 {
+    flex: 1; /* Permet au titre de prendre tout l'espace disponible */
+    text-align: center;
+    margin-right: 1%;
+  }
+  
+  .titre2024 h1 {
+    color: #1B3D71;
+    font-weight: bold;
+    margin-top: 15px;
+    white-space: nowrap; /* Empêche le retour à la ligne du texte */
+    overflow: hidden; /* Masque le texte qui dépasse */
+    font-size: 16px;
+    text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+  }
+  
+  .ligne52024 {
+    width: 35%;
+    margin-top: 20px;
+    height: 2px;
+    background-color: #1B3D71;
+  }
+    }
+    
+  

@@ -12,7 +12,6 @@
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  margin-left: 80%;
 }
 
 .boss-trait-refect{
@@ -25,7 +24,6 @@
   width: 5%;
   height: 4px;
   background-color: #1B3D71;
-  margin-top: 3%;
 }
 
 .trait-projet2-refect{
@@ -59,7 +57,7 @@
 }
 
 .projet-texts-refect {
-  flex-basis: 50%;
+  width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -75,12 +73,12 @@
 
 
 .projet-image-refect {
-  width: 50vh;
+  width: 80vh;
 }
 
 .projet-image-refect img {
   width: 100%;
-  height: auto;
+  height: 80vh;
   border-radius: 8px;
 }
 
@@ -96,12 +94,13 @@
     flex-direction: column;
   }
   
-  .buton-project{
+  .buton-project-refect{
     float: left;
     background-color: #1B3D71;
     color: #ffffff;
     border: none;
     border-radius: 4px;
+    margin-bottom: 8px;
   }
   
   .boss-trait-refect{
@@ -111,33 +110,31 @@
   }
   
   .trait-projet1-refect{
-    width: 5%;
-    height: 4px;
+    width: 6%;
+    height: 5px;
+    margin-bottom: 4%;
     background-color: #1B3D71;
-    margin-top: 3%;
   }
   
   .trait-projet2-refect{
-    width: 6%;
-    height: 4px;
+    height: 5px;
     background-color: #1B3D71;
-    margin-top: 3%;
+    margin-top: 12%;
     margin-left: 2%;
   }
   
   .projet-text-refect {
-    font-size: 0.8rem;
+    font-size: 16px;
     margin-bottom: 20px;
     margin-top: 30px;
     color: #1B3D71;
     font-weight: bold;
     text-align: left;
-    margin-left: 2%;
+    width: 100%;
   }
   
   .projet-card-refect {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -147,24 +144,21 @@
     width: 100%;
     flex-direction: column;
     overflow: hidden;
+    height: max-content;
   }
   
   .projet-texts-refect {
-    flex-basis: 100%;
-    text-align:left;
-    font-size: 1rem;
+    width: 90%;
+    text-align:center;
   }
   
-  .projet-texts-refect h2 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: yellow;
-  }
+ 
   
   .projet-texts-refect p {
-    font-size: 1rem;
+    font-size: 10px;
     line-height: 1;
-    color: rgb(31, 30, 30);
+    padding: 5px;
+
   }
   
   
@@ -173,7 +167,7 @@
   }
   
   .projet-image-refect img {
-    width: 80vw;
+    width: 72vw;
     height: 20%;
     height: auto;
     border-radius: 8px;

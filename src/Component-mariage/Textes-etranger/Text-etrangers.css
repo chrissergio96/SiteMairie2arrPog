@@ -9,10 +9,10 @@
 
 .trait-court2{
   width: 4%;
-  height: 3px;
+  height: 4px;
   margin-right: 10px;
   background-color: #1B3D71;
-  margin-top: 2.5%;
+  margin-top: 1%;
   float: left;
 }
 
@@ -31,7 +31,7 @@
   border-radius: 8px;         /* Arrondit les coins */
   max-width: 80%;           /* Limite la largeur pour une meilleure lisibilité */
   margin: auto;             /* Centre le div horizontalement */
-  box-shadow: 0 1px 3px rgba(2, 2, 2, 2.2); /* Ajoute une ombre */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 1%;
   text-align: left;
   font-size:20px;
@@ -60,27 +60,25 @@
     }
 
   .texte-etranger{
-    text-align: center;         /* Centre le texte */
     padding: 6px;              /* Ajoute de l'espace autour du texte */
     background-color: ffffff;  /* Couleur de fond légère */
     border-radius: 8px;         /* Arrondit les coins */
     max-width: 95%;           /* Limite la largeur pour une meilleure lisibilité */
     margin: auto;             /* Centre le div horizontalement */
-    box-shadow: 0 1px 3px rgba(2, 2, 2, 2.2); /* Ajoute une ombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 1%;
     text-align: left;
-    font-weight: 300;
-    font-size:12px;
+    font-size:10px;
     padding: auto;
     }
   
     
  .enfant-text2{
   color: #1B3D71;
-  font-weight: 500;
-  margin-top: 2%;
+  font-weight: bold;
+  margin-top: 5%;
   margin-left: 3%;
-  font-size: 5;
+  font-size: 16px;
   }
 
   .trait-long2{
@@ -97,7 +95,7 @@
   height: 3px;
   margin-right: 10px;
   background-color: #1B3D71;
-  margin-top: 4.3%;
+  margin-top: 1%;
   float: left;
   }
      

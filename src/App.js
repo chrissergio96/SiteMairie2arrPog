@@ -45,6 +45,7 @@ import Servicesocial from './Pages/Servicesocial.jsx';
 import Aidesocials from './Pages/Aidesocials.jsx';
 import Projet from './Pages/Projet.jsx';
 import Numerosutiles from './Pages/Numerosutiles.jsx';
+import FaqUtilisateurs from './Pages/FaqUtilisateurs.jsx';
 
 function App() {
   return (
@@ -72,6 +73,8 @@ function App() {
           <Route path="/apropos" element={<Apropos/>} /> 
           <Route path="/projet" element={<Projet/>} /> 
           <Route path="/numerosutiles" element={<Numerosutiles/>} /> 
+          <Route path="/faq" element={<FaqUtilisateurs/>} /> 
+
 
 
 

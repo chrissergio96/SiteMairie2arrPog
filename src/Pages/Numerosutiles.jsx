@@ -4,13 +4,15 @@ import BackButtonUrb from '../ComponentsUrbanisme/BackButtonUrb/BackButtonUrb';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
 import Footerbas from '../Components/Footerbas/Footerbas';
+import Contacte from '../ComponentContacte/Contacte/Contacte';
 
 function Numerosutiles() {
     return (
       <div>
         <Navbar/>
-        <Contact/>
+        <Contacte/>
         <BackButtonUrb/>
+        <Contact/>
         <Footer/>
         <Footerbas/>
       </div>

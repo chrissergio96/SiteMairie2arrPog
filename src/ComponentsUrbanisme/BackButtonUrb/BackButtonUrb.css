@@ -27,7 +27,7 @@ a{
     .back-buttons{
         width:60%;
         font-size: 12px;
-        margin-top: 2%; /* Espacement entre les cartes et le bouton */
+        margin-top:8%;
     }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Socialheadergal from '../Socialgalerie/Socialheadergal/Socialheadergal';
 import Footer from '../Components-tech/Footertech/Footertech';
-import Textephotos2 from '../Mariagegalerie/Textephoto2/Textephotos2';
+import Textephoto2 from '../Mariagegalerie/Textephoto2/Textephoto2';
 import Cartesocial from '../Socialgalerie/Socialcartegal/Cartesocial';
 import Contact from '../Components/Contact/Contact';
 import Footerbas from '../Components/Footerbas/Footerbas';
@@ -13,7 +13,7 @@ function Socialgalerie() {
     <div>
      <Navbar/>
       <Socialheadergal/>
-      <Textephotos2/>
+      <Textephoto2/>
       <Cartesocial/>
       <Voirplus/>
       <Boutonretour2/>

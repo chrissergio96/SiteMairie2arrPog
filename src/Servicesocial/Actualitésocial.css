@@ -96,14 +96,14 @@
             align-items: center;
         }
         .trait3{
-            width: 20%;
+            width: 40%;
             height: 5px;
             background-color: #1B3D71;
             margin-bottom: 5px;
-           margin-left: 25%;
+           margin-left: 9px;
         }
         .tiret3a{
-            width: 70%;
+            width:100%;
             height: 5px;
             background-color: #1B3D71;
         }
@@ -112,14 +112,15 @@
         }
       
         .tiret3{
-            width: 30%;
+            width: 53%;
             margin-top: 25px;
             height: 2px;
             background-color: #1B3D71;
         }
         .sous-titre3 h1{
             font-weight: bold;
-            font-size: 30px;
+            font-size: 16px;
+            margin-top: 18px;
         } 
     .rectangle-blanc3 {
         background-color: white;
@@ -134,7 +135,7 @@
     }
     .rectangle-blanc3 ul  {
         color: gray;
-        font-size: 12px;
+        font-size: 10px;
         text-align: left; 
         text-align: justify;
         line-height: 1.5;
@@ -143,7 +144,7 @@
     }
     .rectangle-blanc  li {
         color: #333;
-        font-size: 12px;
+        font-size: 10px;
         text-align: left; 
         text-align: justify;
         line-height: 1;

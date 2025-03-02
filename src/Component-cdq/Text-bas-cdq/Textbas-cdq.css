@@ -7,8 +7,6 @@
     margin: auto;             /* Centre le div horizontalement */
     margin-top: 1%;
     text-align: center;
-    font-weight: 100;
-    width: fit-content;
     height: fit-content;
     font-size: 0.9rem;
     font-weight: bold;
@@ -18,5 +16,28 @@
 }
 
 .textbas-texts p{
-    font-size: 0,5rem;
+    font-size: 20px;
 }
+ /* Responsive styles */
+ @media (max-width: 768px) {
+   
+    .textbas-container{
+        text-align:justify;         /* Centre le texte */
+        padding: 2px;              /* Ajoute de l'espace autour du texte */
+        background-color: ffffff;  /* Couleur de fond légère */
+        border-radius: 8px;         /* Arrondit les coins */
+        max-width: 85%;           /* Limite la largeur pour une meilleure lisibilité */
+        margin: auto;             /* Centre le div horizontalement */
+        margin-top: 1%;
+        text-align: center;
+        height: fit-content;
+        font-weight: bold;
+        scroll-behavior: auto;
+        
+        
+    }
+    
+    .textbas-texts p{
+        font-size: 10px;
+    }
+  }

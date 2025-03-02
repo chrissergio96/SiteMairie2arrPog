@@ -12,7 +12,7 @@ const Textephotos0= () => {
             <div className='trait22024'></div>
             </div>
             <div className='titre2024'>
-                <h1>Toutes les photos</h1>
+                <h1>TOUTES LES PHOTOS</h1>
             </div>
             <div className='ligne52024'>
             </div>
