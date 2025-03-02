@@ -1,10 +1,18 @@
-.rubrique{
-    margin-left: 9%;
+.rubriquet{
+    margin-left: 8%;
     margin-top:4%;
     justify-content: center;
     align-items: center;
+    width: 90%;
 }
-.travaux{
+.four{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+.travauxi{
     display: flex;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -13,16 +21,17 @@
     border:none;
     margin-top: 2%;
     align-items: center;
+    margin-right: 5px;
 }
-.travaux h4{
+.travauxi h4{
     margin-left:5%;
     color: gray;
 }
-.rubrique a{
+.rubriquet a{
     text-decoration:none;
 
 }
-.rubrique h2{
+.rubriquet h2{
     margin-bottom: 2%;
     color: #1B3D71;
 
@@ -31,25 +40,34 @@
 /* Responsive styles */
 @media (max-width: 576px) {
 
-    .rubrique{
+    .rubriquet{
         margin-left: 9%;
         margin-top:4%;
         justify-content: center;
         align-items: center;
     }
-    .travaux{
+    .four{
+        margin-left: -10%;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .travauxi{
         display: flex;
-        width: 90%;
+        width: 80%;
         border-radius:8px;
         border:none;
         margin-top: 2%;
         align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
     }
-    .travaux h4{
+    .travauxi h4{
         margin-left:10%;
         font-size: 10px;
     }
-    .rubrique h2{
+    .rubriquet h2{
         margin-bottom: 2%;
         color: #1B3D71;
        padding-top: 20px;
