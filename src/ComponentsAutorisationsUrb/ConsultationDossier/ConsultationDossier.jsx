@@ -13,7 +13,7 @@ const ConsultationDossier= () => {
             <div className='trait2cd'></div>
             </div>
             <div className='titrecd'>
-                <h1>CONSULTATION DOSSIERS EN COURS</h1>
+                <h1>CONSULTATION DOSSIERS </h1>
             </div>
             <div className='ligne5cd'>
             </div>

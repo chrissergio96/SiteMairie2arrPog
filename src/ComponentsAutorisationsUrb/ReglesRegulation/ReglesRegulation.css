@@ -34,7 +34,7 @@
     font-size: 30px;
 }
 .ligne5rr{
-    width: 30%;
+    width: 52%;
     margin-top: 20px;
     height: 2px;
     background-color: #1B3D71;
@@ -44,6 +44,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top:4%;
+    font-size: 20px;
+
 }
 .texterr h6{
     color:red;
@@ -55,8 +57,9 @@
 @media (max-width: 576px) {
    
    .titrerr h1{
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 15px;
+    margin-left: 10px
    }
    .barresrr{
     width: 12%;
@@ -64,16 +67,17 @@
    }
    .trait1rr{
     width: 40%;
+    margin-left: 9px;
    }
    .trait2rr{
     width: 100%;
    }
   
 .ligne5rr{
-    width: 4%;
     margin-top: 14px;
     height: 2px;
     background-color: #1B3D71;
+    width: 15%;
 }
 .containerArr{
     display: flex;
@@ -92,7 +96,8 @@
     font-size:10px;
 }
 .texterr p{
-    font-size:8px;
+    font-size: 10px;
+
 }
 
 

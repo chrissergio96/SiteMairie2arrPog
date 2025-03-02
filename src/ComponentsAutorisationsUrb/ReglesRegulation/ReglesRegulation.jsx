@@ -13,7 +13,7 @@ const ReglesRegulation= () => {
             <div className='trait2rr'></div>
             </div>
             <div className='titrerr'>
-                <h1>REGLES ET REGULATIONS A RESPECTER</h1>
+                <h1>REGLES ET REGULATIONS</h1>
             </div>
             <div className='ligne5rr'>
             </div>

@@ -9,11 +9,11 @@ const MotProjet = () => {
 
           <div className='boss-trait'>
            <div className='trait-projet1'></div> 
-           <h3 className='projet-text'> PROJETS DE DEVELOPPEMENT URBAINS </h3>
+           <h3 className='projet-text'> PROJETS DE DEVELOPPEMENT URBAIN </h3>
           <div className='trait-projet2'></div>
           </div>
 
-          <div className="projet-card">
+          <div className="projet-care">
                 <div className="projet-image">
                    <img
                    src={require('../../Images/cdq5.jpg')}

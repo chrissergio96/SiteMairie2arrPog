@@ -21,7 +21,7 @@ const CarteUrb = () => {
             </div>
             <div className="carte-item">
                 <img src={caniveau} alt="Carte 2" className="carte-image" />
-                <h3>2.Develloppement durable et 
+                <h3>2.Developpement durable et 
                 environnemental</h3>
             </div>
             <div className="carte-item">

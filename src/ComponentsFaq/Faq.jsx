@@ -1,0 +1,199 @@
+import React, { useState, useEffect } from 'react';
+import './Faq.css';
+
+const Faq = () => {
+  // Charger les questions depuis le LocalStorage si elles existent
+  const [questions, setQuestions] = useState(() => {
+    const savedQuestions = localStorage.getItem('questions');
+    return savedQuestions ? JSON.parse(savedQuestions) : [];
+  });
+
+  const [newQuestion, setNewQuestion] = useState('');
+  const [adminResponses, setAdminResponses] = useState({});
+  const [isEditing, setIsEditing] = useState(null);  // Pour identifier la question en édition
+  const [editedQuestion, setEditedQuestion] = useState('');
+
+  // Sauvegarder les questions dans le LocalStorage chaque fois qu'elles changent
+  useEffect(() => {
+    localStorage.setItem('questions', JSON.stringify(questions));
+  }, [questions]);
+
+  // Fonction pour soumettre une question
+  const submitQuestion = (e) => {
+    e.preventDefault();
+    if (newQuestion.trim()) {
+      setQuestions([...questions, { question: newQuestion, answer: null }]);
+      setNewQuestion(''); // Réinitialiser le champ de texte
+    }
+  };
+
+  // Fonction pour permettre à l'admin de répondre à une question
+  const handleAdminResponse = (index, response) => {
+    const updatedQuestions = [...questions];
+    updatedQuestions[index].answer = response;
+    setQuestions(updatedQuestions);
+  };
+
+  // Fonction pour modifier une question existante
+  const handleEditQuestion = (index) => {
+    const updatedQuestions = [...questions];
+    updatedQuestions[index].question = editedQuestion;
+    setQuestions(updatedQuestions);
+    setIsEditing(null); // Arrêter l'édition
+    setEditedQuestion('');
+  };
+
+  // Fonction pour supprimer une question
+  const handleDeleteQuestion = (index) => {
+    const updatedQuestions = questions.filter((_, i) => i !== index);
+    setQuestions(updatedQuestions);
+  };
+
+  return (
+    <div className="faq-container">
+       
+    <div class="quest">
+        <h1>FAQ - Mairie du 2e Arrondissement de Port-Gentil</h1>
+
+        <h2>1. État Civil</h2>
+        <div>
+            <h3>Q : Comment obtenir un acte de naissance ?</h3>
+            <p><strong>R :</strong> Vous pouvez obtenir un acte de naissance en vous rendant au service de l’état civil de la Mairie du 2e Arrondissement de Port-Gentil, muni d'une pièce d'identité valide. Le coût pour l’obtention de l’acte est de 2000 FCFA.</p>
+        </div>
+        <div>
+            <h3>Q : Comment faire une demande de carte d’identité ?</h3>
+            <p><strong>R :</strong> Pour faire une demande de carte d’identité, vous devez vous rendre au guichet de l’Etat Civil avec une photo d’identité récente, un extrait de naissance et une attestation de résidence.</p>
+        </div>
+        <div>
+            <h3>Q : Comment demander un extrait de mariage ?</h3>
+            <p><strong>R :</strong> Vous pouvez demander un extrait de mariage en vous rendant au service de l’Etat Civil avec une pièce d'identité et, si nécessaire, les informations concernant la date et le lieu du mariage.</p>
+        </div>
+
+        <h2>2. Urbanisme et Permis de Construire</h2>
+        <div>
+            <h3>Q : Où puis-je déposer une demande de permis de construire ?</h3>
+            <p><strong>R :</strong> Vous pouvez déposer votre demande de permis de construire au Service Urbanisme de la Mairie du 2e Arrondissement, en présentant les plans de construction approuvés et un permis de votre architecte.</p>
+        </div>
+        
+        <div>
+            <h3>Q : Comment savoir si mon permis de construire a été approuvé ?</h3>
+            <p><strong>R :</strong> Vous pouvez vérifier l’état de votre demande de permis de construire en vous rendant directement au Service Urbanisme ou en consultant notre plateforme en ligne pour le suivi de vos demandes.</p>
+        </div>
+
+        <div>
+            <h3>Q : Où puis-je payer mes impôts locaux ?</h3>
+            <p><strong>R :</strong> Vous pouvez payer vos impôts locaux directement au service des finances de la Mairie ou via notre plateforme de paiement en ligne. Les paiements en ligne sont sécurisés et pratiques.</p>
+        </div>
+        <div>
+            <h3>Q : Quels documents sont nécessaires pour payer la taxe foncière ?</h3>
+            <p><strong>R :</strong> Pour payer la taxe foncière, vous devez fournir une copie de votre acte de propriété ainsi qu'une facture d'impôt de l'année précédente.</p>
+        </div>
+        <div>
+            <h3>Q : Comment obtenir un certificat de non-arriéré fiscal ?</h3>
+            <p><strong>R :</strong> Le certificat de non-arriéré fiscal peut être demandé au service des finances de la Mairie avec vos informations fiscales à jour.</p>
+        </div>
+
+        <h2>4. Collecte des Déchets et Environnement</h2>
+        <div>
+            <h3>Q : Quand les déchets sont-ils collectés dans le 2e Arrondissement ?</h3>
+            <p><strong>R :</strong> La collecte des déchets se fait tous les jours sauf le dimanche. Assurez-vous de sortir vos poubelles avant 6h du matin.</p>
+        </div>
+        <div>
+            <h3>Q : Comment signaler une zone insalubre ?</h3>
+            <p><strong>R :</strong> Vous pouvez signaler une zone insalubre en remplissant un formulaire de signalement sur notre site internet ou en nous contactant directement via la ligne dédiée.</p>
+        </div>
+        <div>
+            <h3>Q : Que faire en cas de dépôt sauvage de déchets ?</h3>
+            <p><strong>R :</strong> Si vous constatez un dépôt sauvage de déchets, merci de le signaler au service de l’assainissement de la Mairie pour que nous puissions organiser une intervention rapide.</p>
+        </div>
+
+        <h2>5. Sécurité et Ordre Public</h2>
+        <div>
+            <h3>Q : Comment signaler un problème de sécurité dans le quartier ?</h3>
+            <p><strong>R :</strong> Vous pouvez signaler un problème de sécurité en contactant le commissariat local ou en utilisant notre plateforme en ligne dédiée aux alertes citoyennes.</p>
+        </div>
+        <div>
+            <h3>Q : Comment faire une demande pour un éclairage public dans ma rue ?</h3>
+            <p><strong>R :</strong> Si vous constatez un manque d’éclairage public dans votre quartier, vous pouvez faire une demande via notre site web ou en vous rendant au service des infrastructures de la Mairie.</p>
+        </div>
+
+        <h2>6. Services Divers</h2>
+        <div>
+            <h3>Q : Comment organiser un événement public dans le 2e Arrondissement ?</h3>
+            <p><strong>R :</strong> Pour organiser un événement public, vous devez soumettre une demande officielle auprès du service des Affaires culturelles et communautaires, en indiquant la nature de l’événement et son lieu de déroulement.</p>
+        </div>
+        <div>
+            <h3>Q : Comment obtenir un certificat de résidence ?</h3>
+            <p><strong>R :</strong> Le certificat de résidence peut être obtenu en vous rendant au service de l’Etat Civil avec une pièce d’identité et un justificatif de domicile.</p>
+        </div>
+    </div>
+      <h1>Foire Aux Questions (FAQ)</h1>
+
+      {/* Formulaire pour poser une question */}
+      <form onSubmit={submitQuestion} className="faq-form">
+        <label htmlFor="userQuestion">Posez votre question :</label>
+        <input
+          type="text"
+          id="userQuestion"
+          value={newQuestion}
+          onChange={(e) => setNewQuestion(e.target.value)}
+          placeholder="Entrez votre question ici"
+          required
+        />
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div className="faq-list">
+        {questions.length > 0 ? (
+          questions.map((item, index) => (
+            <div key={index} className="faq-item">
+              {isEditing === index ? (
+                <div className="edit-question">
+                  <input
+                    type="text"
+                    value={editedQuestion}
+                    onChange={(e) => setEditedQuestion(e.target.value)}
+                    placeholder="Modifier la question"
+                  />
+                  <button onClick={() => handleEditQuestion(index)}>Enregistrer</button>
+                  <button onClick={() => setIsEditing(null)}>Annuler</button>
+                </div>
+              ) : (
+                <div>
+                  <h2 className="faq-question">{item.question}</h2>
+                  <button onClick={() => {
+                    setIsEditing(index);
+                    setEditedQuestion(item.question);
+                  }}>Modifier</button>
+                  <button onClick={() => handleDeleteQuestion(index)}>Supprimer</button>
+                </div>
+              )}
+
+              {item.answer ? (
+                <p className="faq-answer"><strong>Réponse :</strong> {item.answer}</p>
+              ) : (
+                <div className="admin-response">
+                  <label htmlFor={`response-${index}`}>Réponse de l'admin :</label>
+                  <input
+                    type="text"
+                    id={`response-${index}`}
+                    value={adminResponses[index] || ''}
+                    onChange={(e) => setAdminResponses({ ...adminResponses, [index]: e.target.value })}
+                    placeholder="Répondre à la question"
+                  />
+                  <button onClick={() => handleAdminResponse(index, adminResponses[index])}>
+                    Envoyer la réponse
+                  </button>
+                </div>
+              )}
+            </div>
+          ))
+        ) : (
+          <p>Aucune question pour le moment. Soyez le premier à poser une question !</p>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Faq;

@@ -7,14 +7,14 @@
   }
   
   .projets-container h1 {
-    font-size: 2.5rem;
+    font-size: 30px;
     color: #1B2D71;
     margin-bottom: 20px;
     font-weight:bold;
   }
   
   .projets-container p {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #333;
     margin-bottom: 40px;
   }
@@ -47,13 +47,13 @@
   }
   
   .projet-info h2 {
-    font-size: 1.5rem;
+    font-size: 30px;
     color: #1B3D71;
     margin-bottom: 10px;
   }
   
   .projet-info p {
-    font-size: 1rem;
+    font-size: 20px;
     color: #555;
   }
   
@@ -69,11 +69,27 @@
     }
   
     .projets-container h1 {
-      font-size: 2rem;
+      font-size: 16px;
+      font-weight: bold;
     }
   
     .projets-grid {
       grid-template-columns: 1fr;
+    }
+    .projets-container p {
+      font-size: 10px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .projet-info h2 {
+      font-size: 16px;
+      color: #1B3D71;
+      margin-bottom: 10px;
+    }
+    
+    .projet-info p {
+      font-size: 10px;
+      color: #555;
     }
   }
   

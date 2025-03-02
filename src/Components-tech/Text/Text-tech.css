@@ -1,21 +1,18 @@
 
-    .text {
+    .textt {
       text-align: center;         /* Centre le texte */
-      color: black;                /* Couleur du texte */
-      padding: 20px;              /* Ajoute de l'espace autour du texte */
+      padding: 10px;              /* Ajoute de l'espace autour du texte */
       background-color: ffffff;  /* Couleur de fond légère */
       border-radius: 8px;         /* Arrondit les coins */
       width: 80%;           /* Limite la largeur pour une meilleure lisibilité */
       margin: auto;             /* Centre le div horizontalement */
-      box-shadow: 0 1px 3px rgba(2, 2, 2, 2.2); /* Ajoute une ombre */
+      box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1) ; 
       margin-top: 1%;
-      display: flex;
       flex-direction: column;
     }
-    
-    .text2 {
+
+    .text2t {
       font-size: 30px;           /* Taille du texte pour le titre */
-      line-height: 1.5;          /* Espacement entre les lignes */
       font-weight: bold;         /* Met le texte en gras */
       color:#1B3D71;            /* Couleur du texte (adaptée à votre couleur de marque) */
       align-items: center;
@@ -23,45 +20,42 @@
     }
   
     
-    .text-p {
+    .textt p {
       font-size: 20px;           /* Taille du texte pour le paragraphe */
       color: gray;     
       text-align: center;
-      line-height: normal;
     
   };
 
-    @media (max-width:577px){
-
-    .text {
+    @media (max-width:768px){
+   
+    .textt {
       text-align: center;         /* Centre le texte */
-      color: black;                /* Couleur du texte */
-      padding: 5%;              /* Ajoute de l'espace autour du texte */
+      padding: 20px;              /* Ajoute de l'espace autour du texte */
       background-color: ffffff;  /* Couleur de fond légère */
       border-radius: 8px;         /* Arrondit les coins */
-      max-width: 100%;           /* Limite la largeur pour une meilleure lisibilité */
+      width: 100%;           /* Limite la largeur pour une meilleure lisibilité */
       margin: auto;             /* Centre le div horizontalement */
-      box-shadow: 0 1px 3px rgba(2, 2, 2, 2.2); /* Ajoute une ombre */
+      box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1) ; 
       margin-top: 1%;
       display: flex;
       flex-direction: column;
-      font-weight: normal;
-      width: 100%;
-      font-size: 12px;
+    }
+    
+    .text2t {
+      font-size: 10px;           /* Taille du texte pour le titre */
+      font-weight: bold;         /* Met le texte en gras */
+      color:#1B3D71;            /* Couleur du texte (adaptée à votre couleur de marque) */
+      align-items: center;
+      margin-bottom: 2%;
     }
   
-    .text2{
-      color: #1B3D71;
-      font-weight: bold;
-      margin-top: 0.1%;
-    }
     
-    .text-p {
+    .textt p {
       font-size: 20px;           /* Taille du texte pour le paragraphe */
-      color: #555; 
-      width: 100%;
-
+      color: gray;     
+      text-align: center;
     
-  }
+  };
 
     }

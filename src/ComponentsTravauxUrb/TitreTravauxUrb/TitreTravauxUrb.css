@@ -1,10 +1,11 @@
-.travauxtitre{
+.travauxtitres {
     justify-content:center;
     align-items: center;
 }
-.travauxtitre h2{
+.travauxtitres h1{
     text-align:center;
     font-size: 30px;
+    color: #1B3D71;
 }  
  .travauxpar{
     background-color:white;
@@ -13,12 +14,13 @@
     margin-right:auto;
     margin-left:auto;
     padding:2px;
-    height: 160px;
+    height: max-content;
     border-radius:8px;
  }
 .travauxpar p{
     text-align:center;
     color:gray;
+    font-size: 20px;
 } 
 .containertrurb{
     display: flex;
@@ -95,7 +97,7 @@
 
     .titrestrurb h1{
         margin-bottom: 2px;
-        font-size: 20px;
+        font-size: 16px;
        }
        .titrestrurb{
         margin-right:10px;
@@ -103,7 +105,7 @@
        .trait1trurb{
         width: 40%;
         height: 5px;
-        margin-left: 15px;
+        margin-left: 14px;
         background-color: #1B3D71;
         margin-bottom: 5px;
     }
@@ -113,7 +115,7 @@
         background-color: #1B3D71;
     }
        .lignes55trurb{
-        width: 10%;
+        width: 20%;
         margin-top: 10px;
         height: 2px;
         background-color: #1B3D71;
@@ -163,7 +165,7 @@
         margin-left:auto;
         padding:5px;
         border-radius:8px;
-        height: 180px;
+        height: max-content;
      }
      .meretrurbphoto button{
         width: 30%;
@@ -176,11 +178,4 @@
         color: white;
         font-size:12px;
     }
-  }
-  @media (max-width: 420px) {
-    
-   
- 
-  
-   
   }

@@ -52,21 +52,23 @@
 .permis{
     width: 50%;
     margin-right: 20px;
+    font-size: 20px
 }
 .limite{
     width:3px;
-    height:520px;
+    height:200vh;
     margin-right: 30px;
     background-color:#1B3D71;
 }
 .document{
     width:50%;
+    font-size: 20px;
 }
 /* Responsive styles */
 @media (max-width: 576px) {
    
    .titreta h1{
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 15px;
     margin-left: 5px;
    }
@@ -82,7 +84,7 @@
    }
   
 .ligne5ta{
-    width: 22%;
+    width: 15%;
     margin-top: 14px;
     height: 2px;
     background-color: #1B3D71;
@@ -105,20 +107,22 @@
     font-size:10px;
 }
 .texteta p{
-    font-size:8px;
+    font-size:10px;
 }
 .permis{
     width: 50%;
     margin-right: 20px;
+    font-size: 10px;
 }
 .limite{
     width:3px;
-    height:470px;
+    height:105vh;
     margin-right: 30px;
     background-color:#1B3D71;
 }
 .document{
     width:50%;
+    font-size: 10px;
 }
 }
 

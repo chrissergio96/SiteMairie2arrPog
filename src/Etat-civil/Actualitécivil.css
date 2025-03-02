@@ -84,10 +84,11 @@ margin-top:20px;
             width: 13%;
         }
         .trait1etc{
-            width: 20%;
+            width: 30%;
             height: 5px;
             background-color: #1B3D71;
             margin-bottom: 5px;
+            margin-left: 9px;
         }
         .tiret2etc{
             width: 75%;
@@ -100,11 +101,12 @@ margin-top:20px;
         }
         .sous-titreetc h1{
             font-weight: bold;
-            font-size: 30px;
+            font-size: 16px;
             margin-right: 2px;
+            margin-top: 10px;
         }
         .tiretetc{
-            width: 30%;
+            width: 52%;
             margin-top: 14px;
             height: 2px;
             background-color: #1B3D71;
@@ -126,6 +128,7 @@ margin-top:20px;
     }
     .civiltexte p{
         text-align: center;
+        font-size: 10px;
     }
     
     .civiltexte  li {
@@ -134,5 +137,6 @@ margin-top:20px;
     color: gray;
     margin-top:20px;
     text-align: start;
+    font-size: 10px;
     }
 }

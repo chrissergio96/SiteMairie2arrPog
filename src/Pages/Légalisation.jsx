@@ -3,12 +3,12 @@ import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Headerleg from '../Légalisation/Headerleg';
 import Cartes from '../Légalisation/Cartes';
+import Boutonretour2 from '../Galerietecnic/Boutonretour2/Boutonretour2';
 import Info from '../Légalisation/info';
 import Contact from '.././Components/Contact/Contact';
 import Footer from '.././Components/Footer/Footer';
 import Footerbas from '.././Components/Footerbas/Footerbas';
-import RetourButtonleg from '../Légalisation/RetourButtonleg';
-import RetourButtonpreced from '../Légalisation/RetourButtonpreced';
+
 
 function Légalisation() {
   return (
@@ -17,9 +17,8 @@ function Légalisation() {
       <Headerleg/>
       <Cartes/>
       <Info/>
+      <Boutonretour2/>
       <Contact/>
-      <RetourButtonleg/>
-      <RetourButtonpreced/>
      <Footer/>
      <Footerbas/>
     </>

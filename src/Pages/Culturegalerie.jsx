@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import Cultureheader from '../Culturegalerie/Cultureheader/Cultureheader';
-import Textephotos2 from '../Mariagegalerie/Textephoto2/Textephotos2';
+import Textephoto2 from '../Mariagegalerie/Textephoto2/Textephoto2';
 import Culturecarte from '../Culturegalerie/Culturecarte/Culturecarte';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
@@ -14,7 +14,7 @@ function Culturegalerie() {
     <div>
       < Navbar/>
      < Cultureheader/>
-     < Textephotos2/>
+     < Textephoto2/>
      < Culturecarte/>
      < Voirplus/>
      < Boutonretour2/>

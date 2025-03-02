@@ -16,7 +16,7 @@ const Profil = () => {
           Assistant technique :
         </Typography>
         <Typography variant="h6" gutterBottom>
-          Monsieur Derson Levy
+          Monsieur James
         </Typography>
         <img
           src={require('../../Images/eleve 4.jpg')}
@@ -26,21 +26,13 @@ const Profil = () => {
       {/* Deuxième Paper */}
       <Paper className='paper2'
         elevation={3} 
-        style={{
-          padding: '20px',
-          width: '40%',
-          textAlign: 'center',
-          display: 'flex',
-          flexDirection: 'column',          
-          alignItems: 'center',
-          overflow:'hidden'
-        }}
+        
       >
         <Typography variant="body1" color="textSecondary">
           Assistant technique  :
         </Typography>
         <Typography variant="h6" gutterBottom>
-          Madame Fyti Naicka
+          Madame Jessi
         </Typography>
         <img
           src={require('../../Images/eleve 2.jpg')}

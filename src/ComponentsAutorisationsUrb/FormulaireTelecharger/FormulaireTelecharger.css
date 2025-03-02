@@ -34,7 +34,7 @@
     font-size: 30px;
 }
 .ligne5ft{
-    width: 22%;
+    width: 44%;
     margin-top: 20px;
     height: 2px;
     background-color: #1B3D71;
@@ -47,6 +47,8 @@
 }
 .ft{
     text-align:center;
+    font-size: 20px;
+
 }
 
 
@@ -68,12 +70,13 @@
 }
 .apresb{
     margin-top: 30px;
+    font-size: 20px
 }
 /* Responsive styles */
 @media (max-width: 576px) {
    
    .titreft h1{
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 15px;
     margin-left: 10px;
    }
@@ -91,7 +94,7 @@
    }
   
 .ligne5ft{
-    width: 4%;
+    width: 2%;
     margin-top: 14px;
     height: 2px;
     background-color: #1B3D71;
@@ -110,7 +113,7 @@
 }
 
 .texteft p{
-    font-size:8px;
+    font-size:10px;
 }
 .texteft button{
     width:90%;
@@ -127,6 +130,9 @@
 .texteft a button:hover{
     background-color: yellow;
     color: #1B3D71;
+}
+.apresb{
+    font-size: 10px;
 }
 }
 

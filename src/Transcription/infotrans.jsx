@@ -15,7 +15,7 @@ export default function MediaCard1() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '100vh', // Hauteur de la vue pour centrer verticalement
+        minHeight: '60vh', // Hauteur de la vue pour centrer verticalement
         padding: 2,
         boxSizing: 'border-box', // Assure que tout est bien contenu dans la fenêtre
       }}
@@ -23,7 +23,7 @@ export default function MediaCard1() {
       <Card
         sx={{
           width: 1080, // Largeur augmentée
-          height: 800, // Hauteur augmentée
+          height: 530, // Hauteur augmentée
           boxShadow: 3, // Ajout d'une ombre pour un effet esthétique
           borderRadius: 2, // Coins légèrement arrondis
         }}
@@ -31,7 +31,7 @@ export default function MediaCard1() {
         {/* Agrandissement de l'image */}
         <CardMedia
           sx={{
-            height: 400, // Augmente la hauteur de l'image
+            height: 300, // Augmente la hauteur de l'image
             backgroundSize: 'cover', // Ajuste l'image pour qu'elle couvre l'espace
           }}
           image={imageMariage}
@@ -44,7 +44,7 @@ export default function MediaCard1() {
             component="div"
             sx={{
               fontWeight: 'bold', // Rend le titre plus visible
-              fontSize:'30px'
+              fontSize:'20px'
             }}
           >
             PROCESSUS DE DÉCLARATION DE MARIAGE
@@ -52,10 +52,12 @@ export default function MediaCard1() {
           </Typography>
           {/* Agrandissement du texte de contenu */}
           <Typography
-            variant="h6" // Texte plus grand
+            variant="p" // Texte plus grand
             sx={{
               color: 'text.secondary',
               lineHeight: 1, // Améliore la lisibilité
+              fontSize:'15px',
+              fontWeight:'bold'
             }}
           >
            Vous souhaitez vous mariez ?  <br />
@@ -64,7 +66,7 @@ export default function MediaCard1() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="large">Voir plus</Button>
+          <Button size="10px">Voir plus</Button>
         </CardActions>
       </Card>
     </Box>

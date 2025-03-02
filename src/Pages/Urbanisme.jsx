@@ -17,8 +17,8 @@ function Accueil() {
        <AproposUrb/>
        <RubriqueUrb/>
        <CarteUrb/>
-       <Contact/>
        <BackButtonUrb/>
+       <Contact/>
        <Footer/>
        <Footerbas/>
       </div>

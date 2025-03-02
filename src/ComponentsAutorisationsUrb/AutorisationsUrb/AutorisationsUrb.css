@@ -14,7 +14,7 @@
 
 .texte3a{
     width:80%;
-    height: 230px;
+    height: max-content;
     background-color:white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: auto;
@@ -39,7 +39,7 @@
    
    .texte3a{
     width:80%;
-    height: 140px;
+    height: max-content;
     background-color:white;
     box-shadow: 0 4px 8px rgba(7, 3, 3, 0.1);
     margin-left: auto;
@@ -52,7 +52,7 @@
     text-align: center;
    padding-top: 4%;
    color: gray;
-   font-size: 8px;
+   font-size: 10px;
   
 }
 

@@ -18,51 +18,8 @@ const Projets = () => {
       description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
       image: require('../../Images/hj.jpg'),
     },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
-    {
-      titre: 'Construction de Centres de Santé',
-      description: 'La construction de nouveaux centres de santé pour garantir un accès de qualité aux soins dans les zones les plus reculées du 2e arrondissement.',
-      image: require('../../Images/hj.jpg'),
-    },
+   
+   
     {
       titre: 'Réhabilitation des Routes Urbaines',
       description: 'Un projet pour améliorer les routes principales et secondaires du 2e arrondissement afin de fluidifier la circulation et réduire les accidents.',

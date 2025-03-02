@@ -12,7 +12,6 @@
     color: #ffffff;
     border: none;
     border-radius: 4px;
-    margin-left: 80%;
   }
   
   .boss-trait-sensib{
@@ -25,11 +24,10 @@
     width: 5%;
     height: 4px;
     background-color: #1B3D71;
-    margin-top: 3%;
   }
   
   .trait-projet2-sensib{
-    width: 55%;
+    width: 50%;
     height: 4px;
     background-color: #1B3D71;
     margin-top: 3%;
@@ -37,13 +35,13 @@
   }
   
   .projet-text-sensib {
-    font-size: 1.6rem;
+    font-size: 30px;
     margin-bottom: 20px;
     margin-top: 30px;
     color: #1B3D71;
     font-weight: bold;
     text-align: left;
-    margin-left: 2%;
+    margin-left: 11px;
   }
   
   .projet-card-sensib {
@@ -59,17 +57,13 @@
   }
   
   .projet-texts-sensib {
-    flex-basis: 50%;
     text-align: left;
     display: flex;
+    width: 50%;
     flex-direction: column;
   }
   
-  .projet-texts-sensib h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
+ 
   .projet-texts-sensib p {
     font-size: 20px;
     line-height: 1.6;
@@ -78,30 +72,100 @@
   
   
   .projet-image-sensib {
-    width: 50vh;
+    width: 80vh;
   }
   
   .projet-image-sensib img {
     width: 100%;
-    height: auto;
+    height: 80vh;
     border-radius: 8px;
   }
   
   /* Responsive styles */
   @media (max-width: 768px) {
-    .sensib-card {
+    .sensibilisation-container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px 0;
+      text-align: center;
+      justify-content: center;
+      object-fit: cover;
+    }
+    
+    .buton-sensib{
+      background-color: #1B3D71;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+    }
+    
+    .boss-trait-sensib{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .trait-projet1-sensib{
+      width: 6%;
+      height: 4px;
+      margin-top: 6px;
+      background-color: #1B3D71;
+    }
+    
+    .trait-projet2-sensib{
+      width: 9%;
+      height: 4px;
+      background-color: #1B3D71;
+      margin-top: 7%;
+      margin-left: 2%;
+    }
+    
+    .projet-text-sensib {
+      font-size: 16px;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      color: #1B3D71;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 4px;
+    }
+    
+    .projet-card-sensib {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      padding: 10px;
+      border-radius: 8px;
+      width: 100%;
       flex-direction: column;
     }
-  
-    .sensib-texts {
-      text-align: center;
-      margin-bottom: 20px;
+    
+    .projet-texts-sensib {
+      text-align: left;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
     }
-  
-    .sensib-image {
+    
+   
+    .projet-texts-sensib p {
+      font-size: 10px;
+      line-height: 1.6;
+      color: gray;
+      text-align: center;
+    }
+    
+    
+    .projet-image-sensib {
       width: 100%;
     }
-    .sensib-text {
-      font-size: 28px;
+    
+    .projet-image-sensib img {
+      width: 100%;
+      height: 30vh;
+      border-radius: 8px;
     }
+    
   }

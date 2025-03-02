@@ -7,8 +7,8 @@ import elecImage from '../../Images/elec.jpg'
 
 const TitreTravauxUrb = () => {
     return (
-        <div className='travauxtitre'>
-        <h2>Travaux</h2>
+        <div className='travauxtitres'>
+        <h1>Travaux</h1>
         <div className='travauxpar'>
             <p>
             Bienvenue dans la rubrique Travaux de la Mairie du 2ᵉ Arrondissement de Port-Gentil. Cette section est dédiée à l'information et au suivi des différents travaux d'infrastructure entrepris dans l'Arrondissement. Qu'il s'agisse de la construction de nouvelles infrastructures, de la réfection de routes, ou de l'aménagement des espaces publics, vous trouverez ici les détails sur les projets en cours et à venir. 
@@ -50,7 +50,7 @@ const TitreTravauxUrb = () => {
             <img src={elecImage} alt="elec" />
             <strong>
             <a href="https://www.facebook.com/Mairie2eArrondissementPortGentil/posts/pfbid02Hy8JoZGwvsZyVsg1XHgHiSRaB6ULdsTqD8cLagjoVfSX67bXqZQzjrMQTeEcR1CNl">
-            [VISITE DE TERRAIN : SECURITE ELECTRIQUE AU 2E ARRONDISSEMENT]</a>
+            [VISITE DE TERRAIN : Sécurité électrique au 2e Arrondissement] </a>
             </strong>
             </div>
 
