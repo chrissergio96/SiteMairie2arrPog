@@ -4,9 +4,9 @@ import './Text-tech.css';
 const Texttech = () => {
   return (
     
-    <div className='textt'>
+    <div className='textte'>
       
-    <h1  className='text2t'>BON A SAVOIR</h1>
+    <h1  className='text2te'>BON A SAVOIR</h1>
       <p>
       Le service technique d'une Mairie est un département clé chargé de la gestion des infrastructures et des travaux publics de la commune. Son rôle principal est 
       d'assurer le bon fonctionnement, l'entretien et le développement des infrastructures

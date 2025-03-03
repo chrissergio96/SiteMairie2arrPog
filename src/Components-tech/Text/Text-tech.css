@@ -1,7 +1,7 @@
 
-    .textt {
+    .textte {
       text-align: center;         /* Centre le texte */
-      padding: 10px;              /* Ajoute de l'espace autour du texte */
+      padding: 5px;              /* Ajoute de l'espace autour du texte */
       background-color: ffffff;  /* Couleur de fond légère */
       border-radius: 8px;         /* Arrondit les coins */
       width: 80%;           /* Limite la largeur pour une meilleure lisibilité */
@@ -11,16 +11,16 @@
       flex-direction: column;
     }
 
-    .text2t {
+    .text2te {
       font-size: 30px;           /* Taille du texte pour le titre */
       font-weight: bold;         /* Met le texte en gras */
       color:#1B3D71;            /* Couleur du texte (adaptée à votre couleur de marque) */
       align-items: center;
-      margin-bottom: 2%;
+      margin-bottom: 4%;
     }
   
     
-    .textt p {
+    .textte p {
       font-size: 20px;           /* Taille du texte pour le paragraphe */
       color: gray;     
       text-align: center;
@@ -29,9 +29,9 @@
 
     @media (max-width:768px){
    
-    .textt {
+    .textte {
       text-align: center;         /* Centre le texte */
-      padding: 20px;              /* Ajoute de l'espace autour du texte */
+      padding: 5px;              /* Ajoute de l'espace autour du texte */
       background-color: ffffff;  /* Couleur de fond légère */
       border-radius: 8px;         /* Arrondit les coins */
       width: 100%;           /* Limite la largeur pour une meilleure lisibilité */
@@ -42,18 +42,17 @@
       flex-direction: column;
     }
     
-    .text2t {
-      font-size: 10px;           /* Taille du texte pour le titre */
+    .text2te {
+      font-size: 16px;           /* Taille du texte pour le titre */
       font-weight: bold;         /* Met le texte en gras */
       color:#1B3D71;            /* Couleur du texte (adaptée à votre couleur de marque) */
       align-items: center;
-      margin-bottom: 2%;
     }
   
     
-    .textt p {
-      font-size: 20px;           /* Taille du texte pour le paragraphe */
-      color: gray;     
+    .textte p {
+      font-size: 10px;           /* Taille du texte pour le paragraphe */
+      color: yellow;     
       text-align: center;
     
   };
