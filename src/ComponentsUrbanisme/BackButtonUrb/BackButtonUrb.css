@@ -5,14 +5,14 @@
     border-radius: 3px;
     padding: 10px 15px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight:bold;
     text-decoration: none;
     margin-left: 10%;
-    margin-top: 2%; /* Espacement entre les cartes et le bouton */
+    margin-top: 1%; /* Espacement entre les cartes et le bouton */
     margin-bottom: 4%;
     display: block; /* Pour le centrer sous les cartes si besoin */
-    width: 20%; /* Ajuster la largeur du bouton au contenu */
+    width: 30%; /* Ajuster la largeur du bouton au contenu */
 }
 a{
     text-decoration: none;
@@ -27,7 +27,7 @@ a{
     .back-buttons{
         width:60%;
         font-size: 12px;
-        margin-top:8%;
+        margin-top:5%;
     }
 }
 

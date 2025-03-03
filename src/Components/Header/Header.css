@@ -219,4 +219,15 @@
     padding: 8px 16px; /* Ajuster la taille du bouton */
     
   }
+  .mairiea {
+    background-image: url('../../Images/Mairie de.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  }
 }

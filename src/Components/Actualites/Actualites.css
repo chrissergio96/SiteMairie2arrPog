@@ -81,10 +81,11 @@ div .carousel.slide{
     font-weight: bold;
    }
    .trait1l{
-    width: 30%;
+    width: 34%;
     height: 5px;
     background-color: #1B3D71;
     margin-bottom: 5px;
+    margin-left: 10px;
 }
 .trait2{
     width: 100%;
