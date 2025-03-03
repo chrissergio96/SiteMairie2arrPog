@@ -83,7 +83,7 @@
       background-color: white;
       border-radius: 8px;
       opacity: 0.8;
-      height: 40%;
+      height: max-content;
       overflow: hidden;
       align-items: center;
       margin-top: 25%;
@@ -111,7 +111,6 @@
       text-align: center;
       width: 75vw; /* Largeur fixe pour aligner les boutons */
       font-weight: bold;
-      margin-top: -5%;
     }
     
     .bouttonga1:hover {

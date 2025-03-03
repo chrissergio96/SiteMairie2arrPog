@@ -78,7 +78,7 @@
   background-color:white;
   border-radius: 8px;
   opacity: 0.8;
-  height: 32%;
+  height: max-content;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;

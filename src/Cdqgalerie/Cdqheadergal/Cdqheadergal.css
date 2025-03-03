@@ -60,7 +60,7 @@
   /* Media queries pour les petits écrans */
   @media (max-width: 768px) {
     .header-containerga24 {
-      height: 400px; /* Ajuste la hauteur pour les petits écrans */
+      height: max-content; /* Ajuste la hauteur pour les petits écrans */
     }
   
     .boutton-containerga24 {

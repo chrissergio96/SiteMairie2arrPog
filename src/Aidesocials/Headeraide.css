@@ -85,7 +85,7 @@
       text-align: center;
       width: 85%;
       background-color: #1B3D71;
-      height: 30%;
+      height: max-content;
       border-radius: 8px;
       opacity: 0.9;
       overflow: hidden; 

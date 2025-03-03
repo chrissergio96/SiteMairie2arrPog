@@ -1,7 +1,7 @@
 .flotant{
     opacity: 0.8;
     width: 40%;
-    height: 35vh;
+    height: 38%;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -15,7 +15,6 @@
     align-items: center;
     justify-content: space-between; /* Espace entre le texte et l'icône */
     height: 40px;
-   
     background-color: #1B3D71;
     color:white ;
     border: none;
@@ -43,7 +42,7 @@
     .flotant{
         opacity: 0.8;
         width: 80%;
-        height: 30%;
+        height: max-content;
         background-color: white;
         align-items: center;
         justify-content: center;
@@ -57,7 +56,6 @@
         align-items: center;
         justify-content: space-between; /* Espace entre le texte et l'icône */
         height: 40px;
-       
         background-color: #1B3D71;
         color:white ;
         border: none;
@@ -66,7 +64,7 @@
         text-align: center;
         width: 60VW; /* Largeur fixe pour aligner les boutons */
         font-weight: bold;
-    
+        margin-top: 2%;
     }
     
     .service-technique{
