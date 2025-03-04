@@ -23,17 +23,10 @@ text-decoration:none;
 @media (max-width: 768px) {
     
     .back-button{
-        width:30%;
+        width:32%;
         height: 30px;
         font-size: 7px;
     }
 }
 
-@media (max-width: 480px) {
-   
-    .back-button{
-        width:30%;
-        height: 30px;
-        font-size: 7px;
-    }
-}
+
