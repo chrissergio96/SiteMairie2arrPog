@@ -57,16 +57,37 @@ const Faq = () => {
 
         <h2>1. État Civil</h2>
         <div>
+            <h3>Q : Comment faire une procédure de mariage ?</h3>
+            <p><strong>R :</strong>
+            Les futurs mariés doivent déposer, une semaine avant la date de cette célébration, un dossier comprenant :</p>
+           <p> <strong>- Une demande manuscrite adressée au Maire ;</strong></p>
+           <p> <strong>- Un extrait d’acte de naissance des futurs mariés ;</strong></p>
+           <p> <strong>- Une attestation sur l’honneur de célibat des futurs mariés ;</strong></p>
+           <p> <strong>- Une fiche polygamique pour le futur conjoint ;</strong></p>
+           <p> <strong>- Une autorisation de contracter un mariage civil par la hiérarchie pour les militaires, gendarmes, policiers ;</strong></p>
+           <p> <strong>- Une fiche de témoins des futurs mariés ;</strong></p>
+           <p> <strong>- Une copie des pièces d’identité des témoins ;</strong></p>
+           <p> <strong>- Un certificat médical des futurs mariés ;</strong></p>
+           <p> <strong>- Une copie de la pièce d’identité des futurs mariés.</strong></p>
+
+        </div>
+        <div>
             <h3>Q : Comment obtenir un acte de naissance ?</h3>
-            <p><strong>R :</strong> Vous pouvez obtenir un acte de naissance en vous rendant au service de l’état civil de la Mairie du 2e Arrondissement de Port-Gentil, muni d'une pièce d'identité valide. Le coût pour l’obtention de l’acte est de 2000 FCFA.</p>
+            <p><strong>R :</strong> Les géniteurs ou leur représentant, le médecin ou la sage-femme doivent procéder auprès des services d’état civil à la déclaration du fait trois jours après l’accouchement, à la déclaration sont annexés les pièces suivantes du bulletin de naissance :</p>
+            <p> <strong>- Un certificat de naissance ou bulletin de naissance ;</strong></p>
+            <p> <strong>- Une copie de la carte nationale d’identité pour les parents de nationalité gabonaise ;</strong></p>
+            <p> <strong>- Une copie de la carte de séjour pour les parents non gabonais.</strong></p>
+
         </div>
         <div>
-            <h3>Q : Comment faire une demande de carte d’identité ?</h3>
-            <p><strong>R :</strong> Pour faire une demande de carte d’identité, vous devez vous rendre au guichet de l’Etat Civil avec une photo d’identité récente, un extrait de naissance et une attestation de résidence.</p>
-        </div>
-        <div>
-            <h3>Q : Comment demander un extrait de mariage ?</h3>
-            <p><strong>R :</strong> Vous pouvez demander un extrait de mariage en vous rendant au service de l’Etat Civil avec une pièce d'identité et, si nécessaire, les informations concernant la date et le lieu du mariage.</p>
+            <h3>Q : Que faire en cas de perte, omission, erreur et lacération d’un acte d’état civil ?</h3>
+            <p><strong>R : Perte d’un acte :</strong>
+            Toute personne intéressée peut se rapprocher du centre d’état civil ayant établi l’acte afin d’obtenir une copie tirée de la souche du registre.
+            </p>
+            <p><strong>R : Erreur ou omission sur un acte :</strong>
+            Toute personne intéressée peut saisir le Tribunal de Première Instance aux fins d’obtention d’un jugement rectificatif. Après obtention dudit jugement, l’intéressé se rapproche de la Mairie pour transcription et délivrance de l’acte. </p> 
+             <p><strong>R :Lacération de registre :</strong> 
+             Toute personne intéressée est tenue de saisir le Tribunal du lieu de naissance afin d’obtenir un jugement autorisant la reconstitution de l’acte.  </p>
         </div>
 
         <h2>2. Urbanisme et Permis de Construire</h2>
@@ -140,7 +161,7 @@ const Faq = () => {
           placeholder="Entrez votre question ici"
           required
         />
-        <button type="submit">Envoyer</button>
+        <button className='sub' type="submit">Envoyer</button>
       </form>
 
       <div className="faq-list">
