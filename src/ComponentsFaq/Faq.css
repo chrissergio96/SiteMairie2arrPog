@@ -18,7 +18,7 @@
   }
   .quest h3{
     color: black;
-    font-size: 25px;
+    font-size: 20px;
   }
   .quest h2 {
     font-size: 30px;
@@ -78,9 +78,11 @@
   
   .faq-question {
     font-size: 20px;
-    font-weight: bold;
     color: #1B3D71;
+    font-weight: normal;
     margin: 0;
+    text-align: center;
+    margin-bottom: 1%;
   }
   
   .faq-answer {
@@ -106,13 +108,23 @@
     border-radius: 5px;
     cursor: pointer;
   }
+  .sub{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
   
   .admin-response button:hover {
     background-color: #163c64;
   }
   
-  button {
+   button {
     margin-left: 10px;
+    background-color: #1B3D71;
+    margin-bottom: 2%;
+    color: white;
+    border: none;
+    font-size: 14px;
   }
   
   .edit-question input {
@@ -140,6 +152,18 @@
       }
     .faq-question {
       font-size: 10px;
+      color: #1B3D71;
+      font-weight: normal;
+    }
+    button {
+      margin-left: 5px;
+      background-color: #1B3D71;
+      margin-bottom: 2%;
+      color: white;
+      border: none;
+      font-size: 10px;
+      margin-top: 2%;
+      text-align: center;
     }
     .faq-list {
         margin-top: 20px;
@@ -180,7 +204,7 @@
       }
       .quest h3{
         color: black;
-        font-size: 16px;
+        font-size: 14px;
       }
   }
   

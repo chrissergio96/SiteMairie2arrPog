@@ -16,19 +16,16 @@ const MotProjet = () => {
           <div className="projet-care">
                 <div className="projet-image">
                    <img
-                   src={require('../../Images/cdq5.jpg')}
+                   src={require('../../Images/WhatsApp Image 2025-03-04 at 08.06.12.jpeg')}
                     alt="" 
                   /> 
 
                 </div>
                 <div className="projet-texts">
                     <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, commodi. At fuga, incidunt perferendis tenetur 
-                    quod voluptatem labore et. Nisi, quo! Totam hic repellat inventore sint amet expedita recusandae tempore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vitae quod ratione rem natus velit esse, 
-                    animi fugiat perspiciatis sunt. Laudantium assumenda mollitia voluptatem numquam labore est fugit, rem cumque.
-                    </p>
-                    <button className='buton-project' type="button">Voir plus<ArrowRightAltOutlinedIcon/></button>
+                    🌿 𝐉𝐨𝐮𝐫𝐧𝐞́𝐞 𝐂𝐢𝐭𝐨𝐲𝐞𝐧𝐧𝐞 𝐝𝐚𝐧𝐬 𝐥𝐞 𝐪𝐮𝐚𝐫𝐭𝐢𝐞𝐫 𝐏𝐞𝐧𝐭𝐞𝐜𝐨̂𝐭𝐞 : 𝐔𝐧 𝐛𝐞𝐥 𝐞𝐱𝐞𝐦𝐩𝐥𝐞 𝐝'𝐞𝐧𝐠𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐜𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐟 ! 🌿
+                    Aujourd'hui, le 𝗖𝗼𝗺𝗶𝘁𝗲́ 𝗱𝗲 𝗗𝗲́𝘃𝗲𝗹𝗼𝗽𝗽𝗲𝗺𝗲𝗻𝘁 𝗱𝗲 𝗤𝘂𝗮𝗿𝘁𝗶𝗲𝗿 (𝗖𝗗𝗤) "𝗡𝗼𝘁𝗿𝗲 𝗖𝗮𝘂𝘀𝗲 𝗖𝗼𝗺𝗺𝘂𝗻𝗲" a brillamment démontré l'importance de l'unité et du civisme en initiant une grande 𝗷𝗼𝘂𝗿𝗻𝗲́𝗲 𝗰𝗶𝘁𝗼𝘆𝗲𝗻𝗻𝗲. L'activité phare de cette journée a été une 𝗼𝗽𝗲́𝗿𝗮𝘁𝗶𝗼𝗻 𝗱𝗲 𝗻𝗲𝘁𝘁𝗼𝘆𝗮𝗴𝗲 𝗱𝘂 𝗰𝗮𝗻𝗮𝗹 du quartier, un chantier crucial pour préserver un environnement sain et améliorer le cadre de vie des habitants.                    </p>
+                    <button className='buton-project' type="button"><a style={{color:'white'}} href="https://www.facebook.com/share/p/1BkqVwx5TQ/">Voir plus<ArrowRightAltOutlinedIcon/></a></button>
                 </div>
             </div>
         </div>

@@ -9,9 +9,9 @@ const Projets = () => {
       image: require('../../Images/travaux-assainissement.jpg'),
     },
     {
-      titre: 'Modernisation du Marché Local',
-      description: 'Le projet de modernisation du marché a pour but de rénover les installations et d’améliorer les infrastructures pour mieux accueillir les commerçants et les visiteurs.',
-      image: require('../../Images/travaux-assainissement.jpg'),
+      titre: '[𝐕𝐈𝐒𝐈𝐓𝐄 𝐃𝐄 𝐓𝐄𝐑𝐑𝐀𝐈𝐍] : Un engagement solide pour le bien-etre des habitants du 2eme Arrondissement',
+      description: 'La Mairie du 2ème arrondissement, sous la vision 𝐝𝐮 𝐃𝐞́𝐥𝐞́𝐠𝐮𝐞́ 𝐒𝐩𝐞́𝐜𝐢𝐚𝐥 Boubacar Ngouwa Guingo Mayaki, démontre une fois de plus son engagement indéfectible en faveur d’un cadre de vie sain, sécurisé et digne pour tous.',
+      image: require('../../Images/inondation.jpg'),
     },
     {
       titre: 'Construction de Centres de Santé',
