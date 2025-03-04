@@ -1,7 +1,7 @@
 
 .texte-pieces3 {
   text-align: center;         /* Centre le texte */
-  padding: 6px;              /* Ajoute de l'espace autour du texte */
+  padding: 10px;              /* Ajoute de l'espace autour du texte */
   background-color: ffffff;  /* Couleur de fond légère */
   border-radius: 8px;         /* Arrondit les coins */
   max-width: 80%;           /* Limite la largeur pour une meilleure lisibilité */
@@ -10,7 +10,6 @@
   margin-top: 1%;
   text-align: left;
   font-size:20px;
-  padding: auto;
 }
 
 .boss-text3{
@@ -62,7 +61,7 @@
     }
 
   .texte-pieces3{
-    padding: 6px;              /* Ajoute de l'espace autour du texte */
+    padding: 10px;              /* Ajoute de l'espace autour du texte */
     background-color: ffffff;  /* Couleur de fond légère */
     border-radius: 8px;         /* Arrondit les coins */
     max-width: 95%;           /* Limite la largeur pour une meilleure lisibilité */
@@ -71,7 +70,6 @@
     margin-top: 1%;
     text-align: left;
     font-size:10px;
-    padding: auto;
       }
   
     
