@@ -1,8 +1,8 @@
 
     /* src/components/Text.css */
     .texte-bon-a-savoir{
-      text-align: center;         /* Centre le texte */
-  padding: 6px;              /* Ajoute de l'espace autour du texte */
+    text-align: center;         /* Centre le texte */
+  padding: 10px;              /* Ajoute de l'espace autour du texte */
   background-color: ffffff;  /* Couleur de fond légère */
   border-radius: 8px;         /* Arrondit les coins */
   max-width: 80%;           /* Limite la largeur pour une meilleure lisibilité */
@@ -11,7 +11,6 @@
   margin-top: 1%;
   text-align: left;
   font-size:20px;
-  padding: auto;
     }
 
 .boss-texte1{
@@ -62,7 +61,7 @@
    }
   
     .texte-bon-a-savoir{
-      padding: 6px;              /* Ajoute de l'espace autour du texte */
+      padding: 10px;              /* Ajoute de l'espace autour du texte */
       background-color: ffffff;  /* Couleur de fond légère */
       border-radius: 8px;         /* Arrondit les coins */
       max-width: 100%;           /* Limite la largeur pour une meilleure lisibilité */
