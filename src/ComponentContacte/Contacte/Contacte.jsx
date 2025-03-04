@@ -14,13 +14,20 @@ const emergencyNumbers = [
   {
     category: 'Commissariat Central',
     numbers: [
-      { label: 'Numéro d\'urgence', number: '077256372' }
+      { label: 'Numéro d\'urgence', number: '011.55.29.12' }
     ]
   },
   {
     category: 'Samu Social',
     numbers: [
-      { label: 'Numéro d\'urgence', number: '1488' }
+      { label: 'Numéro d\'urgence', number: '1428' }
+    ]
+  },
+  {
+    category: 'S.e.e.g',
+    numbers: [
+      { label: 'Allo Fuite', number: '011.76.12.83' },
+      { label: 'Intervention', number: '011.76.73.73' }
     ]
   }
 ];
