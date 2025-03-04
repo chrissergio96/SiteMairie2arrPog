@@ -114,7 +114,7 @@ const Faq = () => {
             <p><strong>R :</strong> Le certificat de non-arriéré fiscal peut être demandé au service des finances de la Mairie avec vos informations fiscales à jour.</p>
         </div>
 
-        <h2>4. Collecte des Déchets et Environnement</h2>
+        <h2>3. Collecte des Déchets et Environnement</h2>
         <div>
             <h3>Q : Quand les déchets sont-ils collectés dans le 2e Arrondissement ?</h3>
             <p><strong>R :</strong> La collecte des déchets se fait tous les jours sauf le dimanche. Assurez-vous de sortir vos poubelles avant 6h du matin.</p>
@@ -128,7 +128,7 @@ const Faq = () => {
             <p><strong>R :</strong> Si vous constatez un dépôt sauvage de déchets, merci de le signaler au service de l’assainissement de la Mairie pour que nous puissions organiser une intervention rapide.</p>
         </div>
 
-        <h2>5. Sécurité et Ordre Public</h2>
+        <h2>4. Sécurité et Ordre Public</h2>
         <div>
             <h3>Q : Comment signaler un problème de sécurité dans le quartier ?</h3>
             <p><strong>R :</strong> Vous pouvez signaler un problème de sécurité en contactant le commissariat local ou en utilisant notre plateforme en ligne dédiée aux alertes citoyennes.</p>
@@ -138,7 +138,7 @@ const Faq = () => {
             <p><strong>R :</strong> Si vous constatez un manque d’éclairage public dans votre quartier, vous pouvez faire une demande via notre site web ou en vous rendant au service des infrastructures de la Mairie.</p>
         </div>
 
-        <h2>6. Services Divers</h2>
+        <h2>5. Services Divers</h2>
         <div>
             <h3>Q : Comment organiser un événement public dans le 2e Arrondissement ?</h3>
             <p><strong>R :</strong> Pour organiser un événement public, vous devez soumettre une demande officielle auprès du service des Affaires culturelles et communautaires, en indiquant la nature de l’événement et son lieu de déroulement.</p>

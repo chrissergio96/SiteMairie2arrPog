@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 20px;
     max-width: 800px;
-    background-color: #f9f9f9;
+    background: linear-gradient(70deg,white, #1B3D71, white);
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-top: 5%;
@@ -14,17 +14,22 @@
 
   .quest p{
     font-size: 20px;
-    color: gray;
+    color: white;
+    text-shadow: 2px 2px 4px #1B3D71;
+
   }
   .quest h3{
-    color: black;
+    color: red;
     font-size: 20px;
+    text-shadow: 2px 2px 25px white;
+
   }
   .quest h2 {
-    font-size: 30px;
+    font-size: 25px;
     color: #1B3D71;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 20px white;
   }
   .faq-container h1 {
     text-align: center;
@@ -32,6 +37,8 @@
     color: #1B3D71;
     margin-bottom: 8%;
     font-weight: bold;
+    text-shadow: 2px 2px 4px #1B3D71;
+
   }
   
   .faq-form {
@@ -200,10 +207,10 @@
       }
       .quest p{
         font-size: 10px;
-        color: gray;
+        color: color;
       }
       .quest h3{
-        color: black;
+        color: red;
         font-size: 14px;
       }
   }
