@@ -69,9 +69,13 @@
 }
 
 .card1al h2 {
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-top: 10px;
     color: #1B2D71;
+    text-shadow: 2px 2px 20px white;
+}
+.card1al h2:hover{
+    color:#d9b849 ;
 }
 .card1al a{
     text-decoration:none;

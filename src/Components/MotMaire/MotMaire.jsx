@@ -8,7 +8,7 @@ const MotMaire = () => {
             <h1 className='motmaire'> Le Mot du Maire </h1>
             <div className="maire-card">
                 <div className="maire-text">
-                    <h2>Boubacar NGOUWA GUINGO MAYAKI</h2> {/* Ajout du nom du maire */}
+                    <h2>Boubakar NGOUWA GUINGO MAYAKI</h2> {/* Ajout du nom du maire */}
                     <p>
                         En tant que Délégué Spécial du 2e Arrondissement de Port-Gentil, je tiens à vous 
                         remercier pour votre engagement au sein de notre communauté. Notre mission 

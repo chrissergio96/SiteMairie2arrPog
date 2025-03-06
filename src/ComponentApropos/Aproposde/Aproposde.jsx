@@ -21,7 +21,7 @@ const Aproposde = () => {
           {/* Maire */}
           <div className="team-member">
           <img src={DelegueImage} alt="Maire" />
-          <h3>Délégué Spécial :<br></br><br></br><strong> Boubacar NGOUWA GUINGO MAYAKI</strong></h3>
+          <h3>Délégué Spécial :<br></br><br></br><strong> Boubakar NGOUWA GUINGO MAYAKI</strong></h3>
             <p>Responsable de la gestion générale du 2e Arrondissement.</p>
           </div>
 
