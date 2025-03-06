@@ -8,6 +8,7 @@ import Info from '../Légalisation/info';
 import Contact from '.././Components/Contact/Contact';
 import Footer from '.././Components/Footer/Footer';
 import Footerbas from '.././Components/Footerbas/Footerbas';
+import Titreleg from '../Légalisation/Titrelegal';
 
 
 function Légalisation() {
@@ -15,6 +16,7 @@ function Légalisation() {
     <>
       <Navbar />  
       <Headerleg/>
+      <Titreleg/>
       <Cartes/>
       <Info/>
       <BackButtonUrb/>

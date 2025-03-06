@@ -46,14 +46,18 @@ import Aidesocials from './Pages/Aidesocials.jsx';
 import Projet from './Pages/Projet.jsx';
 import Numerosutiles from './Pages/Numerosutiles.jsx';
 import FaqUtilisateurs from './Pages/FaqUtilisateurs.jsx';
+import Splash from './Pages/Splash.jsx';
 
 function App() {
   return (
     <div className="App">
       <Router>
+
       <ScrollToTop />  {/* Ce composant s'assure que chaque navigation commence en haut */}
         <Routes>
-          <Route path="/" element={<Accueil />} />
+        <Route path="/" element={<Splash />} /> 
+
+          <Route path="/accueil" element={<Accueil />} />
           <Route path="/etatcivil" element={<Etatcivil />} /> {/* Garder cette ligne */}
           <Route path="/legalisation" element={<Légalisation />} /> {/* Garder cette ligne */}
           <Route path="/urbanisme" element={<Urbanisme />} />
@@ -75,14 +79,6 @@ function App() {
           <Route path="/numerosutiles" element={<Numerosutiles/>} /> 
           <Route path="/faq" element={<FaqUtilisateurs/>} /> 
 
-
-
-
-
-
-
-       
-
           <Route path="/Galerie" element={<Galerie/>} />
           <Route path="/Service" element={<Service/>} />
           <Route path="/Cdqgalerie" element={<Cdqgalerie/>} />
@@ -90,16 +86,7 @@ function App() {
           <Route path="/Culturegalerie" element={<Culturegalerie/>} />
           <Route path="/galeriemariage" element={<Galeriemariage/>} /> 
           <Route path="/dossiercdq1" element={<Dossiercdq1/>} /> 
-          <Route path="/agenda" element={<Agenda/>} /> 
-
-
-
-
-
-
-
-
-           
+          <Route path="/agenda" element={<Agenda/>} />  
 
         </Routes>
       </Router>

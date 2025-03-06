@@ -14,6 +14,8 @@
     color:#1B3D71;
     font-weight:bold;
     text-align:center;
+    text-shadow: 2px 2px 20px white;
+
 }
 
 .maire-card {
@@ -36,13 +38,16 @@
 .maire-text h2 {
     font-size: 30px;
     margin-bottom: 10px;
-    color:yellow;
+    color:  #d9b847;
+    text-shadow: 2px 2px 20px white;
+
 }
 
 .maire-text p {
     font-size: 20px;
     line-height: 1.6;
     color: gray;
+
 }
 
 .maire-image {

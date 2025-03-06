@@ -1,0 +1,53 @@
+/* Styles pour le splashscreen */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .splash-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #1B3D71, white);
+  }
+
+  
+  /* Style du logo */
+  .logo {
+    max-width: 50%;
+    height: 50%;
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 10%;
+  }
+  
+  /* Animation pour le logo */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+/* Responsive styles */
+@media (max-width: 576px) {
+  
+    .splash-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, #1B3D71, white);
+      }
+     
+      /* Style du logo */
+      .logo {
+        max-width: 60%;
+        height: 20%;
+        animation: fadeIn 1s ease-in-out;
+        border-radius: 10%;
+      }
+}
+  

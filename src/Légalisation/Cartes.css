@@ -8,64 +8,97 @@
   margin-right: auto;
 }
 
-.block1, .block2, .block3 {
+.block1 {
   display: grid;
-  padding: 15px;
+  padding: 5px;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr); /* Trois colonnes par bloc */
-  margin: auto;
+}
+.block2 {
+  display: grid;
+  padding: 5px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes par bloc */
+  
 }
 
 /* Styles communs pour les cartes */
 .cardA {
-  background-color: white;
   justify-content: center;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-align: center;
-  width: 95%;
-  height: 100%;
+  width: 98%;
+  height:min-content;
+  padding: 5px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+  background: linear-gradient(45deg,white,#1B3D71,white);
 
+}
+.cardA p{
+  font-size: 15px;
+  color: white;
+  text-shadow: 2px 2px 3px #1B3D71;
+  text-align: left;
+  padding: 5px;
+
+}
 .cardA:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cardA img {
-  width: 80%;
-  height: 300px;
+  width: 90%;
+  height: 50%;
   object-fit: cover;
   display: block;
   margin: 10px auto;
+  border-radius: 8px;
 }
 
 .cardA h2 {
-  font-size: 16px;
-  font-weight: normal;
-  color: #1a73e8;
+  font-size: 20px;
+  font-weight: bold;
+  color:red;
+  text-shadow: 2px 2px 15px #1B3D71;
   margin: 10px 0;
-}
+  font-weight: bold;
+  text-align: center;
 
+}
+.telechargebtn{
+ border-radius:8px;
+ font-weight:bold;
+ background-color: #d9b847;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 10px 50px;
+ font-size: 20px;
+}
 @media (max-width: 768px) {
  
   
   .cards-wrapperA {
     flex-direction: column; /* Permet d'empiler les blocs verticalement */
     gap: 5px; /* Espace entre les blocs */
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
   
-  .block1, .block2, .block3 {
+  .block1{
     display: block;
     padding: 15px;
     justify-content: center;
+  }
+  .block2{
+    display: block;
+    padding: 15px;
+    justify-content: center;
+    margin-top: -10%;
   }
   
   /* Styles communs pour les cartes */
@@ -75,32 +108,48 @@
     border-radius: 8px;
     box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    text-align: center;
-    width: 95%;
-    height: 100%;
+    width: 100%;
+    height: max-content;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
   }
-  
+  .cardA p{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px #1B3D71;
+
+  }
+ 
   .cardA:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   }
   
   .cardA img {
-    width: 80%;
-    height: 300px;
+    width: 100%;
+    height: max-content;
     object-fit: cover;
     display: block;
     margin: 10px auto;
   }
   
   .cardA h2 {
-    font-size: 16px;
-    font-weight: normal;
-    color: #1a73e8;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
     margin: 10px 0;
+    text-align: center;
+    text-shadow: 2px 2px 15px #1B3D71;
+
   }
+  .telechargebtn{
+    padding: 10px 60px;
+    border-radius:8px;
+    font-weight:bold;
+    width: 100%;
+    font-size: 10px;
+   }
 }

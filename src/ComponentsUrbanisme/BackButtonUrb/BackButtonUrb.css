@@ -19,7 +19,8 @@ a{
 }
 
 .back-buttons:hover {
-    background-color: yellow; /* Couleur au survol */
+    background-color: #d9b847;
+    ; /* Couleur au survol */
 }
 /* Media queries pour la réactivité */
 @media (max-width: 768px) {
