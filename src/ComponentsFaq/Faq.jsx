@@ -58,8 +58,8 @@ const Faq = () => {
         <h2>1. État Civil</h2>
         <div>
             <h3>Q : Comment faire une procédure de mariage ?</h3>
-            <p><strong>R :</strong>
-            Les futurs mariés doivent déposer, une semaine avant la date de cette célébration, un dossier comprenant :</p>
+            <p><strong>R : </strong> 
+             Les futurs mariés doivent déposer, une semaine avant la date de cette célébration, un dossier comprenant :</p>
            <p> <strong>- Une demande manuscrite adressée au Maire ;</strong></p>
            <p> <strong>- Un extrait d’acte de naissance des futurs mariés ;</strong></p>
            <p> <strong>- Une attestation sur l’honneur de célibat des futurs mariés ;</strong></p>
@@ -73,7 +73,7 @@ const Faq = () => {
         </div>
         <div>
             <h3>Q : Comment obtenir un acte de naissance ?</h3>
-            <p><strong>R :</strong> Les géniteurs ou leur représentant, le médecin ou la sage-femme doivent procéder auprès des services d’état civil à la déclaration du fait trois jours après l’accouchement, à la déclaration sont annexés les pièces suivantes du bulletin de naissance :</p>
+            <p><strong>R :</strong>  Les géniteurs ou leur représentant, le médecin ou la sage-femme doivent procéder auprès des services d’état civil à la déclaration du fait trois jours après l’accouchement, à la déclaration sont annexés les pièces suivantes du bulletin de naissance :</p>
             <p> <strong>- Un certificat de naissance ou bulletin de naissance ;</strong></p>
             <p> <strong>- Une copie de la carte nationale d’identité pour les parents de nationalité gabonaise ;</strong></p>
             <p> <strong>- Une copie de la carte de séjour pour les parents non gabonais.</strong></p>
