@@ -31,7 +31,7 @@
   overflow: hidden;
   width: 98%;
   height:min-content;
-  padding: 5px;
+  padding: 2px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background: linear-gradient(45deg,white,#1B3D71,white);
 
@@ -40,7 +40,7 @@
   font-size: 15px;
   color: white;
   text-shadow: 2px 2px 3px #1B3D71;
-  text-align: left;
+  text-align: center;
   padding: 5px;
 
 }
@@ -61,7 +61,7 @@
 .cardA h2 {
   font-size: 20px;
   font-weight: bold;
-  color:red;
+  color:#d9b847;
   text-shadow: 2px 2px 15px #1B3D71;
   margin: 10px 0;
   font-weight: bold;
