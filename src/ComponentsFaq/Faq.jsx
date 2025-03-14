@@ -90,34 +90,13 @@ const Faq = () => {
              Toute personne intéressée est tenue de saisir le Tribunal du lieu de naissance afin d’obtenir un jugement autorisant la reconstitution de l’acte.  </p>
         </div>
 
-        <h2>2. Urbanisme et Permis de Construire</h2>
-        <div>
-            <h3>Q : Où puis-je déposer une demande de permis de construire ?</h3>
-            <p><strong>R :</strong> Vous pouvez déposer votre demande de permis de construire au Service Urbanisme de la Mairie du 2e Arrondissement, en présentant les plans de construction approuvés et un permis de votre architecte.</p>
-        </div>
+       
         
-        <div>
-            <h3>Q : Comment savoir si mon permis de construire a été approuvé ?</h3>
-            <p><strong>R :</strong> Vous pouvez vérifier l’état de votre demande de permis de construire en vous rendant directement au Service Urbanisme ou en consultant notre plateforme en ligne pour le suivi de vos demandes.</p>
-        </div>
-
-        <div>
-            <h3>Q : Où puis-je payer mes impôts locaux ?</h3>
-            <p><strong>R :</strong> Vous pouvez payer vos impôts locaux directement au service des finances de la Mairie ou via notre plateforme de paiement en ligne. Les paiements en ligne sont sécurisés et pratiques.</p>
-        </div>
-        <div>
-            <h3>Q : Quels documents sont nécessaires pour payer la taxe foncière ?</h3>
-            <p><strong>R :</strong> Pour payer la taxe foncière, vous devez fournir une copie de votre acte de propriété ainsi qu'une facture d'impôt de l'année précédente.</p>
-        </div>
-        <div>
-            <h3>Q : Comment obtenir un certificat de non-arriéré fiscal ?</h3>
-            <p><strong>R :</strong> Le certificat de non-arriéré fiscal peut être demandé au service des finances de la Mairie avec vos informations fiscales à jour.</p>
-        </div>
 
         <h2>3. Collecte des Déchets et Environnement</h2>
         <div>
             <h3>Q : Quand les déchets sont-ils collectés dans le 2e Arrondissement ?</h3>
-            <p><strong>R :</strong> La collecte des déchets se fait tous les jours sauf le dimanche. Assurez-vous de sortir vos poubelles avant 6h du matin.</p>
+            <p><strong>R :</strong> La collecte des déchets se fait tous les jours sauf le dimanche. Assurez-vous de sortir vos poubelles de 18h à 21h.</p>
         </div>
         <div>
             <h3>Q : Comment signaler une zone insalubre ?</h3>
@@ -139,10 +118,7 @@ const Faq = () => {
         </div>
 
         <h2>5. Services Divers</h2>
-        <div>
-            <h3>Q : Comment organiser un événement public dans le 2e Arrondissement ?</h3>
-            <p><strong>R :</strong> Pour organiser un événement public, vous devez soumettre une demande officielle auprès du service des Affaires culturelles et communautaires, en indiquant la nature de l’événement et son lieu de déroulement.</p>
-        </div>
+      
         <div>
             <h3>Q : Comment obtenir un certificat de résidence ?</h3>
             <p><strong>R :</strong> Le certificat de résidence peut être obtenu en vous rendant au service de l’Etat Civil avec une pièce d’identité et un justificatif de domicile.</p>

@@ -3,7 +3,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import imageMariage from '../Images/Mariage.jpeg';
@@ -23,7 +22,7 @@ export default function MediaCard1() {
       <Card
         sx={{
           width: 1080, // Largeur augmentée
-          height: 530, // Hauteur augmentée
+          height: 540, // Hauteur augmentée
           boxShadow: 3, // Ajout d'une ombre pour un effet esthétique
           borderRadius: 2, // Coins légèrement arrondis
         }}
@@ -44,7 +43,8 @@ export default function MediaCard1() {
             component="div"
             sx={{
               fontWeight: 'bold', // Rend le titre plus visible
-              fontSize:'20px'
+              fontSize:'20px',
+              color:'#1B3D71'
             }}
           >
             PROCESSUS DE DÉCLARATION DE MARIAGE
@@ -66,7 +66,9 @@ export default function MediaCard1() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="10px">Voir plus</Button>
+        <a href="/CONSTITUTION%20DU%20DOSSIER%20DE%20MARIAGE2.pdf" target="_blank" rel="noopener noreferrer">
+         <button className='telechargebtn'>Voir plus</button>
+        </a>
         </CardActions>
       </Card>
     </Box>

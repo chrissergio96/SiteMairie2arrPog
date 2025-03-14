@@ -5,26 +5,92 @@
     padding: 20px;
   }
   
-  .black1, .black2, .black3 {
+  .black1 {
     display: grid;
     padding: 15px;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr); /* Trois colonnes par bloc */
     margin: auto;
   }
-  
-  /* Styles communs pour les cartes */
-  .cardB {
-    background-color: white;
+  .cardF{
     justify-content: center;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    text-align: center;
-    width: 95%;
-    height: 100%;
+    width: 88%;
+    height:max-content;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(45deg,white,#1B3D71,white);
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cardF p{
+    font-size: 15px;
+    color: white;
+    text-shadow: 2px 2px 3px #1B3D71;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .cardF:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardF img {
+    width: 90%;
+    height: 250px;
+    object-fit: top;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+  
+  .cardF h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color:#d9b847;
+    text-shadow: 2px 2px 15px #1B3D71;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+  
+  }
+  .telechargebtn{
+   border-radius:8px;
+   font-weight:bold;
+   background-color: #d9b847;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px 50px;
+   font-size: 20px;
+  }
+  
+  /* Styles communs pour les cartes */
+
+  .cardB {
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 98%;
+    height:max-content;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: linear-gradient(45deg,white,#1B3D71,white);
+    margin-bottom: 8%;
+  
+  }
+  .cardB p{
+    font-size: 10px;
+    color: white;
+    text-shadow: 2px 2px 3px #1B3D71;
+    text-align: center;
+    padding: 5px;
   }
   
   .cardB:hover {
@@ -33,18 +99,33 @@
   }
   
   .cardB img {
-    width: 80%;
-    height: 300px;
+    width: 90%;
+    height: min-content;
+    object-fit: top;
     object-fit: cover;
     display: block;
     margin: 10px auto;
+    border-radius: 8px;
   }
   
   .cardB h2 {
-    font-size: 16px;
-    font-weight: normal;
-    color: #1a73e8;
+    font-size: 20px;
+    font-weight: bold;
+    color:#d9b847;
+    text-shadow: 2px 2px 5px #1B3D71;
     margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+  
+  }
+  .telechargebtn{
+   border-radius:8px;
+   font-weight:bold;
+   background-color: #d9b847;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px 50px;
+   font-size: 20px;
   }
   
   @media (max-width: 768px) {
@@ -58,48 +139,62 @@
       margin-right: auto;
     }
     
-    .black1, .black2, .black3 {
+    .black1 {
       display: block;
       padding: 15px;
       justify-content: center;
     }
-    
     /* Styles communs pour les cartes */
-    .cardB {
-      background-color: white;
-      justify-content: center;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      text-align: center;
-      width: 95%;
-      height: 100%;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 2%;
-    }
-    
-    .cardB:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    }
-    
-    .cardB img {
-      width: 80%;
-      height: 300px;
-      object-fit: cover;
-      display: block;
-      margin: 10px auto;
-    }
-    
-    .cardB h2 {
-      font-size: 16px;
-      font-weight: normal;
-      color: #1a73e8;
-      margin: 10px 0;
-    }
+  .cardB {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    height: 40%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    padding: 10px;
+  }
+  .cardB p{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px #1B3D71;
 
+  }
+ 
+  .cardB:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardB img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .cardB h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d9b847;
+    margin: 10px 0;
+    text-align: center;
+    text-shadow: 2px 2px 15px #1B3D71;
+
+  }
+  .telechargebtn{
+    padding: 10px 60px;
+    border-radius:8px;
+    font-weight:bold;
+    width: 100%;
+    font-size: 10px;
+   }
   
   }
