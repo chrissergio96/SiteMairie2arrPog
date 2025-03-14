@@ -1,7 +1,6 @@
 import React from 'react';
 import passeport from '../Images/id.jpeg';
-import Actedevente from '../Images/Acte de vente.webp';
-import Attestation from '../Images/Attestation  de logement.jpg';
+import Declarationnai from '../Images/Legalisation/FICHE DE DECLARATION DE NAISSANCE_page-0001.jpg';
 import './Cartestrans.css';
 
 function Cartestrans() {
@@ -13,43 +12,23 @@ function Cartestrans() {
         <img src={passeport} alt="Pièces d’identité" />
         <h2>Déclaration de Mariage</h2>
       </div>
-      <div className="cardB">
-        <img src={Actedevente} alt="Acte de vente de véhicule" />
-        <h2>Réservation de la salle de mariage</h2>
-      </div>
-      <div className="cardB">
-        <img src={Attestation} alt="Attestation de logement" />
-        <h2>Déclaration de Naissance</h2>
-      </div>
     </div>
-      <div className='black2'>
-      <div className="cardB">
-        <img src={passeport} alt="Autorisation Maritale" />
-        <h2>Etablissement d’Acte de Naissance</h2>
+
+    <div className="cardF">
+        <img src={Declarationnai} alt="Certificat de residence" />
+        <h2>Déclaration de naissance</h2>
+        <p> Pour transcrire à une déclaration de naissance, il faut founir:
+        <strong>
+          <p>- 1 copie de la pièce d'identité du demandeur ;</p>
+          <p>- Remplir l'imprimé à retirer à la Mairie(document ci-joins) ;</p>
+          <p>- 1 timbre de 1000f .</p>
+          <a href="/FICHE%20DE%20DECLARATION%20DE%20NAISSANCE.pdf" target="_blank" rel="noopener noreferrer">
+         <button className='telechargebtn'>Téléchargez la  fiche de declaration</button>
+        </a>
+        </strong>
+        </p>
       </div>
-      <div className="cardB">
-        <img src={Actedevente} alt="Acte de naissance" />
-        <h2>Processus de Déclaration de Mariage</h2>
-      </div>
-      <div className="cardB">
-        <img src={Attestation} alt="Certification de célibat" />
-        <h2>Certification de  célibat</h2>
-      </div>
-      </div>
-      <div className='black3'>
-      <div className="cardB">
-        <img src={passeport} alt="Attestation d'emploi" />
-        <h2>Carte de Séjour </h2>
-      </div>
-      <div className="cardB">
-        <img src={Actedevente} alt="Carte de Séjour" />
-        <h2>Carte de Séjour</h2>
-      </div>
-      <div className="cardB">
-        <img src={Attestation} alt="Certificat de résidence" />
-        <h2>Certificat de  résidence </h2>
-      </div>
-      </div>
+     
     </div>
     </div>
   );

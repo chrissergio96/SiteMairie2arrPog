@@ -16,9 +16,9 @@ body, html {
   
   /* Style du logo */
   .logo {
-    max-width: 50%;
-    height: 50%;
-    animation: fadeIn 1s ease-in-out;
+    max-width: 40%;
+    height: 40%;
+    animation: fadeIn 2s ease-out;
     border-radius: 10%;
   }
   

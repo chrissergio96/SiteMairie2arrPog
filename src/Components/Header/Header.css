@@ -147,6 +147,12 @@
 .audience-button:hover {
   background-color: #218838;
 }
+.no-suggestions {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
 /* Styles spécifiques pour la version mobile */
 @media (max-width: 768px) {
   .buttons-left .button {
