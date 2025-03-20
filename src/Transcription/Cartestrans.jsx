@@ -1,6 +1,6 @@
 import React from 'react';
 import passeport from '../Images/id.jpeg';
-import Declarationnai from '../Images/Legalisation/FICHE DE DECLARATION DE NAISSANCE_page-0001.jpg';
+import Declarationnai from '../Images/Fiche-naissance.jpg';
 import './Cartestrans.css';
 
 function Cartestrans() {
@@ -22,7 +22,7 @@ function Cartestrans() {
           <p>- 1 copie de la pièce d'identité du demandeur ;</p>
           <p>- Remplir l'imprimé à retirer à la Mairie(document ci-joins) ;</p>
           <p>- 1 timbre de 1000f .</p>
-          <a href="/FICHE%20DE%20DECLARATION%20DE%20NAISSANCE.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Fiche-naissance.pdf" target="_blank" rel="noopener noreferrer">
          <button className='telechargebtn'>Téléchargez la  fiche de declaration</button>
         </a>
         </strong>
