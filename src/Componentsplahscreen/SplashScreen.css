@@ -7,19 +7,29 @@ body, html {
   
   .splash-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(45deg, #1B3D71, white);
+    background-color: white;
   }
-
+.splash-container h3{
+  color: #1B3D71;
+  font-size: 30px;
+  font-family: serif;
+}
   
   /* Style du logo */
   .logo {
-    max-width: 40%;
-    height: 40%;
+    max-width: 60%;
+    height: 50%;
     animation: fadeIn 2s ease-out;
     border-radius: 10%;
+    box-shadow: 1px 1px 10px white;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Animation pour le logo */
@@ -37,17 +47,28 @@ body, html {
   
     .splash-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(45deg, #1B3D71, white);
+        background-color: white;
+        padding: 5%;
       }
-     
+      .splash-container h3{
+        color: #1B3D71;
+        font-size: 14px;
+        text-align: center;
+        font-family: serif;
+      }
       /* Style du logo */
       .logo {
         max-width: 60%;
         height: 20%;
         animation: fadeIn 1s ease-in-out;
         border-radius: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
       }
 }
   

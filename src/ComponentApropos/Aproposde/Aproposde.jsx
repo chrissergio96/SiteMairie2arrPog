@@ -28,7 +28,7 @@ const Aproposde = () => {
           {/* Délégué spécial adjoint */}
           <div className="team-member">
             <img src={GeneralImage} alt="Délégué Spécial Adjoint" />
-            <h3>Délégué Spécial Adjoint:<br></br><br></br><strong>Le Commandant ONDO ZUE Betin </strong>  
+            <h3>Délégué Spécial Adjoint:<br></br><br></br><strong>Le Commandant ONDO ZUE Bertin </strong>  
                
             </h3>
             <p>Responsable adjoint des affaires sociales et du développement local du 2e Arrondissement.</p>

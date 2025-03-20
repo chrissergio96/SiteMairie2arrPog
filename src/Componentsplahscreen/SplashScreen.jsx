@@ -1,25 +1,41 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Utiliser react-router-dom pour la navigation
-import "./SplashScreen.css"; // Le fichier CSS pour les styles
-import logo from "../Images/logo Mairie.jpg"; // Importez l'image du logo
-
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./SplashScreen.css";
+import logo from "../Images/logo_Mairie-removebg-preview.png";
 
 const SplashScreen = () => {
   const navigate = useNavigate();
+  const [text, setText] = useState("M"); // Initialiser avec la première lettre "M"
+  const fullText = "MAIRIE DU 2e ARRONDISSEMENT DE PORT-GENTIL"; // Texte à afficher lettre par lettre
 
   useEffect(() => {
-    // Après 3 secondes, redirige vers la page d'accueil
-    const timer = setTimeout(() => {
-      navigate("/accueil"); // Redirection vers la page d'accueil après 3 secondes
-    }, 5000); // 3000 ms = 3 secondes
+    let index = 1; // Commencer à 1 car "M" est déjà affiché
 
-    // Nettoyage du timer quand le composant est démonté
-    return () => clearTimeout(timer);
-  }, [navigate]);
+    // Effet pour l'animation lettre par lettre
+    const interval = setInterval(() => {
+      setText((prevText) => prevText + fullText.charAt(index));
+      index++;
+      if (index === fullText.length) {
+        clearInterval(interval); // Arrêter l'intervalle une fois que tout le texte est affiché
+      }
+    }, 80); // 100ms de délai entre chaque lettre
+
+    // Timer pour redirection après 5 secondes
+    const timer = setTimeout(() => {
+      navigate("/accueil");
+    }, 5000);
+
+    // Nettoyage des timers et de l'intervalle au démontage
+    return () => {
+      clearTimeout(timer);
+      clearInterval(interval);
+    };
+  }, [fullText, navigate]); // Dépendances correctes : fullText et navigate
 
   return (
     <div className="splash-container">
       <img src={logo} alt="Logo de la Mairie du 2e Arrondissement" className="logo" />
+      <h3><strong>{text}</strong></h3> {/* Texte animé lettre par lettre */}
     </div>
   );
 };
