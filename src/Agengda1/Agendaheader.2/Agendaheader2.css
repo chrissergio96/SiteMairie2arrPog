@@ -1,6 +1,6 @@
 /* Headergalerie.css */
 
-.header-containerga12{
+.header-containerga12a{
     width: 100%; /* Prend toute la largeur disponible */
     height: 80vh; /* Hauteur définie pour ton en-tête */
     display: flex;
@@ -13,7 +13,7 @@
     position: relative;
   }
   
-  .boutton-containerga12 {
+  .boutton-containerga12a {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -21,19 +21,20 @@
     background-color: white;
     border-radius: 8px;
     opacity: 0.8;
-    height: 30%;
+    height: max-content;
     overflow: hidden;
     align-items: center;
+    margin-top: 20%;
   }
   
-  .butga12 h1 {
-    font-size: 40px;
+  .butga12a h1 {
+    font-size: 30px;
     color: #1B3D71;
     font-weight: bold;
     text-align: center;
   }
   
-  .bouttonga12 {
+  .bouttonga12a {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Espace entre le texte et l'icône */
@@ -48,10 +49,9 @@
     text-align: center;
     width: 25vw; /* Largeur fixe pour aligner les boutons */
     font-weight: bold;
-    margin-top: -5%;
   }
   
-  .bouttonga1:hover {
+  .bouttonga1a:hover {
     background-color: #13345A;
     color: white;
   }
@@ -62,7 +62,7 @@
   
   /* Media queries pour les petits écrans */
   @media (max-width: 768px) {
-    .header-containerga12{
+    .header-containerga12a{
       width: 100%; /* Prend toute la largeur disponible */
       height: 50vh; /* Hauteur définie pour ton en-tête */
       display: flex;
@@ -75,7 +75,7 @@
       position: relative;
     }
     
-    .boutton-containerga12 {
+    .boutton-containerga12a {
       display: flex;
       justify-content: center;
       text-align: center;
@@ -89,14 +89,14 @@
       margin-top: 25%;
     }
     
-    .butga12 h1 {
-      font-size: 40px;
+    .butga12a h1 {
+      font-size: 30px;
       color: #1B3D71;
       font-weight: bold;
       text-align: center;
     }
     
-    .bouttonga12 {
+    .bouttonga12a {
       display: flex;
       align-items: center;
       justify-content: space-between; /* Espace entre le texte et l'icône */
@@ -113,7 +113,7 @@
       font-weight: bold;
     }
     
-    .bouttonga1:hover {
+    .bouttonga1a:hover {
       background-color: #13345A;
       color: white;
     }

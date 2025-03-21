@@ -37,7 +37,7 @@ const Aproposde = () => {
           {/* Secrétariat */}
           <div className="team-member">
             <img src={DelegueImage} alt="Secrétariat" />
-            <h3>Secrétariat Général</h3>
+            <h3>Chef de Cabinet</h3>
             <p>Coordination des activités administratives.</p>
           </div>
 

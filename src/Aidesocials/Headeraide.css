@@ -20,7 +20,7 @@
     text-align: center;
     width: 40%;
     background-color: #1B3D71;
-    height: 30%;
+    height: max-content;
     border-radius: 8px;
     opacity: 0.8;
     overflow: hidden; 
@@ -30,7 +30,7 @@
   
   
   .buts.aidesocial h2 {
-    font-size: 60px;
+    font-size: 30px;
     color: white;
     font-weight: bold;
     margin: auto;

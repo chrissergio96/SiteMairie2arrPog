@@ -5,10 +5,10 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // Import de l'
 
 function HeaderGalerie() {
   return (
-    <div className="header-containerga">
-        <div className="boutton-containerga">
-                <div className='butga'>
-             <button className="bouttonga">ACCUEIL<ArrowForwardIcon className="arrow-icon" />GALERIE</button>
+    <div className="header-containergale">
+        <div className="boutton-containergale">
+                <div className='butgale'>
+             <button className="bouttongale">ACCUEIL<ArrowForwardIcon className="arrow-icon" />GALERIE</button>
              <h1>GALERIE</h1> 
             </div>
             </div>
