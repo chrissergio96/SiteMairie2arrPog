@@ -10,7 +10,7 @@ function Header() {
     <header className='bg-mariage'
     style={{
       position: 'relative',
-      height: '50vh', // Ajustez la hauteur si nécessaire
+      height: '60vh', // Ajustez la hauteur si nécessaire
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       display: 'flex',
@@ -25,7 +25,7 @@ function Header() {
         
       >
         <button  className='enfant-bleu'>ACCUEIL <ArrowRightAltOutlinedIcon/>MARIAGE</button>
-        <h1 className='service-technique'>MARIAGE</h1>
+        <h1 className='mariage'>MARIAGE</h1>
       </div>
     </header>
   );

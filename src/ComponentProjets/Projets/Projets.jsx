@@ -35,7 +35,7 @@ const Projets = () => {
   return (
     <div className="projets-container">
       <h1>Nos Projets</h1>
-      <p>Découvrez les projets en cours et à venir qui transformeront le 2e arrondissement de Port-Gentil.</p>
+      <p>Découvrez les projets en cours et à venir qui transformeront le 2e Arrondissement de Port-Gentil.</p>
       
       <div className="projets-grid">
         {projets.map((projet, index) => (

@@ -1,7 +1,7 @@
 .flotant{
     opacity: 0.8;
     width: 40%;
-    height: 38%;
+    height: max-content;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -26,14 +26,15 @@
 
 }
 
-.service-technique{
+.mariage{
     color:  #1B3D71;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .bg-mariage{
     image-rendering: crisp-edges; /* Pour les navigateurs modernes */
-    background-image: url('../../Images/Mariages1.jpg');
+    background-image: url('../../Images/Mariage3.jpg');
 }
 
 /* Styles spécifiques pour la version mobile */
@@ -67,7 +68,7 @@
         margin-top: 2%;
     }
     
-    .service-technique{
+    .mariage{
         color:  #1B3D71;
         font-weight: bold;
         font-size: 40px;

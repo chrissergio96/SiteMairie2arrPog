@@ -5,11 +5,11 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // Import de l'
 
 function Agendaheader2() {
   return (
-    <div className="header-containerga12">
-        <div className="boutton-containerga12">
-                <div className='butga12'>
+    <div className="header-containerga12a">
+        <div className="boutton-containerga12a">
+                <div className='butga12a'>
                   
-             <button className="bouttonga12">ACCUEIL<ArrowForwardIcon className="1arrow-icon" />AGENDA</button>
+             <button className="bouttonga12a">ACCUEIL<ArrowForwardIcon className="1arrow-icon" />AGENDA</button>
              <h1>AGENDA</h1> 
             </div>
             </div>

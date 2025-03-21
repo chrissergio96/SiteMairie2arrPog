@@ -9,7 +9,7 @@ function Headersocial() {
         
             
         <div className="boutton-container14">
-            <div className='butTs'>
+            <div className='butTsh'>
             <button className="boutton14">ACCUEIL<ArrowForwardIcon className="arrow-icon" />SERVICE SOCIAL</button>
          <h2>SERVICE SOCIAL</h2> 
         </div>

@@ -118,14 +118,17 @@
     text-align: center;
   
   }
-  .telechargebtn{
+  .telechargebtns{
    border-radius:8px;
    font-weight:bold;
    background-color: #d9b847;
    margin-left: auto;
    margin-right: auto;
    padding: 10px 50px;
-   font-size: 20px;
+   font-size: 10px;
+  }
+  .cardF h2{
+    font-size: 25px;
   }
   
   @media (max-width: 768px) {
@@ -189,12 +192,15 @@
     text-shadow: 2px 2px 15px #1B3D71;
 
   }
-  .telechargebtn{
-    padding: 10px 60px;
+  .cardF h2{
+    color: #d9b847;
+    font-size: 15px;
+  }
+  .telechargebtns{
+    padding: 10px 50px;
     border-radius:8px;
     font-weight:bold;
     width: 100%;
-    font-size: 10px;
    }
   
   }

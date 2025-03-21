@@ -2,7 +2,7 @@
 
 .header-containerga12 {
   width: 100%; /* Prend toute la largeur disponible */
-  height: 80vh; /* Hauteur définie pour ton en-tête */
+  height: 60vh; /* Hauteur définie pour ton en-tête */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +21,13 @@
   background-color: white;
   border-radius: 8px;
   opacity: 0.8;
-  height: 30%;
+  height: max-content;
   overflow: hidden;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .butga123 h1 {
-  font-size: 40px;
+  font-size: 30px;
   color: #1B3D71;
   font-weight: bold;
   text-align: center;
@@ -68,7 +68,7 @@
   }
 
   .butga123 h1 {
-    font-size: 40px; /* Réduit la taille de la police pour les petits écrans */
+    font-size: 30px; /* Réduit la taille de la police pour les petits écrans */
   }
   .bouttonga123 {
     display: flex;

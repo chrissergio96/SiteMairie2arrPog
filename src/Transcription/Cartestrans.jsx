@@ -23,7 +23,7 @@ function Cartestrans() {
           <p>- Remplir l'imprimé à retirer à la Mairie(document ci-joins) ;</p>
           <p>- 1 timbre de 1000f .</p>
           <a href="/Fiche-naissance.pdf" target="_blank" rel="noopener noreferrer">
-         <button className='telechargebtn'>Téléchargez la  fiche de declaration</button>
+         <button className='telechargebtns'>Téléchargez la  fiche de declaration</button>
         </a>
         </strong>
         </p>

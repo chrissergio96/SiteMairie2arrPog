@@ -18,11 +18,11 @@
   background-color:white;
   border-radius: 8px;
   opacity: 0.8;
-  height: 30%;
+  height: max-content;
   overflow: hidden;
 }
 .butc h1{
-  font-size: 40px;
+  font-size: 30px;
   color:#1B3D71;
   font-weight: bold;
 }
