@@ -70,9 +70,10 @@ const Navbar = () => {
           <img src={logo} alt="Logo Mairie" />
           </Link>
         </div>
+        <div className='nommairie'><h1>MAIRIE DU 2E ARRONDISSEMENT DE PORT-GENTIL</h1></div>
 
         {/* Icône de menu hamburger */}
-        <IconButton edge="end" color="inherit" onClick={toggleDrawer}>
+        <IconButton edge="end" color="inherit" style={{marginRight:'-30px'}} onClick={toggleDrawer}>
           <MenuIcon color="secondary" />
         </IconButton>
       </Toolbar>

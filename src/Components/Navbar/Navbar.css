@@ -13,6 +13,7 @@
   
   .navbar-logo img {
     height: 50px; /* Hauteur du logo */
+    margin-left: -30px;
     cursor: pointer; /* Curseur pointer au survol */
   }
   .navbar-container{
@@ -39,4 +40,51 @@
   .MuiIconButton-root {
     color: black; /* Couleur du bouton de menu hamburger */
   }
+  .nommairie{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .nommairie h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: #1B3D71;
+    text-align: center;
+    text-decoration: double;
+    align-items: center;
+    text-shadow: 1px 2px 1px #1B3D71;
+  }
+  
+  @media (max-width: 768px) {
+    .nommairie{
+      display: flex;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .nommairie h1{
+      font-size: 11px;
+      font-weight: bold;
+      color: #1B3D71;
+      text-align: center;
+      text-decoration: double;
+      align-items: center;
+      text-shadow: 2px 1px 2px #1B3D71;
+    }
+    /* Style de la barre de navigation */
+.navbar {
+    background-color: white; /* Couleur de fond blanche */
+    box-shadow: none; /* Retirer l'ombre si besoin */
+    position: relative;
+    z-index: 1; /* S'assurer que la navbar est bien visible */
+    padding: 0 20px; /* Ajouter un padding pour éviter que les éléments touchent les bords */
+  }
+  }
+  
+ 
   

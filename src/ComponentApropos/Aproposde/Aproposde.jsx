@@ -37,36 +37,40 @@ const Aproposde = () => {
           {/* Secrétariat */}
           <div className="team-member">
             <img src={DelegueImage} alt="Secrétariat" />
-            <h3>Chef de Cabinet</h3>
+            <h3>Chef de Cabinet :<br></br><br></br><strong>Chris IGANA </strong>
+            </h3>
             <p>Coordination des activités administratives.</p>
           </div>
 
           {/* Responsable du service technique */}
           <div className="team-member">
             <img src={GeneralImage} alt="Service Technique" />
-            <h3>Responsable du Service Technique</h3>
-            <p>Gestion des infrastructures publiques et des travaux.</p>
+            <h3>Chef de section d'Etat-Civil: <br/><br/><br/> <strong>AYAMINE REMBANGOUET Joel</strong>
+            </h3>
+            <p>Gestion des actes de naissance, mariage, et décès.</p>
+          </div>
+              {/* Hub municipal */}
+              <div className="team-member">
+            <img src="/images/hub_municipal.jpg" alt="Hub Municipal" />
+            <h3>Chargé de l'Etat-Civil <br/><br/><br/> <strong>MANDZEMBE BILONGO Christelle Pamela</strong>
+            </h3>
+            <p>Point de contact pour l'innovation et le développement local.</p>
           </div>
 
           {/* Service social */}
           <div className="team-member">
             <img src="/images/service_social.jpg" alt="Service Social" />
-            <h3>Responsable du Service Social</h3>
+            <h3>Chef de section Service Social <br/><br/><br/> <strong>NZIENGUI Jacqueline Epse NZIENGUI</strong>
+            </h3> 
             <p>Soutien aux familles et programmes d’aide sociale.</p>
           </div>
 
           {/* Service état civil */}
           <div className="team-member">
             <img src="/images/etat_civil.jpg" alt="État Civil" />
-            <h3>Responsable du Service État Civil</h3>
-            <p>Gestion des actes de naissance, mariage, et décès.</p>
-          </div>
-
-          {/* Hub municipal */}
-          <div className="team-member">
-            <img src="/images/hub_municipal.jpg" alt="Hub Municipal" />
-            <h3>Hub Municipal</h3>
-            <p>Point de contact pour l'innovation et le développement local.</p>
+            <h3>Assistant Technique <br/><br/><br/> <strong>MOKOUKOU KONDJA Jovan</strong>
+            </h3>
+            <p>Gestion des infrastructures publiques et des travaux.</p>
           </div>
 
         </div>

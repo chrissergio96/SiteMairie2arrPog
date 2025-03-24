@@ -9,7 +9,7 @@ const Textebon = ({ children }) => {
     <div className='texte-comite'>
       <p>
       Le Comité de Développement des Quartiers (CDQ) est
-      un acteur clé dans l'amélioration du cadre de vie de nos quartiers. Chaque CDQ, propre à chaque quartier,
+      un acteur clé dans l'amélioration du cadre de vie de nos quartiers. Chaque CDQ, propre à chaque quartier,travaille en étroite collaboration avec le Chef du dit quartier.
       Les CDQ, ce sont avant tout des citoyens engagés qui donnent de leur temps pour améliorer leur quartier. 
       Leur action est essentielle, mais elle ne peut se faire sans vous. En rejoignant votre CDQ, vous pourrez 
       contribuer activement à façonner votre environnement et à créer un quartier où il fait bon vivre.

@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .enfant-bleu{
@@ -77,6 +78,7 @@
     .bg-mariage{
         image-rendering: crisp-edges; /* Pour les navigateurs modernes */
         background-image: url('../../Images/Mariages1.jpg');
+        height: 50vh;
        
     }
     

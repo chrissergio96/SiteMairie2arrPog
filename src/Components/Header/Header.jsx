@@ -1,13 +1,38 @@
-import React, { useState } from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; 
 import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+
+const images = [
+    require('../../Images/Ville/ancien port p.jpg'),
+    require('../../Images/Ville/lephare.jpg'),
+    require('../../Images/Ville/POG.jpg'),
+    require('../../Images/Ville/MARINA.jpg'),
+    require('../../Images/Ville/lamarina.jpg'),
+    require('../../Images/Ville/Mairie de.jpg'),
+    require('../../Images/Ville/carref len mba.jpg'),
+    require('../../Images/Ville/ANCIENPORT.jpg'),
+
+    
+
+
+    // Ajoute autant d'images que nécessaire
+  ];
 
 const Header = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 2000); // Change d'image toutes les 5 secondes
+  
+      return () => clearInterval(intervalId); // Nettoie l'intervalle à la fin
+    }, []);
+    
     // Tableau des suggestions
     const suggestions = [
         { name: 'Service État Civil', path: '/Etatcivil' },
@@ -62,7 +87,7 @@ const Header = () => {
     };
 
     return (
-        <div className='mairiea'>
+        <div className='mairiea' style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
             <div className='mere-searcha'>
                 <div className="search-containera">
                     <input 
