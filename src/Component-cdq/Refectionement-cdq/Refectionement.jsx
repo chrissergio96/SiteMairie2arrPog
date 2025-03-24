@@ -24,9 +24,7 @@ const Projet = () => {
                 <div className="projet-texts-refect">
                     <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, commodi. At fuga, incidunt perferendis tenetur 
-                    quod voluptatem labore et. Nisi, quo! Totam hic repellat inventore sint amet expedita recusandae tempore.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vitae quod ratione rem natus velit esse, 
-                    animi fugiat perspiciatis sunt. Laudantium assumenda mollitia voluptatem numquam labore est fugit, rem cumque.
+                    quod voluptatem labore et. 
                     </p>
                     <button className='buton-project-refect' type="button">Voir plus<ArrowRightAltOutlinedIcon/></button>
                 </div>

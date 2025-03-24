@@ -9,7 +9,6 @@ import Reseaux from '../Component-mariage/Reseaux/Reseaux';
 import Contact from '../Components/Contact/Contact';
 import Footer from'../Components/Footer/Footer';
 import Footerbas from '../Components/Footerbas/Footerbas';
-import BackButtonUrb from '../ComponentsUrbanisme/BackButtonUrb/BackButtonUrb';
 
 function Mariage() {
 
@@ -22,7 +21,6 @@ function Mariage() {
       <Textetrangers/>
       <Archives/>
       <Reseaux/>
-      <BackButtonUrb/>
       <Contact/>
       <Footer/>
       <Footerbas/>
