@@ -66,7 +66,7 @@ export default function MediaCard1() {
           </Typography>
         </CardContent>
         <CardActions>
-        <a href="/CONSTITUTION%20DU%20DOSSIER%20DE%20MARIAGE2.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/CONSTITUTION%20DU%20DOSSIER%20DE%20MARIAGE2.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Voir plus</button>
         </a>
         </CardActions>

@@ -64,7 +64,7 @@ function Cartes() {
           <p>- 1 copie de l'acte ou la pièces d'identité de celui qu'on prend en charge ;</p>
           <p>- 1 Attestation d'emploi ou presence au poste ou fiche circuit ;</p>
           <p>- 1 timbre de 5000f .</p> 
-          <a href="/Attestation-prise-charge.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Attestation-prise-charge.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
 
@@ -80,7 +80,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Autorisation%20Parentale.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Autorisation%20Parentale.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -93,7 +93,7 @@ function Cartes() {
         <strong>
          
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Certificat%20de%20celibat.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Certificat%20de%20celibat.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -106,7 +106,7 @@ function Cartes() {
         <strong>
  
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Certificat%20hebergement.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Certificat%20hebergement.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -120,7 +120,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Certificat%20entretien%20et%20education.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Certificat%20entretien%20et%20education.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -134,7 +134,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Certificat%20de%20vie.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Certificat%20de%20vie.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -148,7 +148,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Autorisation%20maritale.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Autorisation%20maritale.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -162,7 +162,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Attestation-sur%20-honneur-pension.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Attestation-sur%20-honneur-pension.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -176,7 +176,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Attestation-sur-l'honneur.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Attestation-sur-l'honneur.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -191,7 +191,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du demandeur ;</p>
           <p>- Remplir l'imprimé à retirer à la Mairie(document ci-joins) ;</p>
           <p>- 1 timbre de 1000f .</p>
-          <a href="/CERTIFICAT-RESIDENCE%20(2).pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/CERTIFICAT-RESIDENCE%20(2).pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -206,7 +206,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Attestation-non-dissolution.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Attestation-non-dissolution.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -220,7 +220,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/CERTIFICAT%20DE%20COUTUME.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/CERTIFICAT%20DE%20COUTUME.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -234,7 +234,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/CERTIFICAT-VENTE-VEHICULE%20(1).pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/CERTIFICAT-VENTE-VEHICULE%20(1).pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -248,7 +248,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/CERTIFICAT-NON-MARIAGE.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/CERTIFICAT-NON-MARIAGE.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -262,7 +262,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Lettre%20d'invitation.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Lettre%20d'invitation.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -276,7 +276,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Attestation-Logementt.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Attestation-Logementt.pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
@@ -290,7 +290,7 @@ function Cartes() {
           <p>- 1 copie de la pièce d'identité du père ou de la mère ;</p>
           <p>- 1 copie de l'acte de naissance de l'enfant ;</p>
           <p>- 1 timbre de 5000f .</p>
-          <a href="/Procuration%20(1).pdf" target="_blank" rel="noopener noreferrer">
+          <a href="/Procuration%20(1).pdf" target="_blank" rel="noopener noreferrer" download>
          <button className='telechargebtn'>Téléchargez le document</button>
         </a>
         </strong>
