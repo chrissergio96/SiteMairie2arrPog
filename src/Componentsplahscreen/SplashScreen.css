@@ -1,3 +1,11 @@
+@keyframes rotationEtTaille {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(720deg);
+  }
+}
 
   
   .splash-container {
@@ -26,6 +34,8 @@
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    animation: rotationEtTaille 2s ease-out 1;
+
   }
   
   /* Animation pour le logo */
