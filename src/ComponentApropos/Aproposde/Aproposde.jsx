@@ -2,6 +2,10 @@ import React from 'react';
 import './Aproposde.css';
 import DelegueImage from '../../Images/Delegue.jpg';
 import GeneralImage from '../../Images/general.jpg';
+import CCImage from '../../Images/pont.jpg';
+import ChristelleImage from '../../Images/Christelle.jpg';
+import JeanneImage from '../../Images/Jeanne.jpg';
+import FranciscaImage from '../../Images/Francisca.jpg'
 
 
 const Aproposde = () => {
@@ -34,41 +38,56 @@ const Aproposde = () => {
             <p>Responsable adjoint des affaires sociales et du développement local du 2e Arrondissement.</p>
           </div>
 
-          {/* Secrétariat */}
+          
           <div className="team-member">
-            <img src={DelegueImage} alt="Secrétariat" />
+            <img src={CCImage} alt="Cabinet" />
             <h3>Chef de Cabinet :<br></br><br></br><strong>Chris IGANA </strong>
             </h3>
             <p>Coordination des activités administratives.</p>
           </div>
 
-          {/* Responsable du service technique */}
+          
+
+           <div className="team-member">
+            <img src={FranciscaImage} alt="Service Etat civil" />
+            <h3>Sécrétaire particulière du Délégué Spécial: <br/><br/><br/> <strong> Joel AYAMINE REMBANGOUET</strong>
+            </h3>
+            <p>Gestion des tâches administratives, organisationnelles et relationnelles du Délégué Spécial</p>
+          </div>
+
+           <div className="team-member">
+              <img src={ChristelleImage} alt="Chargé de l'état spécial" />
+              <h3>Chargé de l'Etat Spécial : <br/><br/><br/> <strong> Christelle Pamela MANDZEMBE BILONGO</strong>
+            </h3>
+            <p>En charge de la gestion des finances de la Mairie.</p>
+          </div>
+
           <div className="team-member">
-            <img src={GeneralImage} alt="Service Technique" />
-            <h3>Chef de section d'Etat-Civil: <br/><br/><br/> <strong>AYAMINE REMBANGOUET Joel</strong>
+          <img src={JeanneImage} alt="Chargé du Protocole" />
+          <h3>Chargé du Protocole <br/><br/><br/> <strong> Jeanne BOUTSANA </strong>
+            </h3>
+            <p>En charge de la gestion protocolaire de la Mairie.</p>
+          </div>
+
+          <div className="team-member">
+            <img src={GeneralImage} alt="Service Etat civil" />
+            <h3>Chef de section d'Etat-Civil: <br/><br/><br/> <strong> Joel AYAMINE REMBANGOUET</strong>
             </h3>
             <p>Gestion des actes de naissance, mariage, et décès.</p>
           </div>
-              {/* Hub municipal */}
-              <div className="team-member">
-            <img src="/images/hub_municipal.jpg" alt="Hub Municipal" />
-            <h3>Chargé de l'Etat-Civil <br/><br/><br/> <strong>MANDZEMBE BILONGO Christelle Pamela</strong>
-            </h3>
-            <p>Point de contact pour l'innovation et le développement local.</p>
-          </div>
+             
 
-          {/* Service social */}
           <div className="team-member">
             <img src="/images/service_social.jpg" alt="Service Social" />
-            <h3>Chef de section Service Social <br/><br/><br/> <strong>NZIENGUI Jacqueline Epse NZIENGUI</strong>
+            <h3>Chef de section Service Social <br/><br/><br/> <strong> Jacqueline NZIENGUI Epse NZIENGUI</strong>
             </h3> 
             <p>Soutien aux familles et programmes d’aide sociale.</p>
           </div>
 
-          {/* Service état civil */}
+
           <div className="team-member">
-            <img src="/images/etat_civil.jpg" alt="État Civil" />
-            <h3>Assistant Technique <br/><br/><br/> <strong>MOKOUKOU KONDJA Jovan</strong>
+            <img src="/images/etat_civil.jpg" alt="Assistant Technique" />
+            <h3>Assistant Technique <br/><br/><br/> <strong> Jovan MOKOUKOU KONDJA </strong>
             </h3>
             <p>Gestion des infrastructures publiques et des travaux.</p>
           </div>

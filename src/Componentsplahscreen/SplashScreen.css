@@ -75,6 +75,8 @@
         margin-right: auto;
         justify-content: center;
         align-items: center;
+        animation: rotationEtTaille 2s ease-out 1;
+
       }
 }
   
