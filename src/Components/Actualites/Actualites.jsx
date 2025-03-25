@@ -26,7 +26,7 @@ const Actualites = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3>VISITE DE TERRAIN:CONSTRUCTION DE L'ÉCOLE 𝐇ENRI 𝐂LEMENT </h3>
+                            <h3>VISITE DE TERRAIN : CONSTRUCTION DE L'ÉCOLE 𝐇ENRI 𝐂LEMENT </h3>
                         </Carousel.Caption>
                     </Carousel.Item>
 

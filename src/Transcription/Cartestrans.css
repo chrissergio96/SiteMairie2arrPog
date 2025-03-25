@@ -81,7 +81,7 @@
     width: 98%;
     height:max-content;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background: linear-gradient(45deg,white,#1B3D71,white);
+    background-color: #1B3D71;
     margin-bottom: 8%;
   
   }
