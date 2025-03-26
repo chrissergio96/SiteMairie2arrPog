@@ -1,11 +1,6 @@
 import React from 'react';
 import './Contact.css';
 import {Link} from 'react-router-dom';
-import AgendaImage from '../../Images/Agenda.png';
-import numeroImage from '../../Images/NumeroUtile.jpeg';
-import CDQImage from '../../Images/CDQ.jpg';
-import galerieImage from '../../Images/Galerie2.jpeg';
-import MARIAGEImage from '../../Images/MARIAGE.jpg';
 
 const Contact = () => {
     return (
@@ -22,36 +17,42 @@ const Contact = () => {
             
             </div>
             <div className="cards1-containeral">
+
                 <div className="card1al">
-                    <Link to='/agenda'>
-                    <img src={AgendaImage} alt="Agenda" />
+                <Link to='/agenda'>
+                    <div className='mereimg'></div>
                     <h2>Agenda</h2>
-                    </Link>
+                </Link>
                 </div>
+
                 <div className="card1al">
-                    <Link to='/numerosutiles'>
-                    <img src={numeroImage} alt="NumeroUtile" />
+                <Link to='/numerosutiles'>
+                <div className='mereimg1'></div>
                     <h2>Numeros utiles </h2>
-                    </Link>
+                </Link>
                 </div>
+
                 <div className="card1al">
-                    <Link to='/galerie'>
-                    <img src={galerieImage} alt="Galerie2" />
+                <Link to='/galerie'>
+                <div className='mereimg2'></div>
                     <h2>Galerie</h2>
-                    </Link>
+                </Link>
                 </div>
+
                 <div className="card1al">
-                    <Link to='/mariage'>
-                    <img src={MARIAGEImage} alt="MARIAGE" />
+                <Link to='/mariage'>
+                <div className='mereimg3'></div>
                     <h2>Mariage</h2>
-                    </Link>
+                </Link>
                 </div>
+
                 <div className="card1al">
-                    <Link to='/cdq'>
-                    <img src={CDQImage} alt="CDQ" />
+                <Link to='/cdq'>
+                <div className='mereimg4'></div>
                     <h2>CDQ</h2>
-                    </Link>
+                </Link>
                 </div>
+
             </div>
         </div>
     );

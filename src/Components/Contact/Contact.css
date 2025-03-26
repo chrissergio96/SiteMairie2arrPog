@@ -48,7 +48,36 @@
     margin: auto;
     margin-top:40px;
 }
-
+.mereimg{
+    background-size: cover;
+    background-image: url('../../Images/Agenda.png');
+    height: 70%;
+    border-radius: 8px;
+}
+.mereimg1{
+    background-size: cover;
+    background-image: url('../../Images/NumeroUtile.jpeg');
+    height: 70%; 
+    border-radius: 8px;
+}
+.mereimg2{
+    background-size: cover;
+    background-image: url('../../Images/Galerie2.jpeg');
+    height: 70%; 
+    border-radius: 8px;
+}
+.mereimg3{
+    background-size: cover;
+    background-image: url('../../Images/MARIAGE.jpg');
+    height: 70%; 
+    border-radius: 8px;
+}
+.mereimg4{
+    background-size: cover;
+    background-image: url('../../Images/CDQ.jpg');
+    border-radius: 8px;
+    height: 70%;
+}
 .card1al {
     background-color: #f7f7f7;
     border-radius: 8px;
@@ -108,18 +137,20 @@
     }
 
     .card1al {
-        width: 100%;
-        height:60%;
-        margin-bottom: 2px;
-        margin-top: 5%;
+        background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    height:300px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
     }
-    .card1al img{
-        width:100%;
-        height: 30%;
-    }
+
     .card1al h2 {
         font-size: 18px;
-        margin-top: 2px;
+        margin-top: 20px;
     }
     .container1al h1{
         color: #1B3D71;
@@ -146,6 +177,36 @@
     }
     .barreal h1{
         text-align: start;
+    }
+    .mereimg{
+        background-size: cover;
+        background-image: url('../../Images/Agenda.png');
+        height: 80%;
+        border-radius: 8px;
+    }
+    .mereimg1{
+        background-size: cover;
+        background-image: url('../../Images/NumeroUtile.jpeg');
+        height: 80%; 
+        border-radius: 8px;
+    }
+    .mereimg2{
+        background-size: cover;
+        background-image: url('../../Images/Galerie2.jpeg');
+        height: 80%; 
+        border-radius: 8px;
+    }
+    .mereimg3{
+        background-size: cover;
+        background-image: url('../../Images/MARIAGE.jpg');
+        height: 80%; 
+        border-radius: 8px;
+    }
+    .mereimg4{
+        background-size: cover;
+        background-image: url('../../Images/CDQ.jpg');
+        border-radius: 8px;
+        height: 80%;
     }
 
 }
