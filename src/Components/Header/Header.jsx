@@ -3,7 +3,9 @@ import SearchIcon from '@mui/icons-material/Search';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; 
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
+import Fuse from 'fuse.js'; // Importation de Fuse.js
 
+// Images de la bannière défilante
 const images = [
     require('../../Images/Ville/ancien port p.jpg'),
     require('../../Images/Ville/lephare.jpg'),
@@ -13,12 +15,41 @@ const images = [
     require('../../Images/Ville/Mairie de.jpg'),
     require('../../Images/Ville/carref len mba.jpg'),
     require('../../Images/Ville/ANCIENPORT.jpg'),
+];
 
-    
+// Suggestions actuelles + mots-clés supplémentaires pour la recherche
+const suggestions = [
+    { name: 'Service État Civil', path: '/Etatcivil' },
+    { name: 'Service Technique', path: '/technique' },
+    { name: 'Service Social', path: '/Servicesocial' },
+    { name: 'Urbanisme', path: '/urbanisme' },
+    { name: 'Agenda', path: '/agenda' },
+    { name: 'Chefs de Quartiers et CDQ', path: '/cdq' },
+    { name: 'Mariage', path: '/mariage' },
+    { name: 'Galerie', path: '/galerie' },
+    { name: 'Contact', path: '/contact' },
+    // Ajoutez plus de suggestions ici si nécessaire
+];
 
+// Mots-clés supplémentaires pour une meilleure recherche
+const keywords = [
+    { name: 'Mairie', path: '/mairie' },
+    { name: 'Maire', path: '/maire' },
+    { name: 'Service Urbanisme', path: '/urbanisme' },
+    { name: 'Demande d\'audience', path: '/audience' },
+    { name: 'Services Techniques', path: '/technique' },
+    { name: 'État Civil', path: '/Etatcivil' },
+    // Ajoutez autant de mots-clés pertinents que nécessaire
+];
 
-    // Ajoute autant d'images que nécessaire
-  ];
+// Mélanger les suggestions et les mots-clés
+const fullSuggestions = [...suggestions, ...keywords];
+
+// Configuration de Fuse.js
+const fuse = new Fuse(fullSuggestions, {
+    keys: ['name'],
+    threshold: 0.3, // Ajuster pour plus ou moins de tolérance
+});
 
 const Header = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -26,56 +57,25 @@ const Header = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
-      const intervalId = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 2000); // Change d'image toutes les 5 secondes
-  
-      return () => clearInterval(intervalId); // Nettoie l'intervalle à la fin
-    }, []);
-    
-    // Tableau des suggestions
-    const suggestions = [
-        { name: 'Service État Civil', path: '/Etatcivil' },
-        { name: 'Service Technique', path: '/technique' },
-        { name: 'Service Social', path: '/Servicesocial' },
-        { name: 'Urbanisme', path: '/urbanisme' },
-        { name: 'Agenda', path: '/agenda' },
-        { name: 'Chefs de Quartiers et CDQ', path: '/cdq' },
-        { name: 'Mariage', path: '/mariage' },
-        { name: 'Galerie', path: '/galerie' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'Cdq', path: '/cdq' },
-        { name: 'Etatcivil', path: '/etatcivil' },
-        { name: 'Légalisation', path: '/légalisation' },
-        { name: 'Aidesocials', path: '/aidesocials' },
-        { name: 'Projet', path: '/projet' },
-        { name: 'Transcription', path: '/transcription' },
-        { name: 'Technique', path: '/technique' },
-        { name: 'Servicesocial', path: '/servicesocial' },
-        { name: 'TravauxUrbanisme', path: '/travauxurbanisme' },
-        { name: 'AutorisationsUrbanisme', path: '/autorisationsurbanisme' },
-        { name: 'Amenagements', path: '/amenagements' },
-        { name: 'Apropos', path: '/apropos' },
-        { name: 'Cdqgalerie', path: '/cdqgalerie' },
-        { name: 'Culturegalerie', path: '/culturegalerie' },
-        { name: 'Galeriemariage', path: '/galeriemariage' },
-        { name: 'ReglesUrb', path: '/reglesurb' },
-    ];
+        const intervalId = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000); // Change d'image toutes les 5 secondes
 
-    // Gérer la recherche
+        return () => clearInterval(intervalId); // Nettoyage de l'intervalle à la fin
+    }, []);
+
+    // Gestion de la recherche
     const handleSearch = (e) => {
         const value = e.target.value;
         setSearchTerm(value);
         filterSuggestions(value);
     };
 
-    // Filtrer les suggestions
+    // Filtrage des suggestions avec Fuse.js
     const filterSuggestions = (value) => {
         if (value.length > 0) {
-            const filtered = suggestions.filter(suggestion =>
-                suggestion.name.toLowerCase().includes(value.toLowerCase())
-            );
-            setFilteredSuggestions(filtered);
+            const result = fuse.search(value); // Recherche floue
+            setFilteredSuggestions(result.map(res => res.item)); // Extraction des éléments correspondants
         } else {
             setFilteredSuggestions([]);
         }
@@ -99,7 +99,7 @@ const Header = () => {
                     />
                     <SearchIcon className="search-icon" onClick={handleIconClick} style={{ cursor: 'pointer' }} />
                 </div>
-                
+
                 {/* Affichage des suggestions */}
                 {filteredSuggestions.length > 0 ? (
                     <ul className="suggestions-list">
@@ -116,6 +116,7 @@ const Header = () => {
                 ) : null}
             </div>
 
+            {/* Boutons des services */}
             <div className="button-containersa">
                 <div className="buttons-left">
                     <Link to='/Etatcivil'><button className="button">SERVICE ETAT CIVIL<ArrowForwardIcon className="arrow-icon" /></button></Link>
@@ -131,6 +132,7 @@ const Header = () => {
                 </div>
             </div>
              
+            {/* Bouton d'audience */}
             <a href="https://calendly.com/safou-christiansergio/30min" target="_blank" rel="noopener noreferrer" className="audience-button">
                 Demande d'audience
             </a>

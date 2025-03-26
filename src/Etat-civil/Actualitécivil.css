@@ -45,10 +45,7 @@
     margin-left:auto;
     margin-top:2%;
     text-align: start;
-    box-shadow: 0 4px 8px rgba(136, 85, 85, 0.2); 
     background-color: white;
-    border-radius: 15px; 
-    padding:20px;
 }
 .mereetc{
     width: 100%;
@@ -115,15 +112,13 @@ margin-top:20px;
         margin-left:auto;
         margin-top:2%;
         text-align: center;
-        box-shadow: 0 4px 8px rgba(136, 85, 85, 0.2); 
         background-color: white;
-        border-radius: 5px; 
         padding:10px;
         font-size: 12px;
     
     }
     .civiltexte p{
-        text-align: center;
+        text-align: justify;
         font-size: 10px;
     }
     
@@ -132,7 +127,7 @@ margin-top:20px;
     font-weight: bold;
     color: gray;
     margin-top:20px;
-    text-align: start;
+    text-align: justify;
     font-size: 10px;
     }
 }
