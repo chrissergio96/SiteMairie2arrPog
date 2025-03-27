@@ -66,7 +66,7 @@ const Navbar = () => {
     <AppBar position="static" className="navbar">
       <Toolbar className='navbar-container'>
         <div className="navbar-logo">
-          <Link to='/'>
+          <Link to='/accueil'>
           <img src={logo} alt="Logo Mairie" />
           </Link>
         </div>

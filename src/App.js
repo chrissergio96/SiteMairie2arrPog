@@ -76,6 +76,7 @@ function App() {
           <Route path="/cdq" element={<Cdq/>} /> 
           <Route path="/apropos" element={<Apropos/>} /> 
           <Route path="/projet" element={<Projet/>} /> 
+          <Route path="/projet/:id" element={<Projet />} /> {/* Page projet avec un paramètre d'ID */}
           <Route path="/numerosutiles" element={<Numerosutiles/>} /> 
           <Route path="/faq" element={<FaqUtilisateurs/>} /> 
 
