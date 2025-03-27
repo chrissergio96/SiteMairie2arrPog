@@ -34,7 +34,7 @@
     transition: transform 0.3s ease;
     display: block;
     padding: 10px;
-    height: max-content;
+    height: 95%;
   }
   
   .projet-card img {
