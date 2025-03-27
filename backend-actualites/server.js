@@ -16,7 +16,7 @@ const actualites = [
     {
         id: 1,
         titre: 'Projet d’Assainissement des Quartiers',
-        imageUrl: '/Images/travaux-assainissement.jpg',
+        imageUrl: '/travaux-assainissement.jpg',
         description: 'Actualité 1 description',
         date: '2025-03-01',
     },
