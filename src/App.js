@@ -47,6 +47,8 @@ import Projet from './Pages/Projet.jsx';
 import Numerosutiles from './Pages/Numerosutiles.jsx';
 import FaqUtilisateurs from './Pages/FaqUtilisateurs.jsx';
 import Splash from './Pages/Splash.jsx';
+import ProjetDetail from './ProjetDetail/ProjetDetail.jsx'; // La page de détails des projets
+
 
 function App() {
   return (
@@ -76,10 +78,9 @@ function App() {
           <Route path="/cdq" element={<Cdq/>} /> 
           <Route path="/apropos" element={<Apropos/>} /> 
           <Route path="/projet" element={<Projet/>} /> 
-          <Route path="/projet/:id" element={<Projet />} /> {/* Page projet avec un paramètre d'ID */}
+          <Route path="/projet/:id" element={<ProjetDetail />} /> {/* Route dynamique pour la page de détails */}
           <Route path="/numerosutiles" element={<Numerosutiles/>} /> 
           <Route path="/faq" element={<FaqUtilisateurs/>} /> 
-
           <Route path="/Galerie" element={<Galerie/>} />
           <Route path="/Service" element={<Service/>} />
           <Route path="/Cdqgalerie" element={<Cdqgalerie/>} />

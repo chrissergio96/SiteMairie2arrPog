@@ -1,58 +1,52 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Importer Link de react-router-dom
-import './Projets.css';
+import { useParams } from 'react-router-dom'; // Pour récupérer les paramètres de l'URL
 
-const Projets = () => {
+const ProjetDetail = () => {
+  const { id } = useParams(); // Récupérer l'ID du projet dans l'URL
+  
+  // Liste des projets (ceci pourrait provenir d'une API ou d'un fichier de données séparé)
   const projets = [
     {
       id: 1,
       titre: 'Projet d’Assainissement des Quartiers',
       description: 'Ce projet vise à améliorer les conditions sanitaires des quartiers à travers la réfection des canalisations et l’entretien des espaces publics.',
-      image: require('../../Images/travaux-assainissement.jpg'),
+      image: require('../Images/travaux-assainissement.jpg'),
     },
     {
       id: 2,
       titre: '[𝐕𝐈𝐒𝐈𝐓𝐄 𝐃𝐄 𝐓𝐄𝐑𝐑𝐀𝐈𝐍] : Un engagement solide pour le bien-etre des habitants du 2eme Arrondissement',
       description: 'La Mairie du 2ème arrondissement, sous la vision 𝐝𝐮 𝐃𝐞́𝐥𝐞́𝐠𝐮𝐞́ 𝐒𝐩𝐞́𝐜𝐢𝐚𝐥 Boubacar Ngouwa Guingo Mayaki, démontre une fois de plus son engagement en faveur d’un cadre de vie sain.',
-      image: require('../../Images/inondation.jpg'),
+      image: require('../Images/inondation.jpg'),
     },
     
     {
       id: 4,
       titre: 'Réhabilitation des Routes Urbaines',
       description: 'Un projet pour améliorer les routes principales et secondaires du 2e arrondissement afin de fluidifier la circulation et réduire les accidents.',
-      image: require('../../Images/urbanism.jpg'),
+      image: require('../Images/urbanism.jpg'),
     },
     {
       id: 3,
-      titre: 'Nettoyage des caniveaux au quartier chic',
+      titre: 'NETTOYAGE DES CANIVEAUX AU QUARTIER CHIC',
       description: 'Un projet pour améliorer les routes principales et secondaires du 2e arrondissement afin de fluidifier la circulation et réduire les accidents.',
-      image: require('../../Images/canivau.jpg'),
+      image: require('../Images/canivau.jpg'),
     },
-   
-   
   ];
 
+  // Trouver le projet correspondant à l'ID
+  const projet = projets.find(p => p.id === parseInt(id));
+
+  if (!projet) {
+    return <h2>Projet non trouvé</h2>;
+  }
+
   return (
-    <div className="projets-container">
-      <h1>Nos Projets</h1>
-      <p>Découvrez les projets en cours et à venir qui transformeront le 2e Arrondissement de Port-Gentil.</p>
-      
-      <div className="projets-grid">
-        {projets.map((projet) => (
-          <Link to={`/projet/${projet.id}`} key={projet.id} className="projet-card-link"> {/* Ajouter un lien vers les détails du projet */}
-            <div className="projet-card">
-              <img src={projet.image} alt={projet.titre} />
-              <div className="projet-info">
-                <h2>{projet.titre}</h2>
-                <p>{projet.description}</p>
-              </div>
-            </div>
-          </Link>
-        ))}
-      </div>
+    <div className="projet-detail">
+      <h1>{projet.titre}</h1>
+      <img src={projet.image} alt={projet.titre} style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
+      <p>{projet.description}</p>
     </div>
   );
 };
 
-export default Projets;
+export default ProjetDetail;
