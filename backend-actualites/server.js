@@ -23,7 +23,7 @@ const actualites = [
     {
         id: 2,
         titre: '[𝐕𝐈𝐒𝐈𝐓𝐄 𝐃𝐄 𝐓𝐄𝐑𝐑𝐀𝐈𝐍] : Un engagement solide pour le bien-etre des habitants du 2eme Arrondissement',
-        imageUrl: '/elec.jpg', // Le chemin est relatif au dossier public de React
+        imageUrl: '/inondation.jpg', // Le chemin est relatif au dossier public de React
         description: 'La Mairie du 2ème arrondissement, sous la vision 𝐝𝐮 𝐃𝐞́𝐥𝐞́𝐠𝐮𝐞́ 𝐒𝐩𝐞́𝐜𝐢𝐚𝐥 Boubacar Ngouwa Guingo Mayaki, démontre une fois de plus son engagement en faveur d’un cadre de vie sain.',
         date: '2025-03-10'
     },
@@ -36,10 +36,10 @@ const actualites = [
     } ,
     {
         id: 4,
-        titre: 'Réhabilitation des Routes Urbaines',
-        imageUrl: '/urbanism.jpg',
-        description: 'Un projet pour améliorer les routes principales et secondaires du 2e arrondissement afin de fluidifier la circulation et réduire les accidents.',
-        date: '2025-03-20'
+        titre: "[𝑴𝒐𝒅𝒆𝒓𝒏𝒊𝒔𝒂𝒕𝒊𝒐𝒏 𝒆𝒕 𝒆𝒎𝒃𝒆𝒍𝒍𝒊𝒔𝒔𝒆𝒎𝒆𝒏𝒕 𝒂𝒖 2ᵉ 𝑨𝒓𝒓𝒐𝒏𝒅𝒊𝒔𝒔𝒆𝒎𝒆𝒏𝒕 𝒅𝒆 𝑷𝒐𝒓𝒕-𝑮𝒆𝒏𝒕𝒊𝒍]",
+        imageUrl: '/carref centre social.jpg',
+        description: "Dans le cadre des travaux initiés par le CTRI , des aménagements sont en cours au carrefour du Centre Social pour améliorer l'infrastructure et le cadre de vie des habitants. ",
+        date: '2025-02-24'
     } ,
    
 ];

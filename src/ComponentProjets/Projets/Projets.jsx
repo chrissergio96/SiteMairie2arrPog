@@ -19,9 +19,9 @@ const Projets = () => {
     
     {
       id: 4,
-      titre: 'Réhabilitation des Routes Urbaines',
-      description: 'Un projet pour améliorer les routes principales et secondaires du 2e arrondissement afin de fluidifier la circulation et réduire les accidents.',
-      image: require('../../Images/urbanism.jpg'),
+      titre: "[𝑴𝒐𝒅𝒆𝒓𝒏𝒊𝒔𝒂𝒕𝒊𝒐𝒏 𝒆𝒕 𝒆𝒎𝒃𝒆𝒍𝒍𝒊𝒔𝒔𝒆𝒎𝒆𝒏𝒕 𝒂𝒖 2ᵉ 𝑨𝒓𝒓𝒐𝒏𝒅𝒊𝒔𝒔𝒆𝒎𝒆𝒏𝒕 𝒅𝒆 𝑷𝒐𝒓𝒕-𝑮𝒆𝒏𝒕𝒊𝒍]",
+      description: "Ces travaux visent à moderniser l'espace urbain tout en garantissant plus de sécurité et de confort pour tous. Merci pour votre patience et votre collaboration !",
+      image: require('../../Images/carref centre social.jpg'),
     },
     {
       id: 3,
