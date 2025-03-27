@@ -1,0 +1,26 @@
+
+.projet-detail h1{
+    color: #1B3D71;
+    text-align: center;
+    margin-top: 5%;
+}
+.projet-detail p{
+    font-size: 20px;
+    text-align: center;
+    color: grey;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  
+    .projet-detail h1{
+        color: #1B3D71;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .projet-detail p{
+        font-size: 10px;
+        text-align: center;
+       
+    }
+}
