@@ -1,0 +1,19 @@
+.Carg{
+    background-image: url('../Images/Transcription/declarationmariage.jpg');
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+    .Carg{
+        background-image: url('../Images/Transcription/declarationmariage.jpg');
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+   
+ }

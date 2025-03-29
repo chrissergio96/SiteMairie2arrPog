@@ -1,13 +1,23 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import imageMariage from '../Images/Mariage.jpeg';
+import './infotrans.css';
+import Declarationmariage from '../Images/Transcription/declarationmariage.jpg'
 
 export default function MediaCard1() {
+
+   const [hoveredImage, setHoveredImage] = useState(null); // État pour stocker l'image survolée
+  
+    const handleMouseEnter = (image) => {
+      setHoveredImage(image); // Afficher l'image en aperçu lors du survol
+    };
+  
+    const handleMouseLeave = () => {
+      setHoveredImage(null); // Cacher l'aperçu de l'image quand la souris quitte la carte
+    };
   return (
     <Box
       sx={{
@@ -19,24 +29,21 @@ export default function MediaCard1() {
         boxSizing: 'border-box', // Assure que tout est bien contenu dans la fenêtre
       }}
     >
-      <Card
+      <Card className='hut'
         sx={{
-          width: 1080, // Largeur augmentée
-          height: 540, // Hauteur augmentée
+          width: 1000, // Largeur augmentée
           boxShadow: 3, // Ajout d'une ombre pour un effet esthétique
           borderRadius: 2, // Coins légèrement arrondis
+          padding:5,
         }}
       >
         {/* Agrandissement de l'image */}
-        <CardMedia
-          sx={{
-            height: 300, // Augmente la hauteur de l'image
-            backgroundSize: 'cover', // Ajuste l'image pour qu'elle couvre l'espace
-          }}
-          image={imageMariage}
-        />
+       <div className='Carg' onMouseEnter={() => handleMouseEnter(Declarationmariage)} onMouseLeave={handleMouseLeave}>
+
+       </div>
         <CardContent>
           {/* Agrandissement du titre */}
+
           <Typography
             gutterBottom
             variant="h3" // Taille de titre plus grande
@@ -67,10 +74,16 @@ export default function MediaCard1() {
         </CardContent>
         <CardActions>
         <a href="/CONSTITUTION%20DU%20DOSSIER%20DE%20MARIAGE2.pdf" target="_blank" rel="noopener noreferrer" download>
-         <button className='telechargebtn'>Voir plus</button>
+         <button id='btu' className='telechargebtn'>Voir plus</button>
         </a>
         </CardActions>
       </Card>
+       {/* Aperçu de l'image survolée */}
+       {hoveredImage && (
+        <div className="image-preview">
+          <img src={hoveredImage} alt="Aperçu de l'image" />
+        </div>
+      )}
     </Box>
   );
 }

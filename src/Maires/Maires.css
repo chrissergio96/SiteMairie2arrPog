@@ -1,0 +1,74 @@
+.maire-page {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .responsibilities, .projects, .message, .contact, .gallery, .news {
+    margin-bottom: 30px;
+  }
+  .biography{
+    align-items: center;
+    padding: 20px;
+  }
+  .biography h1{
+    color: #1B3D71;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .inaug{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2 {
+    color: #1B3D71;
+  }
+  
+  .biography p, .message p {
+    font-size: 1.1rem;
+    color: #34495e;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  .contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .news ul {
+    list-style-type: none;
+  }
+  
+  .news li a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  

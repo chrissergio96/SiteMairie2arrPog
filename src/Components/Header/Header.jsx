@@ -1,7 +1,7 @@
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Importation de useNavigate
 import React, { useEffect, useState } from 'react';
 import Fuse from 'fuse.js'; // Importation de Fuse.js
 
@@ -55,6 +55,7 @@ const Header = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredSuggestions, setFilteredSuggestions] = useState([]);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const navigate = useNavigate(); // Initialiser useNavigate
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -83,7 +84,13 @@ const Header = () => {
 
     // Gérer le clic sur l'icône de la loupe
     const handleIconClick = () => {
-        filterSuggestions(searchTerm);
+        if (filteredSuggestions.length > 0) {
+            // Rediriger vers la première suggestion trouvée
+            const firstSuggestion = filteredSuggestions[0];
+            navigate(firstSuggestion.path); // Utilisation de navigate pour rediriger
+        } else if (searchTerm.length > 0) {
+            alert('Aucun élément correspondant'); // Affiche un message si aucun résultat
+        }
     };
 
     return (
@@ -131,7 +138,7 @@ const Header = () => {
                     <Link to='/galerie'><button className="button">GALERIE<ArrowForwardIcon className="arrow-icon" /></button></Link>
                 </div>
             </div>
-             
+
             {/* Bouton d'audience */}
             <a href="https://calendly.com/safou-christiansergio/30min" target="_blank" rel="noopener noreferrer" className="audience-button">
                 Demande d'audience
