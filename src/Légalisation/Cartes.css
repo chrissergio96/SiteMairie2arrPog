@@ -36,12 +36,48 @@
   margin-bottom: 8%;
 
 }
+.cardAB {
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 98%;
+  height:90%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 8%;
+
+}
+
+.cardAB p{
+  font-size: 15px;
+  color: #1B3D71;
+  text-align: center;
+  padding: 2px;
+}
 .cardA p{
   font-size: 10px;
   color: white;
   text-shadow: 2px 2px 3px #1B3D71;
   text-align: center;
   padding: 2px;
+}
+
+.cardAB:hover{
+  font-size: 10px;
+  color: white;
+  text-shadow: 2px 2px 3px #1B3D71;
+  text-align: center;
+  padding: 2px;
+}
+.cardAB h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color:#d9b847;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+
 }
 
 .cardA:hover {

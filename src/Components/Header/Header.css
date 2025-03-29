@@ -1,5 +1,5 @@
 .mairiea {
-  height: 100vh;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -7,6 +7,7 @@
   background-position: center;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
 }
 
 .search-containera {

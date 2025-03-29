@@ -36,7 +36,6 @@ import Cdq from './Pages/Cdq.jsx';
 import Apropos from './Pages/Apropos.jsx';
 
 
-
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -48,7 +47,7 @@ import Numerosutiles from './Pages/Numerosutiles.jsx';
 import FaqUtilisateurs from './Pages/FaqUtilisateurs.jsx';
 import Splash from './Pages/Splash.jsx';
 import ProjetDetail from './ProjetDetail/ProjetDetail.jsx'; // La page de détails des projets
-
+import Maire from './Pages/Maire.jsx';
 
 function App() {
   return (
@@ -58,6 +57,8 @@ function App() {
       <ScrollToTop />  {/* Ce composant s'assure que chaque navigation commence en haut */}
         <Routes>
         <Route path="/" element={<Splash />} /> 
+        <Route path="/maire" element={<Maire />} /> 
+
 
           <Route path="/accueil" element={<Accueil />} />
           <Route path="/etatcivil" element={<Etatcivil />} /> {/* Garder cette ligne */}
