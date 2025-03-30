@@ -48,7 +48,7 @@ const Actualites = () => {
                         >
                             <img
                                 className="d-block w-100"
-                                src={actualite.imageUrl} // URL de l'image
+                                src={`${process.env.PUBLIC_URL}${actualite.imageUrl}`} // Utiliser PUBLIC_URL pour charger les images à partir du dossier public
                                 alt={`Slide ${index + 1}`}
                             />
                             <Carousel.Caption>

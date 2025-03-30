@@ -10,7 +10,7 @@ const Headerleg = () => {
             <div className="boutton-container1">
                 <div className='buts'>
                 <button className="boutton2">ETAT-CIVIL<ArrowForwardIcon className="arrow-icon1" />LÉGALISATION</button>
-             <h2>LÉGALISATION</h2> 
+             <h1>LÉGALISATION</h1> 
             </div>
             </div>
         </div>

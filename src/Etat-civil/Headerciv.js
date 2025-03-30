@@ -10,7 +10,7 @@ const Headerciv = () => {
             <div className="boutton-container10">
                 <div className='butts'>
                 <button className="boutton10">ACCUEIL<ArrowForwardIcon className="arrow-icon" />ETAT-CIVIL</button>
-             <h2>ETAT-CIVIL</h2> 
+             <h1>ETAT-CIVIL</h1> 
             </div>
             </div>
         </div>

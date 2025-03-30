@@ -68,8 +68,8 @@ function Cartes() {
       </div>
     </div>
       <div className='block2'>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave}>
-        <img src={Attestationpec} alt="Attestation de prise en charge" />
+      <div className="cardA"  >
+        <img src={Attestationpec} alt="Attestation de prise en charge" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Attestion de prise en charge</h2>
         <p> Pour légaliser une attestation de prise en charge , il faut founir:
         <strong>
@@ -85,8 +85,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Autorisationp)} onMouseLeave={handleMouseLeave}>
-        <img src={Autorisationp} alt="Autorisation parentale" />
+      <div className="cardA">
+        <img src={Autorisationp} alt="Autorisation parentale" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Autorisation parentale</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -99,8 +99,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatc)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatc} alt="Certifat de celibat" />
+      <div className="cardA">
+        <img src={Certificatc} alt="Certifat de celibat" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat de célibat</h2>
         <p className='ju'> Pour légaliser un certificat de célibat , il faut founir: 
         <strong>
@@ -112,8 +112,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificathe)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificathe} alt="Certificat d'hebergement" />
+      <div className="cardA">
+        <img src={Certificathe} alt="Certificat d'hebergement" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat d'hebergement</h2>
         <p className='ju'> Pour légaliser un Certifat d'hebergement , il faut founir: 
         <strong>
@@ -125,8 +125,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatee)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatee} alt="Certificat entretien et education" />
+      <div className="cardA">
+        <img src={Certificatee} alt="Certificat entretien et education" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat entretien et éducation</h2>
         <p className='ju'> Pour légaliser Certificat entretien et education , il faut founir: 
         <strong>
@@ -139,8 +139,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatv)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatv} alt="Certificat de vie" />
+      <div className="cardA">
+        <img src={Certificatv} alt="Certificat de vie" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat de vie</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -153,8 +153,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatv)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatv} alt="Autorisation Maritale" />
+      <div className="cardA">
+        <img src={Certificatv} alt="Autorisation Maritale" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Autorisation Maritale</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -167,8 +167,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Attestationhp)} onMouseLeave={handleMouseLeave}>
-        <img src={Attestationhp} alt="Attestation sur honneur pension" />
+      <div className="cardA">
+        <img src={Attestationhp} alt="Attestation sur honneur pension" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Attestation sur l'honneur  </h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -181,8 +181,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Attestationhp)} onMouseLeave={handleMouseLeave}>
-        <img src={Attestationhp} alt="Attestation sur honneur pension" />
+      <div className="cardA">
+        <img src={Attestationhp} alt="Attestation sur honneur pension" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Attestation sur l'honneur  </h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -196,8 +196,8 @@ function Cartes() {
         </p>
       </div>
       
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatresi)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatresi} alt="Certificat de residence" />
+      <div className="cardA">
+        <img src={Certificatresi} alt="Certificat de residence" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat de résidence</h2>
         <p> Pour légaliser un certifat de residence , il faut founir:
         <strong>
@@ -211,8 +211,8 @@ function Cartes() {
         </p>
       </div>
       
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Attestationnond)} onMouseLeave={handleMouseLeave}>
-        <img src={Attestationnond} alt="Attestion de non dissolution" />
+      <div className="cardA">
+        <img src={Attestationnond} alt="Attestion de non dissolution" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Attestation de non dissolution</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -226,8 +226,8 @@ function Cartes() {
         </p>
       </div>
 
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatcout)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatcout} alt="Cerficat de coutume" />
+      <div className="cardA">
+        <img src={Certificatcout} alt="Cerficat de coutume" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat de coutume</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -240,8 +240,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatvv)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatvv} alt="Certificat de vente vehicule" />
+      <div className="cardA">
+        <img src={Certificatvv} alt="Certificat de vente vehicule" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat de vente véhicule</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -254,8 +254,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Certificatnr)} onMouseLeave={handleMouseLeave}>
-        <img src={Certificatnr} alt="Certificat de non remariage" />
+      <div className="cardA">
+        <img src={Certificatnr} alt="Certificat de non remariage" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Certificat de non remariage</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -268,8 +268,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(LettreI)} onMouseLeave={handleMouseLeave}>
-        <img src={LettreI} alt="Lettre d'invitation" />
+      <div className="cardA">
+        <img src={LettreI} alt="Lettre d'invitation" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Lettre d'invitation</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -282,8 +282,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(AttestationL)} onMouseLeave={handleMouseLeave}>
-        <img src={AttestationL} alt="Lettre d'invitation" />
+      <div className="cardA">
+        <img src={AttestationL} alt="Lettre d'invitation" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Attestation de logement</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>
@@ -296,8 +296,8 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardA"  onMouseEnter={() => handleMouseEnter(Procuration)} onMouseLeave={handleMouseLeave}>
-        <img src={Procuration} alt="Procuration" />
+      <div className="cardA">
+        <img src={Procuration} alt="Procuration" onMouseEnter={() => handleMouseEnter(Attestationpec)} onMouseLeave={handleMouseLeave} />
         <h2>Procuration</h2>
         <p className='ju'> Pour légaliser une autorisation parentale , il faut founir: 
         <strong>

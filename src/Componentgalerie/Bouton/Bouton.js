@@ -10,7 +10,7 @@ function Bouton() {
       <div className="updated-button-container">
         <Link to='/service'>
           <Button variant="primary" size="lg" className="updated-custom-button">
-            <span className="updated-circle-arrow">➔</span> <strong>Services Technique</strong>
+            <span className="updated-circle-arrow">➔</span> <strong>Service Technique</strong>
           </Button>
         </Link>
 
@@ -28,7 +28,7 @@ function Bouton() {
         
         <Link to='/Socialgalerie'>
         <Button variant="primary" size="lg" className="updated-custom-button">
-          <span className="updated-circle-arrow">➔</span> <strong>Services Social</strong>
+          <span className="updated-circle-arrow">➔</span> <strong>Service Social</strong>
         </Button>
         </Link>
         <Link to='/Culturegalerie'>

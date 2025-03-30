@@ -21,7 +21,7 @@
   opacity: 0.8;
   overflow: hidden;
 }
-.buts h2{
+.buts h1{
   font-size: 30px;
   color:#1B3D71;
   font-weight: bold;
@@ -82,8 +82,8 @@
   opacity: 0.8;
   padding: 10px;
 }
-.buts h2{
-  font-size: 30px;
+.buts h1{
+  font-size: 20px;
   color:#1B3D71;
   font-weight: bold;
 }

@@ -1,7 +1,7 @@
 
     .textte {
       text-align: center;         /* Centre le texte */
-      padding: 5px;              /* Ajoute de l'espace autour du texte */
+      padding: 10px;              /* Ajoute de l'espace autour du texte */
       background-color: ffffff;  /* Couleur de fond légère */
       border-radius: 8px;         /* Arrondit les coins */
       width: 80%;           /* Limite la largeur pour une meilleure lisibilité */
@@ -17,15 +17,14 @@
       color:#1B3D71;            /* Couleur du texte (adaptée à votre couleur de marque) */
       align-items: center;
       margin-bottom: 4%;
+
     }
   
-    
-    .textte p {
-      font-size: 20px;           /* Taille du texte pour le paragraphe */
-      color: gray;     
-      text-align: center;
-    
-  };
+  #serv{
+    font-size: 20px;           /* Taille du texte pour le paragraphe */
+    color: gray;     
+    text-align: justify;
+  }
 
     @media (max-width:768px){
    
@@ -34,7 +33,7 @@
       padding: 5px;              /* Ajoute de l'espace autour du texte */
       background-color: ffffff;  /* Couleur de fond légère */
       border-radius: 8px;         /* Arrondit les coins */
-      width: 100%;           /* Limite la largeur pour une meilleure lisibilité */
+      width: 90%;           /* Limite la largeur pour une meilleure lisibilité */
       margin: auto;             /* Centre le div horizontalement */
       box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1) ; 
       margin-top: 1%;
@@ -51,10 +50,12 @@
   
     
     .textte p {
-      font-size: 10px;           /* Taille du texte pour le paragraphe */
-      color: yellow;     
+      font-size: 10px;           /* Taille du texte pour le paragraphe */   
       text-align: center;
     
   };
+  #serv{
+    font-size: 10px;
+  }
 
     }
