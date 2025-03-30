@@ -16,7 +16,7 @@ const Profil = () => {
           Assistant technique :
         </Typography>
         <Typography variant="h6" gutterBottom>
-          Monsieur James
+        Jovan MOKOUKOU KONDJA 
         </Typography>
         <img
           src={require('../../Images/eleve 4.jpg')}

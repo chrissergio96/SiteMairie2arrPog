@@ -21,7 +21,7 @@
   opacity: 0.8;
   overflow: hidden;
 }
-.butTsh h2{
+.butTsh h1{
   font-size: 30px;
   color:#1B3D71;
   font-weight: bold;
@@ -80,8 +80,8 @@
   border-radius: 8px;
   opacity: 0.8;
 }
-.butTsh h2{
-  font-size: 30px;
+.butTsh h1{
+  font-size: 20px;
   color:#1B3D71;
   font-weight: bold;
 }

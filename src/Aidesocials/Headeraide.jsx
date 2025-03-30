@@ -12,7 +12,7 @@ function Headeraide() {
             <button className="boutton2aidesocial">
                 SERVICE SOCIAL<ArrowForwardIcon className="arrow-iconaidesocial" />AIDE SOCIALE
             </button>
-            <h2 className="aidesocial1">AIDE SOCIALE</h2>
+            <h1 className="aidesocial1">AIDE SOCIALE</h1>
         </div>
     </div>
 </div>

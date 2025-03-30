@@ -22,16 +22,17 @@ export default function MediaCard() {
     >
       <Card
         sx={{
-          width: 1080, // Largeur augmentée
+          width: 1000, // Largeur augmentée
           height: 530, // Hauteur augmentée
           boxShadow: 3, // Ajout d'une ombre pour un effet esthétique
           borderRadius: 2, // Coins légèrement arrondis
+          padding:3,
         }}
       >
         {/* Agrandissement de l'image */}
         <CardMedia
           sx={{
-            height: 300, // Augmente la hauteur de l'image
+            height: 280, // Augmente la hauteur de l'image
             backgroundSize: 'cover', // Ajuste l'image pour qu'elle couvre l'espace
           }}
           image={imageActe}

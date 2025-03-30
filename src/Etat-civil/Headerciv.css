@@ -21,7 +21,7 @@
   opacity: 0.8;
   overflow: hidden;
 }
-.butts h2{
+.butts h1{
   font-size: 30px;
   color:#1B3D71;
   font-weight: bold;
@@ -83,8 +83,8 @@
   border-radius: 8px;
   opacity: 0.8;
 }
-.butts h2{
-  font-size: 30px;
+.butts h1{
+  font-size: 20px;
   color:#1B3D71;
   text-align: center;
 
