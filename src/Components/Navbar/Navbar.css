@@ -55,6 +55,7 @@
     text-align: center;
     text-decoration: double;
     align-items: center;
+    margin-top: 4px;
     text-shadow: 1px 2px 1px #1B3D71;
   }
   
@@ -68,7 +69,7 @@
       justify-content: center;
     }
     .nommairie h1{
-      font-size: 11px;
+      font-size: 15px;
       font-weight: bold;
       color: #1B3D71;
       text-align: center;

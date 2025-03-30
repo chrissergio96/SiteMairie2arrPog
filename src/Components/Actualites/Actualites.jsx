@@ -8,8 +8,13 @@ const Actualites = () => {
     const navigate = useNavigate(); // Initialiser useNavigate pour rediriger vers d'autres pages
 
     useEffect(() => {
+        // Détecter l'URL de l'API en fonction de l'environnement (local ou production)
+        const apiUrl = process.env.NODE_ENV === 'production' 
+            ? 'https://site-mairie2arr-pog.vercel.app/api/actualites' // URL en ligne
+            : 'http://localhost:5000/api/actualites'; // URL locale
+
         // Récupérer les actualités depuis l'API backend
-        fetch('http://localhost:5000/api/actualites') // URL de l'API backend
+        fetch(apiUrl) // Utiliser l'URL appropriée
             .then(response => response.json())
             .then(data => setActualites(data))
             .catch(error => console.error("Erreur lors de la récupération des actualités : ", error));

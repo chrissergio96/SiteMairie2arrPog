@@ -9,12 +9,20 @@ import Fuse from 'fuse.js'; // Importation de Fuse.js
 const images = [
     require('../../Images/Ville/ancien port p.jpg'),
     require('../../Images/Ville/lephare.jpg'),
-    require('../../Images/Ville/POG.jpg'),
+    require('../../Images/Ville/chateau.jpg'),
+    require('../../Images/Ville/mairie2arr.jpg'),
     require('../../Images/Ville/MARINA.jpg'),
     require('../../Images/Ville/lamarina.jpg'),
-    require('../../Images/Ville/Mairie de.jpg'),
-    require('../../Images/Ville/carref len mba.jpg'),
-    require('../../Images/Ville/ANCIENPORT.jpg'),
+    require('../../Images/Ville/aeroport.jpg'),
+    require('../../Images/Ville/ancienportpog.jpg'),
+    require('../../Images/Ville/leommba carref.jpg'),
+    require('../../Images/Ville/louissaint.jpg'),
+    require('../../Images/Ville/pogvuedehaut.jpg'),
+    require('../../Images/Ville/poghaut.jpg'),
+    require('../../Images/Ville/tobia.jpg'),
+    require('../../Images/Ville/routeconcorde.png'),
+
+
 ];
 
 // Suggestions actuelles + mots-clés supplémentaires pour la recherche
@@ -54,13 +62,13 @@ const fuse = new Fuse(fullSuggestions, {
 const Header = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredSuggestions, setFilteredSuggestions] = useState([]);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = useState(10);
     const navigate = useNavigate(); // Initialiser useNavigate
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000); // Change d'image toutes les 5 secondes
+        }, 3000); // Change d'image toutes les 3 secondes
 
         return () => clearInterval(intervalId); // Nettoyage de l'intervalle à la fin
     }, []);
