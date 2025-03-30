@@ -1,10 +1,8 @@
 import { useState } from 'react';  // Ajout de useState pour gérer l'état
 import React from 'react';
 import Attestationpec from '../Images/Attestation-prise-charge_page-0001.jpg';
-import Actenaissance from '../Images/actes de Naissances  2..............jpg';
 import Autorisationp from '../Images/Legalisation/Autorisation Parentale_page-0001.jpg';
 import Certificatc from '../Images/Legalisation/Certificat de celibat_page-0001.jpg';
-import Attestation from '../Images/Attestation  de logement.jpg';
 import Certificathe from '../Images/Legalisation/Certificat hebergement_page-0001.jpg';
 import Certificatee from '../Images/Legalisation/Certificat entretien et education_page-0001.jpg';
 import Certificatv from '../Images/Legalisation/Certificat de vie_page-0001.jpg';
@@ -14,7 +12,7 @@ import Attestationnond from '../Images/Legalisation/Attestation-non-dissolution_
 import Certificatcout from '../Images/Legalisation/CERTIFICAT DE COUTUME.pdf.jpg';
 import Certificatvv from '../Images/Legalisation/CERTIFICAT-VENTE-VEHICULE (1)_page-0001.jpg';
 import Certificatnr from '../Images/Legalisation/CERTIFICAT-NON-MARIAGE (1).pdf.jpg';
-import LettreI from '../Images/Legalisation/Lettre invitation (1).pdf.jpg';
+import LettreI from '../Images/Legalisation/lettreinv.jpg';
 import AttestationL from '../Images/Legalisation/Attestation-Logementt (1).pdf.jpg';
 import Procuration from '../Images/Legalisation/Procuration (1) (1).pdf.jpg';
 import './Cartes.css';
@@ -35,7 +33,7 @@ function Cartes() {
   return (
     <div className="cards-wrapperA">
     <div className='block1'>
-    <div className="cardAB"  onMouseEnter={() => handleMouseEnter(Actenaissance)} onMouseLeave={handleMouseLeave}>
+    <div className="cardAB">
         <h2>Acte de naissance</h2>
         <p> Pour légaliser un acte de naissance , il faut founir:
         <strong>
@@ -45,7 +43,7 @@ function Cartes() {
         </strong>
         </p>
       </div>
-      <div className="cardAB"  onMouseEnter={() => handleMouseEnter(Actenaissance)} onMouseLeave={handleMouseLeave}>
+      <div className="cardAB">
         <h2>Acte de mariage</h2>
         <p> Pour légaliser un acte de mariage , il faut founir:
         <strong>
@@ -57,7 +55,7 @@ function Cartes() {
         </p>
         
       </div>
-      <div className="cardAB"  onMouseEnter={() => handleMouseEnter(Attestation)} onMouseLeave={handleMouseLeave}>
+      <div className="cardAB">
         <h2>Acte de décès</h2>
         <p> Pour légaliser un acte de décès , il faut founir:
         <strong>
