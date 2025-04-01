@@ -5,6 +5,7 @@ const app = express();
 
 // Utiliser le port dynamique pour le déploiement
 const port = process.env.PORT || 5000;
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Permettre à ton frontend de faire des requêtes vers ce serveur
 app.use(cors({
