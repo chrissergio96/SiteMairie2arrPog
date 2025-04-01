@@ -34,7 +34,7 @@ const ProjetDetail = () => {
     {
       id: 3,
       titre: "[TRAVAUX PUBLICS ]",
-      description: 'Un projet pour améliorer les routes principales et secondaires du 2e arrondissement afin de fluidifier la circulation et réduire les accidents.',
+      description: '',
       image: require('../Images/canivau.jpg'),
       details: 'Ce projet se concentre sur le nettoyage et l’entretien des caniveaux pour éviter les inondations.Ce matin, les services techniques de la Mairie du 2e Arrondissement sont intervenus dans le Quartier Chic pour effectuer des travaux de nettoyage des caniveaux, dans le cadre de l’amélioration de l’assainissement et de la prévention des inondations dans cette zone.',
       lienFacebook: 'https://www.facebook.com/Mairie2eArrondissementPortGentil/posts/pfbid01GH6zHCRHHyPnAvr28CKqewrGKstBrvjacuc1v87rj2sNvgDJ1Pmf4FzRhqBv2Gyl'
