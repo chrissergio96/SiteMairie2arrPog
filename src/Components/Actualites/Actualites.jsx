@@ -47,7 +47,7 @@ const Actualites = () => {
                         >
                             <img
                                 className="d-block w-100"
-                                src={actualite.imageUrl}
+                                src={process.env.REACT_APP_PUBLIC_URL + actualite.imageUrl} // Utilisez la variable d'environnement
                                 alt={`Slide ${index + 1}`}
                             />
                             <Carousel.Caption>
