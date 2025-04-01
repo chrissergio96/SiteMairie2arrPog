@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json());
 
 // Servir des fichiers statiques à partir du dossier "public"
-app.use('/images', express.static(path.join(__dirname, 'public', 'images')));
+app.use('/', express.static(path.join(__dirname, 'public', '/')));
 let actualites = [
     {
         id: 1,
