@@ -24,6 +24,7 @@
     font-size: 20px;           /* Taille du texte pour le paragraphe */
     color: gray;     
     text-align: justify;
+    padding: 10px;
   }
 
     @media (max-width:768px){
@@ -42,20 +43,15 @@
     }
     
     .text2te {
-      font-size: 16px;           /* Taille du texte pour le titre */
+      font-size: 18px;           /* Taille du texte pour le titre */
       font-weight: bold;         /* Met le texte en gras */
       color:#1B3D71;            /* Couleur du texte (adaptée à votre couleur de marque) */
       align-items: center;
     }
   
-    
-    .textte p {
-      font-size: 10px;           /* Taille du texte pour le paragraphe */   
-      text-align: center;
-    
-  };
+  
   #serv{
-    font-size: 10px;
+    font-size: 14px;
   }
 
     }

@@ -34,6 +34,7 @@
 .rubriquet h2{
     margin-bottom: 2%;
     color: #1B3D71;
+    font-size: 25px;
 
 }
 
@@ -64,16 +65,13 @@
         align-items: center;
     }
     .travauxi h4{
-        margin-left:10%;
-        font-size: 10px;
+        font-size: 14px;
+        text-align: center;
     }
     .rubriquet h2{
-        margin-bottom: 2%;
+        margin-bottom: 4%;
         color: #1B3D71;
-       padding-top: 20px;
-       padding-bottom: 15px;
-
-    
+       font-size: 18px;
     }
     
  }
