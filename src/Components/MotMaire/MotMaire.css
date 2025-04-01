@@ -70,10 +70,10 @@
         margin-bottom: 20px;
     }
     .maire-text p {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1.6;
         color: gray;
-        text-align: center;
+        text-align: justify;
     }
     .maire-image {
         width: 100%;

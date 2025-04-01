@@ -59,7 +59,7 @@
     }
 
   .texte-etranger{
-    padding: 10px;              /* Ajoute de l'espace autour du texte */
+    padding: 5px;              /* Ajoute de l'espace autour du texte */
     background-color: ffffff;  /* Couleur de fond légère */
     border-radius: 8px;         /* Arrondit les coins */
     max-width: 95%;           /* Limite la largeur pour une meilleure lisibilité */
@@ -67,7 +67,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 1%;
     text-align: left;
-    font-size:10px;
+    font-size:14px;
     }
   
     

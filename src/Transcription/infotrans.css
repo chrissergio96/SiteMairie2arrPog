@@ -3,7 +3,6 @@
     background-size: cover;
     height: 250px;
     width: 100%;
-    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -13,7 +12,7 @@
         background-size: cover;
         height: 250px;
         width: 100%;
-        object-fit: cover;
+        font-size: 14px;
     }
    
  }

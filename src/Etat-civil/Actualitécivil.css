@@ -119,7 +119,7 @@ margin-top:20px;
     }
     .civiltexte p{
         text-align: justify;
-        font-size: 10px;
+        font-size: 14px;
     }
     
     .civiltexte  li {
@@ -127,7 +127,7 @@ margin-top:20px;
     font-weight: bold;
     color: gray;
     margin-top:20px;
-    text-align: justify;
-    font-size: 10px;
+    text-align: left;
+    font-size: 14px;
     }
 }

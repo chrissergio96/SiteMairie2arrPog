@@ -34,7 +34,7 @@ export default function MediaCard1() {
           width: 1000, // Largeur augmentée
           boxShadow: 3, // Ajout d'une ombre pour un effet esthétique
           borderRadius: 2, // Coins légèrement arrondis
-          padding:5,
+          padding:2,
         }}
       >
         {/* Agrandissement de l'image */}

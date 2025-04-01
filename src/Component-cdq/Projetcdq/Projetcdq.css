@@ -5,6 +5,7 @@
   border-radius: 4px;
 }
 
+
 .projet-container {
   width: 80%;
   margin: 0 auto;
@@ -152,22 +153,22 @@
   
   
   .projet-texts p {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.6;
     color: gray;
-    text-align: center;
+    text-align: justify;
     margin-top: 2%;
   }
   
   
   .projet-image {
-    width: 100%
+    width: 100%;
+
     
   }
   
   .projet-image img {
     width: 100%;
-    height: max-content;
     border-radius: 8px;
   }
   }
