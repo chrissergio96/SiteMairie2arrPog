@@ -59,13 +59,23 @@
 .carousel-containeracc .carousel-caption{
     background-color:#1B3D71;
     opacity:0.8;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carousel-containeracc h3{
+    color: yellowgreen;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
 
 }
 
 /* Adjust the image size */
 .carousel img {
     width: 100%; /* S'assure que l'image prend toute la largeur du carousel */
-    height: 500px; /* Ajustez la hauteur selon vos besoins */
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
     object-fit: cover; /* Remplit le conteneur tout en conservant les proportions */
     object-position: top; /* Positionne l'image pour que le haut soit visible */
     cursor: pointer;
@@ -124,7 +134,16 @@ div .carousel.slide{
     width: 14%;
 }
 .carousel-containeracc .carousel-caption h3{
-    font-size:10px;
+    font-size:14px;
+    
+}
+.carousel-containeracc .carousel-caption{
+    background-color:#1B3D71;
+    opacity:0.8;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 .mere{
     margin-bottom: -20%;

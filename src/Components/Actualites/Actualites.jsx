@@ -1,32 +1,48 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { useNavigate } from 'react-router-dom'; // Pour la navigation
 import './Actualites.css';
 
 const Actualites = () => {
-    const [actualites, setActualites] = useState([]);
     const navigate = useNavigate(); // Initialiser useNavigate pour rediriger vers d'autres pages
 
-    useEffect(() => {
-        const apiUrl = process.env.NODE_ENV === 'production'
-            ? 'https://site-mairie2arr-pog.vercel.app/actualites'
-            : 'http://localhost:5000/api/actualites';
-    
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                // Si c'est en production, on complète l'URL pour chaque image
-                const actualitesWithFullImageUrl = data.map(actualite => {
-                    if (!actualite.imageUrl.startsWith('http')) {
-                        actualite.imageUrl = `https://site-mairie2arr-pog.vercel.app/${actualite.imageUrl}`;
-                    }
-                    return actualite;
-                });
-                setActualites(actualitesWithFullImageUrl);
-            })
-            .catch(error => console.error("Erreur lors de la récupération des actualités : ", error));
-    }, []);
-    
+    // Liste des actualités (données statiques ou simulées)
+    const actualites = [
+        {
+            id: 1,
+            titre: 'ASSAINISSEMENT DES QUARTIERS',
+            imageUrl: 'travaux-assainissement.jpg'
+        },
+        {
+            id: 2,
+            titre: 'INONDATION PREVENTION',
+            imageUrl: 'inondation.jpg'
+        },
+        { 
+            id: 3,
+            titre: "[TRAVAUX PUBLICS ]",
+            description: '',
+            imageUrl:'canivau.jpg'
+     },
+        {
+            id: 4,
+            titre: 'MODERNISATION DU CARREFOUR CENTRE SOCIAL',
+            imageUrl: 'carref centre social.jpg'
+        },
+        {
+            id: 5,
+            titre: '[VISITES DES CHANTIERS INITIES PAR LE CTRI DANS LE 2ᵉ ARRONDISSEMENT DE PORT-GENTIL]',
+            imageUrl: 'anciennebalise.jpg'
+        },
+        {
+            id: 6,
+            titre: '[ VISITE DE TERRAIN : REPONSE IMMEDIATEDES DELEGUES SPECIAUX]',
+            imageUrl: 'visiteterrainpg2.jpg'
+        },
+       
+
+        // Ajoute ici les autres actualités statiques
+    ];
 
     // Fonction pour gérer la redirection vers la page projet
     const handleClick = (projetId) => {
