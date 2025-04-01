@@ -12,9 +12,10 @@
   }
   
   .navbar-logo img {
-    height: 50px; /* Hauteur du logo */
-    margin-left: -30px;
+    height: 25px; /* Hauteur du logo */
+    margin-left: -20px;
     cursor: pointer; /* Curseur pointer au survol */
+    background-color: red;
   }
   .navbar-container{
     width:100%;
@@ -55,27 +56,26 @@
     text-align: center;
     text-decoration: double;
     align-items: center;
-    margin-top: 4px;
-    text-shadow: 1px 2px 1px #1B3D71;
+    margin-top: 5px;
+    text-shadow: 1px 2px 2px #1B3D71;
   }
   
   @media (max-width: 768px) {
     .nommairie{
       display: flex;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
       align-items: center;
       justify-content: center;
     }
     .nommairie h1{
-      font-size: 15px;
+      font-size: 14px;
       font-weight: bold;
       color: #1B3D71;
       text-align: center;
       text-decoration: double;
       align-items: center;
       text-shadow: 2px 1px 2px #1B3D71;
+      margin-top: 8px;
     }
     /* Style de la barre de navigation */
 .navbar {

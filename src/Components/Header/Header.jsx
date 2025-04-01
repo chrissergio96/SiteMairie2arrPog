@@ -4,6 +4,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link, useNavigate } from "react-router-dom"; // Importation de useNavigate
 import React, { useEffect, useState } from 'react';
 import Fuse from 'fuse.js'; // Importation de Fuse.js
+import Actu from '../Actu/Actu';
 
 // Images de la bannière défilante
 const images = [
@@ -104,6 +105,7 @@ const Header = () => {
     return (
         <div className='mairiea' style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
             <div className='mere-searcha'>
+                 <Actu/>
                 <div className="search-containera">
                     <input 
                         type="text" 

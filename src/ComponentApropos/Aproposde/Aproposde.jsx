@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Aproposde.css';
 import DelegueImage from '../../Images/Delegue.jpg';
 import GeneralImage from '../../Images/general.jpg';
-import CCImage from '../../Images/pont.jpg';
+import CCImage from '../../Images/Chris IGANA.jpg';
 import ChristelleImage from '../../Images/Christelle.jpg';
 import JeanneImage from '../../Images/Jeanne.jpg';
 import FranciscaImage from '../../Images/Francisca.jpg'
 
 
 const Aproposde = () => {
+
+    const [hoveredImage, setHoveredImage] = useState(null); // État pour stocker l'image survolée
+  
+    const handleMouseEnter = (image) => {
+      setHoveredImage(image); // Afficher l'image en aperçu lors du survol
+    };
+  
+    const handleMouseLeave = () => {
+      setHoveredImage(null); // Cacher l'aperçu de l'image quand la souris quitte la carte
+    };
+
   return (
     <div className="apropos-container">
       <h1>À propos de la Mairie du 2e Arrondissement de Port-Gentil</h1>
@@ -24,14 +35,14 @@ const Aproposde = () => {
 
           {/* Maire */}
           <div className="team-member">
-          <img src={DelegueImage} alt="Maire" />
+          <img src={DelegueImage} alt="Maire" onMouseEnter={() => handleMouseEnter(DelegueImage)} onMouseLeave={handleMouseLeave} />
           <h3>Délégué Spécial :<br></br><br></br><strong> Boubakar NGOUWA GUINGO MAYAKI</strong></h3>
             <p>Responsable de la gestion générale du 2e Arrondissement.</p>
           </div>
 
           {/* Délégué spécial adjoint */}
           <div className="team-member">
-            <img src={GeneralImage} alt="Délégué Spécial Adjoint" />
+            <img src={GeneralImage} alt="Délégué Spécial Adjoint" onMouseEnter={() => handleMouseEnter(GeneralImage)} onMouseLeave={handleMouseLeave}/>
             <h3>Délégué Spécial Adjoint:<br></br><br></br><strong>Le Commandant ONDO ZUE Bertin </strong>  
                
             </h3>
@@ -40,7 +51,7 @@ const Aproposde = () => {
 
           
           <div className="team-member">
-            <img src={CCImage} alt="Cabinet" />
+            <img src={CCImage} alt="Cabinet" onMouseEnter={() => handleMouseEnter(CCImage)} onMouseLeave={handleMouseLeave} />
             <h3>Chef de Cabinet :<br></br><br></br><strong>Chris IGANA </strong>
             </h3>
             <p>Coordination des activités administratives.</p>
@@ -49,21 +60,21 @@ const Aproposde = () => {
           
 
            <div className="team-member">
-            <img src={FranciscaImage} alt="Service Etat civil" />
+            <img src={FranciscaImage} alt="Secretaire" onMouseEnter={() => handleMouseEnter(FranciscaImage)} onMouseLeave={handleMouseLeave} />
             <h3>Sécrétaire particulière du Délégué Spécial: <br/><br/><br/> <strong> Joel AYAMINE REMBANGOUET</strong>
             </h3>
             <p>Gestion des tâches administratives, organisationnelles et relationnelles du Délégué Spécial</p>
           </div>
 
            <div className="team-member">
-              <img src={ChristelleImage} alt="Chargé de l'état spécial" />
+              <img src={ChristelleImage} alt="Chargé de l'état spécial" onMouseEnter={() => handleMouseEnter(ChristelleImage)} onMouseLeave={handleMouseLeave}/>
               <h3>Chargé de l'Etat Spécial : <br/><br/><br/> <strong> Christelle Pamela MANDZEMBE BILONGO</strong>
             </h3>
             <p>En charge de la gestion des finances de la Mairie.</p>
           </div>
 
           <div className="team-member">
-          <img src={JeanneImage} alt="Chargé du Protocole" />
+          <img src={JeanneImage} alt="Chargé du Protocole" onMouseEnter={() => handleMouseEnter(JeanneImage)} onMouseLeave={handleMouseLeave}/>
           <h3>Chargé du Protocole <br/><br/><br/> <strong> Jeanne BOUTSANA </strong>
             </h3>
             <p>En charge de la gestion protocolaire de la Mairie.</p>
@@ -102,6 +113,12 @@ const Aproposde = () => {
           prenons. Nous travaillons sans relâche pour bâtir une administration proche de ses citoyens et attentive à leurs besoins.
         </p>
       </section>
+       {/* Aperçu de l'image survolée */}
+       {hoveredImage && (
+        <div className="image-preview">
+          <img src={hoveredImage} alt="Aperçu de l'image" />
+        </div>
+      )}
     </div>
   );
 };

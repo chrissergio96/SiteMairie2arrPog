@@ -53,7 +53,7 @@ const Faq = () => {
     <div className="faq-container">
        
     <div class="quest">
-        <h1>FAQ - Mairie du 2e Arrondissement de Port-Gentil</h1>
+        <h1> F.A.Q </h1>
 
         <h2>1. État Civil</h2>
         <div>
