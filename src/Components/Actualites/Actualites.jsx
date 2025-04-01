@@ -8,17 +8,25 @@ const Actualites = () => {
     const navigate = useNavigate(); // Initialiser useNavigate pour rediriger vers d'autres pages
 
     useEffect(() => {
-        // Détecter l'URL de l'API en fonction de l'environnement (local ou production)
-        const apiUrl = process.env.NODE_ENV === 'production' 
-            ? 'https://site-mairie2arr-pog.vercel.app/actualites' // URL en ligne
-            : 'http://localhost:5000/api/actualites'; // URL locale
-
-        // Récupérer les actualités depuis l'API backend
+        const apiUrl = process.env.NODE_ENV === 'production'
+            ? 'https://site-mairie2arr-pog.vercel.app/actualites'
+            : 'http://localhost:5000/api/actualites';
+    
         fetch(apiUrl)
             .then(response => response.json())
-            .then(data => setActualites(data))
+            .then(data => {
+                // Si c'est en production, on complète l'URL pour chaque image
+                const actualitesWithFullImageUrl = data.map(actualite => {
+                    if (!actualite.imageUrl.startsWith('http')) {
+                        actualite.imageUrl = `https://site-mairie2arr-pog.vercel.app/${actualite.imageUrl}`;
+                    }
+                    return actualite;
+                });
+                setActualites(actualitesWithFullImageUrl);
+            })
             .catch(error => console.error("Erreur lors de la récupération des actualités : ", error));
     }, []);
+    
 
     // Fonction pour gérer la redirection vers la page projet
     const handleClick = (projetId) => {
@@ -47,7 +55,7 @@ const Actualites = () => {
                         >
                             <img
                                 className="d-block w-100"
-                                src={process.env.REACT_APP_PUBLIC_URL + actualite.imageUrl} // Utilisez la variable d'environnement
+                                src={actualite.imageUrl} 
                                 alt={`Slide ${index + 1}`}
                             />
                             <Carousel.Caption>
