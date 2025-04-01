@@ -10,7 +10,7 @@ const Actualites = () => {
     useEffect(() => {
         // Détecter l'URL de l'API en fonction de l'environnement (local ou production)
         const apiUrl = process.env.NODE_ENV === 'production' 
-            ? 'https://site-mairie2arr-pog.vercel.app/api/actualites' // URL en ligne
+            ? 'https://site-mairie2arr-pog.vercel.app/actualites' // URL en ligne
             : 'http://localhost:5000/api/actualites'; // URL locale
 
         // Récupérer les actualités depuis l'API backend
@@ -47,7 +47,7 @@ const Actualites = () => {
                         >
                             <img
                                 className="d-block w-100"
-                                src={`https://site-mairie2arr-pog.vercel.app${actualite.imageUrl}`} // Correction ici
+                                src={actualite.imageUrl}
                                 alt={`Slide ${index + 1}`}
                             />
                             <Carousel.Caption>

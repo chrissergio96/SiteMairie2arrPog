@@ -16,21 +16,19 @@ app.use(express.json());
 
 // Servir des fichiers statiques à partir du dossier "public"
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Exemple d'actualités
 let actualites = [
     {
         id: 1,
         titre: 'Projet d’Assainissement des Quartiers',
-        imageUrl: '/travaux-assainissement.jpg',
+        imageUrl: '/travaux-assainissement.jpg',  // Pas besoin du backend
         description: 'Actualité 1 description',
         date: '2025-03-01',
     },
     {
         id: 2,
-        titre: '[𝐕𝐈𝐒𝐈𝐓𝐄 𝐃𝐄 𝐓𝐄𝐑𝐑𝐀𝐈𝐍] : Un engagement solide pour le bien-être des habitants du 2eme Arrondissement',
+        titre: 'VISITE DE TERRAIN : Engagement pour le bien-être',
         imageUrl: '/inondation.jpg',
-        description: 'La Mairie du 2ème arrondissement démontre son engagement en faveur d’un cadre de vie sain.',
+        description: 'La Mairie du 2ème arrondissement démontre son engagement.',
         date: '2025-03-10'
     },
     {
@@ -42,9 +40,9 @@ let actualites = [
     },
     {
         id: 4,
-        titre: "[𝑴𝒐𝒅𝒆𝒓𝒏𝒊𝒔𝒂𝒕𝒊𝒐𝒏 𝒆𝒕 𝒆𝒎𝒃𝒆𝒍𝒍𝒊𝒔𝒔𝒆𝒎𝒆𝒏𝒕 𝒂𝒖 2ᵉ 𝑨𝒓𝒓𝒐𝒏𝒅𝒊𝒔𝒔𝒆𝒎𝒆𝒏𝒕 𝒅𝒆 𝑷𝒐𝒓𝒕-𝑮𝒆𝒏𝒕𝒊𝒍]",
-        imageUrl: '/carref centre social.jpg',
-        description: "Des aménagements sont en cours au carrefour du Centre Social pour améliorer l'infrastructure.",
+        titre: 'Modernisation et embellissement au 2ᵉ Arrondissement',
+        imageUrl: '/carref-centre-social.jpg',
+        description: "Des aménagements sont en cours.",
         date: '2025-02-24'
     },
 ];
