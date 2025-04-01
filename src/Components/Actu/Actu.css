@@ -1,0 +1,152 @@
+#breadcrumb.bnews {
+  max-height: none;
+  height: 50px;
+  margin-bottom: 12px;
+  overflow: visible;
+}
+
+.breakingnews * {
+  box-sizing: border-box;
+}
+
+.breakingnews .holder {
+  position: absolute;
+  margin-top: 6%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: black;
+  padding: 0;
+  z-index: 6000;
+  display: flex;
+  align-items: center;
+}
+
+.breakingnews h2 {
+  float: left;
+  max-width: 140px;
+  margin: 0;
+  padding: 5px 10px;
+  background: #fde400;
+  color: #1B3D71;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.breakingnews h2 em {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 0.9;
+  margin-left: -1px;
+}
+
+.breaking-txt {
+  overflow: hidden;
+  white-space: nowrap;
+  width: calc(100% - 160px);
+  padding-left: 10px;
+}
+
+.news-scroll {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollNews 40s linear infinite;
+}
+
+.news-scroll a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.news-scroll a:hover {
+  text-decoration: underline;
+}
+
+/* Animation du défilement */
+@keyframes scrollNews {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
+
+/* Media queries pour la réactivité */
+@media (max-width: 768px) {
+    
+  #breadcrumb.bnews {
+    max-height: none;
+    height: 50px;
+    margin-bottom: 12px;
+    overflow: visible;
+  }
+  
+  .breakingnews * {
+    box-sizing: border-box;
+  }
+  
+  .breakingnews .holder {
+    position: absolute;
+    margin-top: 15.5%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: black;
+    padding: 0;
+    z-index: 6000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .breakingnews h2 {
+    float: left;
+    max-width: 140px;
+    margin: 0;
+    padding: 5px 10px;
+    background: #fde400;
+    color: black;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+  }
+  
+  .breakingnews h2 em {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 0.9;
+    margin-left: -1px;
+  }
+  
+  .breaking-txt {
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(100% - 160px);
+    padding-left: 10px;
+  }
+  
+  .news-scroll {
+    display: flex;
+    gap: 20px;
+    animation: scrollNews 40s linear infinite;
+  }
+  
+  .news-scroll a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .news-scroll a:hover {
+    text-decoration: underline;
+  }
+}
