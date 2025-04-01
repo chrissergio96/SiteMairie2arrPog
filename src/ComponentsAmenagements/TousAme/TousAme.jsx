@@ -13,7 +13,6 @@ const TousAme = () => {
                     <h4> [TRAVAUX DE RÉFECTION DES PONTS À CÔTE D'AZUR]</h4> {/* Ajout du nom du maire */}
                     <p>
                     Dans le cadre des efforts continus pour l'amélioration des infrastructures au sein du 2e Arrondissement, le 𝐂𝐨𝐦𝐢𝐭é 𝐝𝐞 𝐃é𝐯𝐞𝐥𝐨𝐩𝐩𝐞𝐦𝐞𝐧𝐭 𝐝𝐞 𝐐𝐮𝐚𝐫𝐭𝐢𝐞𝐫 (𝐂𝐃𝐐) de Côte d'Azur a entrepris des 𝐭𝐫𝐚𝐯𝐚𝐮𝐱 𝐝𝐞 𝐫é𝐟𝐞𝐜𝐭𝐢𝐨𝐧 𝐝𝐞𝐬 𝐩𝐨𝐧𝐭𝐬 dans le quartier. Ces initiatives témoignent de l'engagement des CDQ à embellir et améliorer la vie quotidienne des riverains. Avec l'arrivée prochaine de la saison des pluies, ces travaux permettront aux habitants de circuler librement sans risque d'être bloqués par l'eau.
-Lors de leur visite sur le terrain, les Délégués Spéciaux du 2e Arrondissement ont tenu à encourager ces personnes engagées et à leur fournir de précieux conseils pour mener à bien cette initiative. La Mairie du 2e Arrondissement invite les autres CDQ à suivre cet exemple en mettant en place des actions similaires dans leurs quartiers respectifs, afin de contribuer à l'embellissement et au développement de notre arrondissement.
 N'oubliez pas de nous suivre également sur Whatsapp pour ne manquer aucune actualité sur les CDQ. Visitez également notre chaine whatsapp pour plus d'informations : <a href="https://whatsapp.com/channel/0029Vap0vkYICVfkljiXNn0h/134"> https://whatsapp.com/channel/0029Vap0vkYICVfkljiXNn0h/134</a>
                     </p>
                 </div>

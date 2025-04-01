@@ -33,20 +33,20 @@
     }
     .titrelega h1{
         font-weight: bold;
-        font-size: 16px;
+        font-size: 18px;
         color: #1B3D71;
         margin-top: 4%;
         text-align: center;
     }
     .titrelega P{
-        font-size: 10px;
+        font-size: 14px;
         color:gray;
         background-color: white;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         margin-top: 4%;
-        text-align: center;
+        text-align: justify;
         border-radius: 8px;
     }
   }

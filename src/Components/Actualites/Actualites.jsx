@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { useNavigate } from 'react-router-dom'; // Importer useNavigate pour la navigation
+import { useNavigate } from 'react-router-dom'; // Pour la navigation
 import './Actualites.css';
 
 const Actualites = () => {
@@ -14,7 +14,7 @@ const Actualites = () => {
             : 'http://localhost:5000/api/actualites'; // URL locale
 
         // Récupérer les actualités depuis l'API backend
-        fetch(apiUrl) // Utiliser l'URL appropriée
+        fetch(apiUrl)
             .then(response => response.json())
             .then(data => setActualites(data))
             .catch(error => console.error("Erreur lors de la récupération des actualités : ", error));
@@ -22,7 +22,6 @@ const Actualites = () => {
 
     // Fonction pour gérer la redirection vers la page projet
     const handleClick = (projetId) => {
-        // Redirection vers la page du projet en utilisant l'ID du projet
         navigate(`/projet/${projetId}`);
     };
 
@@ -44,16 +43,15 @@ const Actualites = () => {
                     {actualites.map((actualite, index) => (
                         <Carousel.Item
                             key={index}
-                            onClick={() => handleClick(actualite.id)} // Appel à la fonction handleClick avec l'ID du projet
+                            onClick={() => handleClick(actualite.id)}
                         >
                             <img
                                 className="d-block w-100"
-                                src={`${process.env.PUBLIC_URL}${actualite.imageUrl}`} // Utiliser PUBLIC_URL pour charger les images à partir du dossier public
+                                src={`https://site-mairie2arr-pog.vercel.app${actualite.imageUrl}`} // Correction ici
                                 alt={`Slide ${index + 1}`}
                             />
                             <Carousel.Caption>
                                 <h3>{actualite.titre}</h3>
-                                {/* Ajouter une description ici si nécessaire */}
                             </Carousel.Caption>
                         </Carousel.Item>
                     ))}
