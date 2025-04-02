@@ -10,8 +10,15 @@
 }
 .projet-detail p{
     font-size: 20px;
-    text-align: center;
-    color: grey;
+    text-align: justify;
+    color: black;
+    padding: 5px;
+}
+.projet-detail p li{
+    font-weight: bold;
+    color: #1B3D71;
+    text-align: justify;
+    font-size: 20px;
 }
 
 /* Responsive styles */
@@ -30,5 +37,11 @@
         text-align: justify;
         padding: 10px;
        
+    }
+    .projet-detail p li{
+        font-weight: bold;
+        color: #1B3D71;
+        text-align: justify;
+        font-size: 14px;
     }
 }
