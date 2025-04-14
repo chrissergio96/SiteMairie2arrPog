@@ -36,7 +36,7 @@ const Actualites = () => {
         },
         {
             id: 6,
-            titre: '[ VISITE DE TERRAIN : REPONSE IMMEDIATEDES DELEGUES SPECIAUX]',
+            titre: '[ VISITE DE TERRAIN : REPONSE IMMEDIATE DES DELEGUES SPECIAUX]',
             imageUrl: 'visiteterrainpg2.jpg'
         },
        
@@ -63,7 +63,7 @@ const Actualites = () => {
             </div>
 
             <div className="carousel-containeracc">
-                <Carousel interval={3000}>
+                <Carousel interval={2000}>
                     {actualites.map((actualite, index) => (
                         <Carousel.Item
                             key={index}
