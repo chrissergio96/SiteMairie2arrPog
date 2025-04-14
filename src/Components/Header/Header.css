@@ -223,11 +223,7 @@
     font-size: 10px; /* Réduction de la taille du texte dans les boutons */
     width:100%;
   }
-  .mairiea {
-    justify-content: flex-start; /* Commence plus haut sur l'écran */
-    padding-top: 20px; /* Ajoute un peu d'espace en haut */
-    height: 80vh;
-  }
+
 
   .audience-button {
     font-size: 10px; /* Réduire la taille du texte pour le bouton d'audience */
@@ -244,5 +240,16 @@
     background-position: center;
     justify-content: center;
     align-items: center;
+  }
+  .video-background {
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
   }
 }
