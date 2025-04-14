@@ -5,23 +5,27 @@ import { Link, useNavigate } from "react-router-dom"; // Importation de useNavig
 import React, { useEffect, useState } from 'react';
 import Fuse from 'fuse.js'; // Importation de Fuse.js
 import Actu from '../Actu/Actu';
+import backgroundVideo from './video.mp4'; // Importez votre fichier audio
+
 
 // Images de la bannière défilante
 const images = [
     require('../../Images/Ville/ancien port p.jpg'),
     require('../../Images/Ville/lephare.jpg'),
     require('../../Images/Ville/chateau.jpg'),
-    require('../../Images/Ville/mairie2arr.jpg'),
+    require('../../Images/Ville/ancien port bien.png'),
     require('../../Images/Ville/MARINA.jpg'),
-    require('../../Images/Ville/lamarina.jpg'),
     require('../../Images/Ville/aeroport.jpg'),
     require('../../Images/Ville/ancienportpog.jpg'),
     require('../../Images/Ville/leommba carref.jpg'),
     require('../../Images/Ville/louissaint.jpg'),
-    require('../../Images/Ville/pogvuedehaut.jpg'),
-    require('../../Images/Ville/poghaut.jpg'),
-    require('../../Images/Ville/tobia.jpg'),
-    require('../../Images/Ville/routeconcorde.png'),
+    require('../../Images/Ville/bgd soir.jpg'),
+    require('../../Images/Ville/mariecentrale.webp'),
+    require('../../Images/Ville/ancien port bien.png'),
+    require('../../Images/Ville/la bgd nuit.jpg'),
+
+
+
 
 
 ];
@@ -101,11 +105,21 @@ const Header = () => {
             alert('Aucun élément correspondant'); // Affiche un message si aucun résultat
         }
     };
-
+    // style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
     return (
-        <div className='mairiea' style={{ backgroundImage: `url(${images[currentImageIndex]})` }}>
+        <div className='mairiea'>
+
+    <Actu/>
+    <video 
+      autoPlay 
+      loop 
+      muted 
+      playsInline 
+      className="video-background"
+    >
+      <source src={backgroundVideo} type="video/mp4" />
+    </video>
             <div className='mere-searcha'>
-                 <Actu/>
                 <div className="search-containera">
                     <input 
                         type="text" 
