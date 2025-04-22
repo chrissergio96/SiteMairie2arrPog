@@ -2,33 +2,28 @@ import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; 
 import { Link, useNavigate } from "react-router-dom"; // Importation de useNavigate
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import Fuse from 'fuse.js'; // Importation de Fuse.js
 import Actu from '../Actu/Actu';
 import backgroundVideo from './video.mp4'; // Importez votre fichier audio
 
 
 // Images de la bannière défilante
-const images = [
-    require('../../Images/Ville/ancien port p.jpg'),
-    require('../../Images/Ville/lephare.jpg'),
-    require('../../Images/Ville/chateau.jpg'),
-    require('../../Images/Ville/ancien port bien.png'),
-    require('../../Images/Ville/MARINA.jpg'),
-    require('../../Images/Ville/aeroport.jpg'),
-    require('../../Images/Ville/ancienportpog.jpg'),
-    require('../../Images/Ville/leommba carref.jpg'),
-    require('../../Images/Ville/louissaint.jpg'),
-    require('../../Images/Ville/bgd soir.jpg'),
-    require('../../Images/Ville/mariecentrale.webp'),
-    require('../../Images/Ville/ancien port bien.png'),
-    require('../../Images/Ville/la bgd nuit.jpg'),
-
-
-
-
-
-];
+// const images = [
+//     require('../../Images/Ville/ancien port p.jpg'),
+//     require('../../Images/Ville/lephare.jpg'),
+//     require('../../Images/Ville/chateau.jpg'),
+//     require('../../Images/Ville/ancien port bien.png'),
+//     require('../../Images/Ville/MARINA.jpg'),
+//     require('../../Images/Ville/aeroport.jpg'),
+//     require('../../Images/Ville/ancienportpog.jpg'),
+//     require('../../Images/Ville/leommba carref.jpg'),
+//     require('../../Images/Ville/louissaint.jpg'),
+//     require('../../Images/Ville/bgd soir.jpg'),
+//     require('../../Images/Ville/mariecentrale.webp'),
+//     require('../../Images/Ville/ancien port bien.png'),
+//     require('../../Images/Ville/la bgd nuit.jpg'),
+// ];
 
 // Suggestions actuelles + mots-clés supplémentaires pour la recherche
 const suggestions = [
@@ -67,16 +62,9 @@ const fuse = new Fuse(fullSuggestions, {
 const Header = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredSuggestions, setFilteredSuggestions] = useState([]);
-    const [currentImageIndex, setCurrentImageIndex] = useState(10);
     const navigate = useNavigate(); // Initialiser useNavigate
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 3000); // Change d'image toutes les 3 secondes
-
-        return () => clearInterval(intervalId); // Nettoyage de l'intervalle à la fin
-    }, []);
+  
 
     // Gestion de la recherche
     const handleSearch = (e) => {
