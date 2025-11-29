@@ -1,88 +1,54 @@
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import { useNavigate } from 'react-router-dom'; // Pour la navigation
-import './Actualites.css';
+import React, { useState, useEffect } from "react";
+import Carousel from "react-bootstrap/Carousel";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebaseConf";
+import { useNavigate } from "react-router-dom";
+import "./Actualites.css";
 
 const Actualites = () => {
-    const navigate = useNavigate(); // Initialiser useNavigate pour rediriger vers d'autres pages
+  const [actualites, setActualites] = useState([]);
+  const navigate = useNavigate();
 
-    // Liste des actualités (données statiques ou simulées)
-    const actualites = [
-        {
-            id: 1,
-            titre: 'ASSAINISSEMENT DES QUARTIERS',
-            imageUrl: 'travaux-assainissement.jpg'
-        },
-        {
-            id: 2,
-            titre: 'INONDATION PREVENTION',
-            imageUrl: 'inondation.jpg'
-        },
-        { 
-            id: 3,
-            titre: "[TRAVAUX PUBLICS ]",
-            description: '',
-            imageUrl:'canivau.jpg'
-     },
-        {
-            id: 4,
-            titre: 'MODERNISATION DU CARREFOUR CENTRE SOCIAL',
-            imageUrl: 'carref centre social.jpg'
-        },
-        {
-            id: 5,
-            titre: '[VISITES DES CHANTIERS INITIES PAR LE CTRI DANS LE 2ᵉ ARRONDISSEMENT DE PORT-GENTIL]',
-            imageUrl: 'anciennebalise.jpg'
-        },
-        {
-            id: 6,
-            titre: '[ VISITE DE TERRAIN : REPONSE IMMEDIATE DES DELEGUES SPECIAUX]',
-            imageUrl: 'visiteterrainpg2.jpg'
-        },
-       
+ const fetchActualites = async () => {
+  const querySnapshot = await getDocs(collection(db, "actualites"));
+  const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
-        // Ajoute ici les autres actualités statiques
-    ];
+  setActualites(
+    data.sort((a, b) => {
+      const dateA = a.date?.toDate ? a.date.toDate() : a.date || 0;
+      const dateB = b.date?.toDate ? b.date.toDate() : b.date || 0;
+      return dateB - dateA;
+    })
+  );
+};
 
-    // Fonction pour gérer la redirection vers la page projet
-    const handleClick = (projetId) => {
-        navigate(`/projet/${projetId}`);
-    };
+  useEffect(() => {
+    fetchActualites();
+  }, []);
 
-    return (
-        <div className='mere'>
-            <div className='container1j'>
-                <div className='barres'>
-                    <div className='trait1l'></div>
-                    <div className='trait2'></div>
-                </div>
-                <div className='titres'>
-                    <h1>ACTUALITES</h1>
-                </div>
-                <div className='lignes55'></div>
-            </div>
+  return (
+ 
 
-            <div className="carousel-containeracc">
-                <Carousel interval={2000}>
-                    {actualites.map((actualite, index) => (
-                        <Carousel.Item
-                            key={index}
-                            onClick={() => handleClick(actualite.id)}
-                        >
-                            <img
-                                className="d-block w-100"
-                                src={actualite.imageUrl} 
-                                alt={`Slide ${index + 1}`}
-                            />
-                            <Carousel.Caption>
-                                <h3>{actualite.titre}</h3>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
-            </div>
-        </div>
-    );
+    <div className="carousel-containeracc">
+           <div className="section-header">
+    <div className="bars">
+        <div className="line1"></div>
+        <div className="line2"></div>
+    </div>
+    <h1>Actualités</h1>
+</div>
+      <Carousel interval={3000}>
+        {actualites.map((actualite, index) => (
+          <Carousel.Item key={index} onClick={() => navigate(`/projet/${actualite.id}`)}>
+            <img className="d-block w-100" src={actualite.imageUrl} alt={`Slide ${index}`} />
+            <Carousel.Caption>
+              <h3>{actualite.titre}</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
+  );
 };
 
 export default Actualites;

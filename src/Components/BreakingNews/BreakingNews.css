@@ -1,0 +1,231 @@
+
+  .ticker {
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-containe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -10%;
+  }
+
+  
+  .flash-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid red;
+    animation: blink-a 1s infinite;
+  }
+  
+  
+  @keyframes blink-a {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.5); }
+  }
+  /* BREAKING NEWS - MODERNE TICKER */
+  .news-ticker {
+    background-color: #f8f9fa; /* un fond doux */
+    color: red;/* rouge chic */
+    padding: 0.6em 1em;
+    font-weight: 600;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  }
+  
+  .ticker-label {
+    font-weight: bold;
+    white-space: nowrap;
+    background-color: red;
+    color: white;
+    padding: 6px ;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  
+  .ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-content {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  min-width: 100%;     /* 👈 obligé pour que ça prenne toute la ligne */
+}
+
+
+    .ticker-wrapper:hover .ticker-content {
+        animation-play-state: paused;
+        cursor: pointer;
+      }
+      
+
+  
+  .top-stories-bar .top-stories-label .flash-icon {
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      background-color: white;
+      top: 50%;
+      margin-top: -5px;
+      left: 10px;
+      z-index: 2;
+  }
+  *, ::after, ::before {
+      box-sizing: border-box;
+  }
+ @keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%); /* 👈 toute la largeur */
+  }
+}
+
+.ticker-content {
+  animation: scroll-left 25s linear infinite;
+}
+
+  
+  
+  .news-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 2px solid red;/* Rouge chic */
+  }
+  
+  .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 60px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;/* rouge profond */
+  }
+  
+  
+  
+  /* Responsive uniquement mobile */
+  @media (max-width: 768px) {
+    
+     @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  /* BREAKING NEWS - MODERNE TICKER */
+  .ticker {
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-containe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  .flash-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid red;
+    animation: blink-a 1s infinite;
+  }
+  
+  @keyframes blink-a {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.5); }
+  }
+  /* BREAKING NEWS - MODERNE TICKER */
+  .news-ticker {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 0.4em;
+  }
+  
+  
+  .ticker-label {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .ticker-item {
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  .news-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  
+  .ticker-wrapper {
+    overflow: hidden;
+    flex: 1;
+    position: relative;
+  }
+  
+  .ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;}
+  
+  
+  .top-stories-bar .top-stories-label .flash-icon {
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      background-color: white;
+      top: 50%;
+      margin-top: -5px;
+      left: 10px;
+      z-index: 2;
+  }
+  *, ::after, ::before {
+      box-sizing: border-box;
+  }
+  
+ 
+  
+    }
+  
+  

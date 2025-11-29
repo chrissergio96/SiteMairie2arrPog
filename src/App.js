@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import ScrollToTop from './ComponentsUrbanisme/ScrollToTop/ScrollToTop.jsx';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -48,6 +48,15 @@ import FaqUtilisateurs from './Pages/FaqUtilisateurs.jsx';
 import Splash from './Pages/Splash.jsx';
 import ProjetDetail from './ProjetDetail/ProjetDetail.jsx'; // La page de détails des projets
 import Maire from './Pages/Maire.jsx';
+import BreakingNews from './Components/BreakingNews/BreakingNews.js';
+import Dashboard from './Admin/Dashboard.js';
+import BreakingNewsList from './Admin/BreakingNewsList.js';
+import BreakingNewsForm from './Admin/BreakingNewsForm.js';
+import ProtectedRoute from './Admin/ProtectedRoute.js';
+import AdminLogin from './Admin/AdminLogin.js';
+import ActualitesList from './Admin/ActualitesList.js';
+import ActualitesForm from './Admin/ActualitesForm.js';
+import AllNav from './Components/AllNav/AllNav.js';
 
 function App() {
   return (
@@ -55,6 +64,7 @@ function App() {
       <Router>
 
       <ScrollToTop />  {/* Ce composant s'assure que chaque navigation commence en haut */}
+      <AllNav/>
         <Routes>
         <Route path="/" element={<Splash />} /> 
         <Route path="/maire" element={<Maire />} /> 
@@ -90,6 +100,31 @@ function App() {
           <Route path="/galeriemariage" element={<Galeriemariage/>} /> 
           <Route path="/dossiercdq1" element={<Dossiercdq1/>} /> 
           <Route path="/agenda" element={<Agenda/>} />  
+
+
+           {/* Page publique qui contient le ticker: /breakingnews */}
+        <Route path="/breakingnews" element={<BreakingNews />} />
+
+        {/* ADMIN - routes protégées */}
+        <Route path="/admin" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+
+        {/* Vue spécifique pour la liste (optionnel si Dashboard intègre la liste) */}
+        <Route path="/admin/breakingnews" element={<ProtectedRoute><BreakingNewsList /></ProtectedRoute>} />
+ 
+        {/* Formulaire : ajouter */}
+        <Route path="/admin/breakingnews/new" element={<ProtectedRoute><BreakingNewsForm /></ProtectedRoute>} />
+
+        {/* Formulaire : modifier (paramètre id) */}
+        <Route path="/admin/breakingnews/:id/edit" element={<ProtectedRoute><BreakingNewsForm /></ProtectedRoute>} />
+
+        {/* Redirection par défaut */}
+        <Route path="*" element={<Navigate to="/" />} />
+
+       <Route path="/admin-login" element={<AdminLogin />} />
+
+       <Route path="/admin/actualites" element={<ActualitesList />} />
+       <Route path="/admin/actualites/new" element={<ActualitesForm />} />
+       <Route path="/admin/actualites/edit/:id" element={<ActualitesForm />} />
 
         </Routes>
       </Router>

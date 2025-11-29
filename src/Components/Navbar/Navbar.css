@@ -7,16 +7,7 @@
     padding: 0 20px; /* Ajouter un padding pour éviter que les éléments touchent les bords */
   }
   
-  .navbar-logo {
-    flex-grow: 1; /* Le logo occupe tout l'espace disponible à gauche */
-  }
-  
-  .navbar-logo img {
-    height: 25px; /* Hauteur du logo */
-    margin-left: -20px;
-    cursor: pointer; /* Curseur pointer au survol */
-    background-color: red;
-  }
+
   .navbar-container{
     width:100%;
 }
@@ -49,16 +40,52 @@
     align-items: center;
     justify-content: center;
   }
-  .nommairie h1{
-    font-size: 30px;
+
+    .nommairie {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Animation du titre */
+.titreAnime {
+  font-weight: 700;
+  opacity: 0;
+   font-size: 40px;
     font-weight: bold;
     color: #1B3D71;
     text-align: center;
     text-decoration: double;
     align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 5px;
     text-shadow: 1px 2px 2px #1B3D71;
+  animation: fadeSlideDown 1.2s forwards, breathing 4s ease-in-out 1.2s infinite;
+}
+
+@keyframes breathing {
+  0% {
+    transform: translateY(0) scale(1);
   }
+  50% {
+    transform: translateY(-8px) scale(1.03); /* Léger zoom + montée */
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   
   @media (max-width: 768px) {
     .nommairie{
