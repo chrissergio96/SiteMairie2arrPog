@@ -3,22 +3,24 @@
     background-color: white; /* Couleur de fond blanche */
     box-shadow: none; /* Retirer l'ombre si besoin */
     position: relative;
+    border-bottom-left-radius: 60px;
     z-index: 1; /* S'assurer que la navbar est bien visible */
     padding: 0 20px; /* Ajouter un padding pour éviter que les éléments touchent les bords */
   }
   
   .navbar-logo {
     flex-grow: 1; /* Le logo occupe tout l'espace disponible à gauche */
+    height: max-content;
   }
   
   .navbar-logo img {
     height: 25px; /* Hauteur du logo */
-    margin-left: -20px;
     cursor: pointer; /* Curseur pointer au survol */
     background-color: red;
   }
   .navbar-container{
     width:100%;
+    height: max-content;
 }
   .MuiDrawer-paper {
     width: 250px; /* Largeur du menu latéral */
