@@ -22,10 +22,10 @@ const Aproposde = () => {
 
   return (
     <div className="apropos-container">
-      <h1>À propos de la Mairie du 2e Arrondissement de Port-Gentil</h1>
+      <h1>À propos de la Mairie du 4e Arrondissement de Libreville</h1>
       <section className="apropos-intro">
         <p>
-          La Mairie du 2e Arrondissement de Port-Gentil se distingue par un engagement constant envers les citoyens. Nous visons à améliorer la vie des résidents avec des services sociaux, des initiatives de développement, et un engagement pour la transparence.
+          La Mairie du 4e Arrondissement de Libreville se distingue par un engagement constant envers les citoyens. Nous visons à améliorer la vie des résidents avec des services sociaux, des initiatives de développement, et un engagement pour la transparence.
         </p>
       </section>
 
@@ -36,14 +36,14 @@ const Aproposde = () => {
           {/* Maire */}
           <div className="team-member">
           <img src={DelegueImage} alt="Maire" onMouseEnter={() => handleMouseEnter(DelegueImage)} onMouseLeave={handleMouseLeave} />
-          <h3>Délégué Spécial :<br></br><br></br><strong> Boubakar NGOUWA GUINGO MAYAKI</strong></h3>
+          <h3>Maire :<br></br><br></br><strong> Boubakar NGOUWA GUINGO MAYAKI</strong></h3>
             <p>Responsable de la gestion générale du 2e Arrondissement.</p>
           </div>
 
           {/* Délégué spécial adjoint */}
           <div className="team-member">
             <img src={GeneralImage} alt="Délégué Spécial Adjoint" onMouseEnter={() => handleMouseEnter(GeneralImage)} onMouseLeave={handleMouseLeave}/>
-            <h3>Délégué Spécial Adjoint:<br></br><br></br><strong>Le Commandant ONDO ZUE Bertin </strong>  
+            <h3>1er Maire Adjoint:<br></br><br></br><strong>Le Commandant ONDO ZUE Bertin </strong>  
                
             </h3>
             <p>Responsable adjoint des affaires sociales et du développement local du 2e Arrondissement.</p>
@@ -52,7 +52,7 @@ const Aproposde = () => {
           
           <div className="team-member">
             <img src={CCImage} alt="Cabinet" onMouseEnter={() => handleMouseEnter(CCImage)} onMouseLeave={handleMouseLeave} />
-            <h3>Chef de Cabinet :<br></br><br></br><strong>Chris IGANA </strong>
+            <h3>2e Maire Adjoint :<br></br><br></br><strong>Chris IGANA </strong>
             </h3>
             <p>Coordination des activités administratives.</p>
           </div>

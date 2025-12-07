@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SplashScreen.css";
-import logo from "../Images/logo_Mairie-removebg-preview.png";
+import logo from "./TEMPLATES LOGO.png";
 
 const SplashScreen = () => {
   const navigate = useNavigate();
   const [text, setText] = useState("M"); // Initialiser avec la première lettre "M"
-  const fullText = "MAIRIE DU 2e ARRONDISSEMENT DE PORT-GENTIL"; // Texte à afficher lettre par lettre
+  const fullText = "MAIRIE DU 4e ARRONDISSEMENT DE LIBREVILLE"; // Texte à afficher lettre par lettre
 
   useEffect(() => {
     let index = 1; // Commencer à 1 car "M" est déjà affiché
@@ -34,7 +34,7 @@ const SplashScreen = () => {
 
   return (
     <div className="splash-container">
-      <img src={logo} alt="Logo de la Mairie du 2e Arrondissement" className="logo" />
+      <img src={logo} alt="Logo de la Mairie du 4e Arrondissement" className="logo" />
       <h3><strong>{text}</strong></h3> {/* Texte animé lettre par lettre */}
     </div>
   );

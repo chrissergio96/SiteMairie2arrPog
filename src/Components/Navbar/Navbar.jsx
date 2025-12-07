@@ -1,6 +1,5 @@
 import React from 'react';
 import './Navbar.css'; // Fichier CSS pour le style
-import logo from '../../Images/logo Mairie.jpg'; // Chemin vers ton logo
 import { AppBar, Toolbar, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu'; // Icône de menu hamburger
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -65,12 +64,12 @@ const Navbar = () => {
     <ThemeProvider theme={theme}>
     <AppBar position="static" className="navbar">
       <Toolbar className='navbar-container'>
-        <div className="navbar-logo">
-          <Link to='/accueil'>
-          <img src={logo} alt="Logo Mairie" />
-          </Link>
-        </div>
-        <div className='nommairie'><h1>MAIRIE DU 2E ARRONDISSEMENT DE PORT-GENTIL</h1></div>
+       
+<div className="nommairie">
+  <h1 className="titreAnime">
+    MAIRIE DU 4e ARRONDISSEMENT DE LIBREVILLE
+  </h1>
+</div>
 
         {/* Icône de menu hamburger */}
         <IconButton edge="end" color="inherit" style={{marginRight:'-30px'}} onClick={toggleDrawer}>

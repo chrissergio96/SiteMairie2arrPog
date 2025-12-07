@@ -4,7 +4,6 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link, useNavigate } from "react-router-dom"; // Importation de useNavigate
 import React, {  useState } from 'react';
 import Fuse from 'fuse.js'; // Importation de Fuse.js
-import Actu from '../Actu/Actu';
 import backgroundVideo from './video.mp4'; // Importez votre fichier audio
 
 
@@ -97,7 +96,6 @@ const Header = () => {
     return (
         <div className='mairiea'>
 
-    <Actu/>
     <video 
       autoPlay 
       loop 
@@ -135,26 +133,34 @@ const Header = () => {
                 ) : null}
             </div>
 
-            {/* Boutons des services */}
-            <div className="button-containersa">
-                <div className="buttons-left">
-                    <Link to='/Etatcivil'><button className="button">SERVICE ETAT CIVIL<ArrowForwardIcon className="arrow-icon" /></button></Link>
-                    <Link to='/technique'><button className="button">SERVICE TECHNIQUE<ArrowForwardIcon className="arrow-icon" /></button></Link>
-                    <Link to='/Servicesocial'><button className="button">SERVICE SOCIAL<ArrowForwardIcon className="arrow-icon" /></button></Link>
-                    <Link to='/urbanisme'><button className="button">URBANISME<ArrowForwardIcon className="arrow-icon" /></button></Link>
-                </div>
-                <div className="buttons-rights">
-                    <Link to='/agenda'><button className="button">AGENDA <ArrowForwardIcon className="arrow-icon" /></button></Link>
-                    <Link to='/cdq'><button className="button">CHEFS DE QUARTIERS ET CDQ<ArrowForwardIcon className="arrow-icon" /></button></Link>
-                    <Link to='/mariage'><button className="button">MARIAGE <ArrowForwardIcon className="arrow-icon" /></button></Link>
-                    <Link to='/galerie'><button className="button">GALERIE<ArrowForwardIcon className="arrow-icon" /></button></Link>
-                </div>
-            </div>
+            <div className="buttons-wrapper">
 
-            {/* Bouton d'audience */}
-            <a href="https://calendly.com/safou-christiansergio/30min" target="_blank" rel="noopener noreferrer" className="audience-button">
+  {/* BOUTON SERVICES */}
+  <div className="dropdown">
+    <button className="main-button">
+      <span className="icon">📂</span> Services
+    </button>
+
+    <div className="dropdown-menu">
+      <Link to="/Etatcivil">Service État Civil</Link>
+      <Link to="/technique">Service Technique</Link>
+      <Link to="/Servicesocial">Service Social</Link>
+      <Link to="/urbanisme">Urbanisme</Link>
+      <Link to="/agenda">Agenda</Link>
+      <Link to="/cdq">Chefs de Quartiers & CDQ</Link>
+      <Link to="/mariage">Mariage</Link>
+      <Link to="/galerie">Galerie</Link>
+    </div>
+  </div>
+  {/* Bouton d'audience */}
+            <a className="audience-button" href="https://calendly.com/safou-christiansergio/30min" target="_blank" rel="noopener noreferrer" className="audience-button">
                 Demande d'audience
             </a>
+</div>
+
+
+
+          
         </div>
     );
 };

@@ -1,0 +1,24 @@
+.breakingnews-form {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
+.breakingnews-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.breakingnews-form button {
+  background: #1B3D71;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.breakingnews-form button:hover {
+  background: #16345c;
+}
