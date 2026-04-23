@@ -24,18 +24,14 @@ const Actualites = () => {
             description: '',
             imageUrl:'canivau.jpg'
      },
+        
         {
             id: 4,
-            titre: 'MODERNISATION DU CARREFOUR CENTRE SOCIAL',
-            imageUrl: 'carref centre social.jpg'
-        },
-        {
-            id: 5,
             titre: '[VISITES DES CHANTIERS INITIES PAR LE CTRI DANS LE 2ᵉ ARRONDISSEMENT DE PORT-GENTIL]',
             imageUrl: 'anciennebalise.jpg'
         },
         {
-            id: 6,
+            id: 5,
             titre: '[ VISITE DE TERRAIN : REPONSE IMMEDIATE DES DELEGUES SPECIAUX]',
             imageUrl: 'visiteterrainpg2.jpg'
         },

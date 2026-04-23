@@ -3,7 +3,7 @@ import './Actu.css';
 
 const Actu = () => {
     const news = [
-        { text: "Intelligence Artificielle et Sécurisation des Données :  «  Apports et perspectives pour la transformation numérique au Gabon»", link: "http://gabonreview.com/intelligence-artificielle-et-securisation-des-donnees-apports-et-perspectives-pour-la-transformation-numerique-au-gabon/" },
+        { text: "Mairie de Port-Gentil :  « près de 24 milliards pour impulser le développement de la capitale économique Gabonaise »", link: "http://gabonreview.com/intelligence-artificielle-et-securisation-des-donnees-apports-et-perspectives-pour-la-transformation-numerique-au-gabon/" }, < br/>,
         { text: " « Contrats fantômes, harcèlement et primes volatiles, les marins de Peschaud brisent le silence . »", link: "https://www.gabonreview.com/contrats-fantomes-harcelement-et-primes-volatiles-les-marins-de-peschaud-brisent-le-silence/" },
         { text: "Fuite sur le pipeline Coucal  : la riposte technique de Perenco à l’incident du 5 avril", link: "https://www.gabonreview.com/fuite-sur-le-pipeline-coucal-la-riposte-technique-de-perenco-a-lincident-du-5-avril/" },
         { text: "Mobilisation politique à Port-Gentil : « Abel Magouegou appelle à soutenir Oligui Nguema »", link: "https://www.gabonreview.com/mobilisation-politique-a-port-gentil-abel-magouegou-appelle-a-soutenir-oligui-nguema/" },
