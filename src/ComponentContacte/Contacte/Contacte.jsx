@@ -37,15 +37,82 @@ const Contacte = () => {
     <div className='mere-contacte'>
       <h1>Numéros utiles</h1>
       <div className="contacte-container">
-        {emergencyNumbers.map((service, index) => (
+        {/* {emergencyNumbers.map((service, index) => (
           <div key={index} className='service-card'>
             <h2>{service.category}</h2>
             {service.numbers.map((num, i) => (
               <p key={i}><strong>{num.label}: {num.number}</strong>{num.extra ? num.extra : ''}</p>
             ))}
           </div>
-        ))}
+        ))} */}
+        <div className='numerosutiles'>
+          <h5>Sappeurs-pompiers</h5>
+         
+      <p>Tel: 011.56.27.75</p>
+      <p>Tel: 077.63.93.63</p>
+      <p>Tel: 062.93.98.48</p>
+      <p>Centre d\'appels: 18 (numéro vert, fixe uniquement, Port-Gentil)</p>
+        </div>
+
+         <div className='numerosutiles'>
+          <h5>Commissariat Central</h5>
+      <p>Tel: 011.55.29.12</p>
+        </div>
+
+         <div className='numerosutiles'>
+          <h5>Samu Social</h5>
+      <p>Tel: 1428</p>
+        </div>
+
+         <div className='numerosutiles'>
+          <h5>S.e.e.g</h5>
+         
+      <p>Tel: Allo Fuite: 011.76.12.83</p>
+      <p>Tel: 011.76.73.73</p>
+      <p>Tel: 062.93.98.48</p>
+      <p>Centre d\'appels: 18 (numéro vert, fixe uniquement, Port-Gentil)</p>
+        </div> 
       </div>
+      
+      <div className="contacte-container">
+      
+        <div className='numerosutiles'>
+          <h5>Centre de Sante</h5>
+         
+      <p>Tel: 011.56.27.75</p>
+      <p>Tel: 077.63.93.63</p>
+      <p>Tel: 062.93.98.48</p>
+      <p>Centre d\'appels: 18 (numéro vert, fixe uniquement, Port-Gentil)</p>
+        </div>
+
+         <div className='numerosutiles'>
+          <h5>Commissariat Central</h5>
+      <p>Tel: 011.55.29.12</p>
+        </div>
+
+         <div className='numerosutiles'>
+          <h5>Samu Social</h5>
+      <p>Tel: 1428</p>
+        </div>
+
+         <div className='numerosutiles'>
+          <h5>S.e.e.g</h5>
+         
+      <p>Tel: Allo Fuite: 011.76.12.83</p>
+      <p>Tel: 011.76.73.73</p>
+      <p>Tel: 062.93.98.48</p>
+      <p>Centre d\'appels: 18 (numéro vert, fixe uniquement, Port-Gentil)</p>
+        </div> 
+      </div>
+      
+
+      <div>
+        <h1>Numéros utiles</h1>
+        <div className='numerosutiles'>
+          
+        </div>
+      </div>
+      
     </div>
   );
 };
