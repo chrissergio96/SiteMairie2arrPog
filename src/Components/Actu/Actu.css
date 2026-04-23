@@ -16,7 +16,7 @@
   left: 0;
   right: 0;
   height: 40px;
-  background: black;
+  background: white;
   padding: 0;
   z-index: 1000;
   display: flex;
@@ -28,8 +28,8 @@
   max-width: 140px;
   margin: 0;
   padding: 1px 10px;
-  background: #fde400;
-  color: #1B3D71;
+  background: #1B3D71;
+  color: white;
   line-height: 20px;
   text-transform: uppercase;
   font-size: 12px;
@@ -46,7 +46,7 @@
 .breaking-txt {
   overflow: hidden;
   white-space: nowrap;
-  width: calc(100% - 260px);
+  width: calc(100% - 160px);
   padding-left: 10px;
 }
 
@@ -60,7 +60,7 @@
 .news-scroll a {
   font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: #1B3D71;
   font-weight: 700;
 }
 
@@ -74,7 +74,7 @@
       transform: translateX(0%);
   }
   to {
-      transform: translateX(-20%);
+      transform: translateX(-10%);
   }
 }
 
