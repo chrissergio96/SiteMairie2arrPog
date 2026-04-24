@@ -1,0 +1,253 @@
+/* ========== SIDEBAR PUBLICITES ========== */
+.publicites-sidebar {
+  width: 270px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+  background: #ffffff;
+  border-left: 3px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+}
+
+/* ---- En-tête ---- */
+.pub-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px dashed #e5e7eb;
+}
+
+.pub-header-icon { font-size: 1.6rem; }
+
+.pub-titre {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  letter-spacing: 0.3px;
+}
+
+.pub-sous-titre {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+
+/* ---- Carte ---- */
+.pub-carte {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.pub-carte.visible { opacity: 1; transform: translateY(0); }
+.pub-carte.hidden  { opacity: 0; transform: translateY(8px); }
+
+/* ---- Zone image ---- */
+.pub-image-zone {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.pub-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.pub-carte:hover .pub-image {
+  transform: scale(1.04);
+}
+
+/* Fallback si pas d'image */
+.pub-image-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pub-emoji-grand {
+  font-size: 3rem;
+}
+
+/* Badge positionné en haut à droite de l'image */
+.pub-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 3px 9px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ---- Corps texte ---- */
+.pub-corps {
+  padding: 12px 14px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pub-categorie {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pub-nom {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.pub-description {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #4b5563;
+  line-height: 1.45;
+}
+
+.pub-contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+}
+
+.pub-contact a {
+  color: #1e3a5f;
+  font-weight: 600;
+  text-decoration: none;
+}
+.pub-contact a:hover { text-decoration: underline; }
+
+/* ---- Bouton lien vers la page ---- */
+.pub-lien-btn {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 7px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 4px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.pub-lien-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+.pub-lien-indisponible {
+  display: block;
+  text-align: center;
+  font-size: 0.72rem;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+/* ---- Dots ---- */
+.pub-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.pub-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #d1d5db;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pub-dot:hover:not(.actif) { background: #9ca3af; }
+
+/* ---- Compteur ---- */
+.pub-compteur {
+  text-align: center;
+  font-size: 0.68rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* ---- CTA ---- */
+.pub-cta {
+  background: #1e3a5f;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.pub-cta-texte {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.pub-cta-btn {
+  display: inline-block;
+  background: #f59e0b;
+  color: #1e3a5f;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.pub-cta-btn:hover {
+  background: #fbbf24;
+  transform: scale(1.03);
+}
+
+/* ========== LAYOUT ========== */
+.accueil-avec-pub {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.accueil-contenu { flex: 1; min-width: 0; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .publicites-sidebar { display: none; }
+  .accueil-avec-pub { display: block; padding: 0; }
+}
