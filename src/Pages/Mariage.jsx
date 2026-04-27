@@ -9,6 +9,8 @@ import Reseaux from '../Component-mariage/Reseaux/Reseaux';
 import Contact from '../Components/Contact/Contact';
 import Footer from'../Components/Footer/Footer';
 import Footerbas from '../Components/Footerbas/Footerbas';
+import QuickActions from '../Components/QuickActions/QuickActions';
+import Publicites from '../Components/Publicites/Publicites';
 
 function Mariage() {
 
@@ -16,12 +18,25 @@ function Mariage() {
     <div>
       <Navbar/>
       <Headermariage/>
+      <div className="page-avec-pub">
+        {/* CONTENU */}
+        <div className="page-contenu"> 
       <Textes/>
       <Texte/>
       <Textetrangers/>
       <Archives/>
       <Reseaux/>
       <Contact/>
+       </div>
+        
+          {/* SIDEBAR DROITE */}
+         <div className="sidebar-right">
+        
+          <QuickActions />
+            <Publicites />
+        
+          </div>
+      </div>
       <Footer/>
       <Footerbas/>
     </div>

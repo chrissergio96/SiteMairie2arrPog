@@ -10,12 +10,18 @@ import Footerbas from '../Components/Footerbas/Footerbas'
 import Footer from '../Components/Footer/Footer';
 import Sensib from '../Component-cdq/Sensib/Sensib';
 import Textbas from '../Component-cdq/Text-bas-cdq/Textbas-cdq';
+import QuickActions from '../Components/QuickActions/QuickActions';
+import Publicites from '../Components/Publicites/Publicites';
 
 function Cdq() {
   return (
     <div>
      <Navbar/> 
      <Headercdq/> 
+     <div className="page-avec-pub">
+
+        {/* CONTENU */}
+        <div className="page-contenu">
      <Comitecdq/>
      <Projetcdq/>
      <Refectionement/>
@@ -23,6 +29,14 @@ function Cdq() {
      <Textbas/>
      <BackButtonUrb/>
      <Contact/>
+      </div>
+        {/* SIDEBAR DROITE */}
+        <div className="sidebar-right">
+
+          <QuickActions />
+          <Publicites />
+          </div>
+      </div>
      <Footer/>
      <Footerbas/>
     

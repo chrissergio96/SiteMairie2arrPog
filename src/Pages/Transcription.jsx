@@ -8,16 +8,31 @@ import Contact from '../Components/Contact/Contact';
 import BackButtonUrb from '../ComponentsUrbanisme/BackButtonUrb/BackButtonUrb';
 import Footer from '../Components/Footer/Footer';
 import Footerbas from '../Components/Footerbas/Footerbas';
+import Publicites from '../Components/Publicites/Publicites';
+import QuickActions from '../Components/QuickActions/QuickActions';
 
 function Transcription() {
   return (
     <div>
       <Navbar/>  
       <Headertrans /> 
+      <div className="page-avec-pub">
+        {/* CONTENU */}
+        <div className="page-contenu"> 
       <Cartestrans /> 
       <MediaCard1 /> {/* Utilisation correcte du composant */}
       <BackButtonUrb/>
       <Contact/> 
+      </div>
+        
+          {/* SIDEBAR DROITE */}
+         <div className="sidebar-right">
+        
+          <QuickActions />
+            <Publicites />
+        
+          </div>
+      </div>
       <Footer/> 
       <Footerbas/> 
     </div>

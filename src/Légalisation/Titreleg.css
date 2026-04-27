@@ -1,52 +1,71 @@
-.titrelega{
-    width: 84%;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-.titrelega h1{
-    font-weight: bold;
-    font-size: 30px;
-    color: #1B3D71;
-    margin-top: 4%;
-    text-align: center;
-}
-.titrelega P{
-    font-size: 20px;
-    color:gray;
-    background-color: white;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-    width: 100%;
-    padding: 10px;
-    margin-top: 4%;
-    text-align: center;
-    border-radius: 8px;
+.titre-leg-container {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  background: #f6f8fb;
 }
 
+.titre-leg-card {
+  width: 85%;
+  max-width: 1000px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* badge */
+.titre-leg-badge {
+  display: inline-block;
+  background: rgba(27,61,113,0.1);
+  color: #1B3D71;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* title */
+.titre-leg-card h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1B3D71;
+  margin-bottom: 10px;
+}
+
+/* ligne décorative */
+.titre-leg-line {
+  width: 80px;
+  height: 3px;
+  background: #C8102E;
+  margin: 10px auto 25px;
+  border-radius: 10px;
+}
+
+/* texte */
+.titre-leg-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+/* responsive */
 @media (max-width: 768px) {
- 
-    .titrelega{
-        width: 88%;
-        margin-right: auto;
-        margin-left: auto;
-    
-    }
-    .titrelega h1{
-        font-weight: bold;
-        font-size: 18px;
-        color: #1B3D71;
-        margin-top: 4%;
-        text-align: center;
-    }
-    .titrelega P{
-        font-size: 14px;
-        color:gray;
-        background-color: white;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        width: 100%;
-        padding: 20px;
-        margin-top: 4%;
-        text-align: justify;
-        border-radius: 8px;
-    }
+  .titre-leg-card {
+    width: 92%;
+    padding: 25px;
   }
+
+  .titre-leg-card h1 {
+    font-size: 20px;
+  }
+
+  .titre-leg-card p {
+    font-size: 14px;
+  }
+}

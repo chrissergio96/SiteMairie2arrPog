@@ -1,255 +1,428 @@
-.mairiea {
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
+  background: #0a1628;
+  overflow: hidden;
 }
 
-.search-containera {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 4px;
-  padding: 4px;
-  width: 100%;
-  max-width: 400px;
-  height: 35px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px; /* Espace entre la barre de recherche et les boutons */
-}
-
-.search-inputa {
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  padding: 4px;
-}
-
-.search-icon {
-  color: #333;
-  margin-left: 8px;
-}
-/* Liste déroulante pour les suggestions */
-.suggestions-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  max-width: 400px;
+.hero-video {
   position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  z-index: 10; /* Mettre les suggestions au-dessus des autres éléments */
-  margin-top: 5px;
-}
-
-.suggestion-item {
-  padding: 10px;
-  color: #333;
-  text-decoration: none;
-  display: block;
-}
-
-.suggestion-item:hover {
-  background-color: #f0f0f0;
-}
-
-.button-containersa {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttons-left {
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-}
-.buttons-rights {
-  display: flex;
-  flex-direction: column;
-  margin: 0 20px;
-}
-.video-background {
-  
-  position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
-.buttons-rights .button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Espace entre le texte et l'icône */
-  height: 40px;
-  margin: 10px 0;
-  padding: 0 10px;
-  background-color: white;
-  color: #1B3D71;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  text-align: center;
-  width: 35VW; /* Largeur fixe pour aligner les boutons */
-  font-weight: bold;
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+ 
 }
-.buttons-left .button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Espace entre le texte et l'icône */
-  height: 40px;
-  margin: 10px 0;
-  padding: 0 10px;
-  background-color: white;
-  color: #1B3D71;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  text-align: center;
-  width: 35VW; /* Largeur fixe pour aligner les boutons */
-  font-weight: bold;
-}
-.buttons-left a{
-  text-decoration: none;
-  width: 10%;
-}
-.buttons-rights a{
-  text-decoration: none;
-  width: 10%;
+.hero-overlay {
+  background: linear-gradient(
+    160deg,
+    rgba(10,22,40,0.65) 0%,
+    rgba(27,61,113,0.55) 55%,
+    rgba(13,34,68,0.65) 100%
+  );
 }
 
-.button:hover {
-  background-color: #1B3D71;
-  color:white;
+/* Ticker */
+#breadcrumb.bnews {
+  position: relative;
+  z-index: 100;
+  height: 36px;
+  margin: 0;
 }
 
-.arrow-icon {
-  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
+/* Topbar */
+.topbar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px 0;
 }
-/* Style pour le bouton de demande d'audience */
-.audience-button {
-  padding: 10px 20px;
-  background-color: #1B3D71; /* Vert pour le bouton d'audience */
-  color: white;
+
+.logo-zone {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-emblem {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.07);
+  flex-shrink: 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-city {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Georgia, serif;
+  line-height: 1;
+  letter-spacing: 0.3px;
+}
+
+.logo-sub {
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  margin-top: 3px;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 38px;
+  background: rgba(255,255,255,0.18);
+}
+
+.logo-arr {
+  color: rgba(255,255,255,0.75);
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-pill {
+  color: rgba(255,255,255,0.65);
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   text-decoration: none;
-  border-radius: 4px;
-  font-size: 16px;
-  text-align: center;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav-pill:hover {
+  color: #fff;
+  border-color: #C8102E;
+}
+
+.nav-sep {
+  color: rgba(255,255,255,0.2);
+  font-size: 12px;
+}
+
+.audience-btn {
+  background: #C8102E;
+  color: #fff;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 9px 20px;
   display: inline-block;
-  font-weight:bold;
-  text-decoration:underline;
-  margin-top:10px;
-}
-.audience-button p{
-  text-decoration: none;
-}
-.audience-button:hover {
-  background-color: #218838;
-}
-.no-suggestions {
-  color: red;
-  margin-top: 10px;
-  font-size: 14px;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
-/* Styles spécifiques pour la version mobile */
-@media (max-width: 768px) {
-  .buttons-left .button {
-    font-size: 10px; /* Réduction de la taille du texte dans les boutons */
-    width:80%; /* Largeur relative pour mieux s'adapter à l'écran mobile */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .buttons-rights .button {
-    font-size: 10px; /* Réduction de la taille du texte dans les boutons */
-    width:80%; /* Largeur relative pour mieux s'adapter à l'écran mobile */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-  }
+.audience-btn:hover {
+  background: #a00d24;
+}
 
-  .search-containera {
-    width: 100%; /* La barre de recherche occupe tout l'espace disponible */
-    margin-bottom: 10px; /* Moins d'espace entre la barre de recherche et les boutons */
-  }
-  .search-input{
-    width: 100%;
-  }
-  .arrow-icon {
-    margin-left: 4px; /* Moins d'espace entre le texte et l'icône sur mobile */
-  }
-  .mere-search{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-  .button-containersa {
-    align-items: center;
-    flex-direction:column;
-    justify-content: center;
-  }
-  
-  .buttons-rights
-    {
-    margin: 0; /* Supprimer les marges inutiles */
-    width: 100%;
-    align-items: center;
-    display: block;
-    margin-top: -5px;
-  }
-  .buttons-left 
-  {
-  margin: 0; /* Supprimer les marges inutiles */
-  width: 100%;
+/* Hero center */
+.hero-center {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 40px 32px 20px;
+  text-align: center;
 }
-  .buttons-left a{
-    font-size: 10px; /* Réduction de la taille du texte dans les boutons */
-    width:100%;
-    text-align: center;
-  }
-  .buttons-rights a{
-    font-size: 10px; /* Réduction de la taille du texte dans les boutons */
-    width:100%;
-  }
 
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200,16,46,0.15);
+  border: 1px solid rgba(200,16,46,0.35);
+  color: yellowgreen;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  padding: 5px 16px;
+  margin-bottom: 18px;
+  z-index: 100;
+}
 
-  .audience-button {
-    font-size: 10px; /* Réduire la taille du texte pour le bouton d'audience */
-    padding: 8px 16px; /* Ajuster la taille du bouton */
-    
-  }
-  .mairiea {
-    /* background-image: url('../../Images/Mairie de.jpg'); */
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .video-background {
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  background: yellowgreen;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: Georgia, serif;
+  line-height: 1.18;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.hero-title em {
+  font-style: normal;
+  color: #90b4e8;
+}
+
+.hero-subtitle {
+  color: white;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.8px;
+  margin-bottom: 30px;
   
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    pointer-events: none;
-  }
+}
+
+/* Search */
+.search-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  background: rgba(255,255,255,0.97);
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #1B3D71;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: #9aabb8;
+}
+
+.search-btn {
+  background: #1B3D71;
+  border: none;
+  height: 100%;
+  width: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background: #142e56;
+}
+
+.suggestions-dropdown {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 100;
+  border-top: 2px solid #1B3D71;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.15s;
+}
+
+.suggestion-item:hover {
+  background: #f5f8ff;
+}
+
+.suggestion-name {
+  color: #1B3D71;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+}
+
+.suggestion-sub {
+  color: #9aabb8;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+}
+
+.no-result {
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Services bar */
+.services-bar {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: auto;
+}
+
+.svc-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 16px 14px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  text-decoration: none;
+  background: rgba(255,255,255,0.03);
+  transition: background 0.2s;
+  min-height: 80px;
+}
+
+.svc-card:last-child {
+  border-right: none;
+}
+
+.svc-card:hover {
+  background: rgba(255,255,255,0.09);
+}
+
+.svc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.svc-name {
+  color: #fff;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.svc-sub {
+  color: rgba(255,255,255,0.38);
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.svc-arrow {
+  color: rgba(255,255,255,0.3) !important;
+  margin-top: 8px;
+  transition: color 0.2s;
+}
+
+.svc-card:hover .svc-arrow {
+  color: #C8102E !important;
+}
+/* Drapeau gabonais incliné */
+.gabon-flag {
+  width: 44px;
+  height: 54px;
+  border-radius: 4px;
+  overflow: hidden;
+  transform: rotate(-8deg);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.flag-green {
+  flex: 1;
+  background: #009e60;
+}
+
+.flag-yellow {
+  flex: 1;
+  background: #fcd116;
+}
+
+.flag-blue {
+  flex: 1;
+  background: #3a75c4;
+}
+
+.flag-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.15);
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .topbar { padding: 16px 20px 0; flex-wrap: wrap; gap: 12px; }
+  .topbar-right { gap: 10px; flex-wrap: wrap; }
+  .logo-arr { display: none; }
+  .logo-divider { display: none; }
+  .hero-title { font-size: 28px; }
+  .services-bar { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .topbar-right .nav-pill { display: none; }
+  .topbar-right .nav-sep { display: none; }
+  .hero-title { font-size: 24px; }
+  .services-bar { grid-template-columns: repeat(2, 1fr); }
+  .search-box { height: 44px; }
 }

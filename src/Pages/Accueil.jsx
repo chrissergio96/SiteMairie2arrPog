@@ -8,6 +8,8 @@ import Footer from '../Components/Footer/Footer';
 import Footerbas from '../Components/Footerbas/Footerbas';
 import Publicites from '../Components/Publicites/Publicites';
 import '../Components/Publicites/Publicites.css';
+import QuickActions from '../Components/QuickActions/QuickActions';
+
 
 function Accueil() {
   return (
@@ -16,14 +18,23 @@ function Accueil() {
       <Header />
 
       {/* Zone avec sidebar Publicités à droite */}
-      <div className="accueil-avec-pub">
-        <div className="accueil-contenu">
+
+            <div className="page-avec-pub">
+        {/* CONTENU */}
+        <div className="page-contenu">
           <Actualites />
           <MotMaire />
           <Contact />
         </div>
 
-        <Publicites />
+        
+        {/* SIDEBAR DROITE */}
+        <div className="sidebar-right">
+
+          <QuickActions />
+          <Publicites />
+
+        </div>
       </div>
 
       <Footer />

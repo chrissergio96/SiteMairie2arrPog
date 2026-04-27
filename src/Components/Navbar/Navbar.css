@@ -1,93 +1,97 @@
-/* Style de la barre de navigation */
 .navbar {
-    background-color: white; /* Couleur de fond blanche */
-    box-shadow: none; /* Retirer l'ombre si besoin */
-    position: relative;
-    border-bottom-left-radius: 60px;
-    z-index: 1; /* S'assurer que la navbar est bien visible */
-    padding: 0 20px; /* Ajouter un padding pour éviter que les éléments touchent les bords */
-  }
-  
-  .navbar-logo {
-    flex-grow: 1; /* Le logo occupe tout l'espace disponible à gauche */
-    height: max-content;
-  }
-  
-  .navbar-logo img {
-    height: 25px; /* Hauteur du logo */
-    cursor: pointer; /* Curseur pointer au survol */
-    background-color: red;
-  }
-  .navbar-container{
-    width:100%;
-    height: max-content;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: transparent;
 }
-  .MuiDrawer-paper {
-    width: 250px; /* Largeur du menu latéral */
-    background-color: white; /* Couleur de fond du menu latéral */
+
+/* LEFT */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 50%;
+}
+
+.navbar-logo {
+  height: 84px;
+  padding: 5px;
+}
+
+
+
+/* CENTER */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #fff;
+}
+
+/* RIGHT */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-btn {
+  color:  #1B3D71 !important;;
+}
+
+/* DRAWER */
+.drawer-content {
+  width: 260px;
+  padding: 20px;
+}
+
+.drawer-content a {
+  text-decoration: none;
+  color: #1B3D71;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
   }
-  
-  .MuiListItemText-root {
-    color: black; /* Couleur des textes du menu */
-  }
-  
-  .MuiListItemText-root a {
-    text-decoration: none; /* Enlever le soulignement des liens */
-    color: black; /* Couleur des liens dans le menu */
-  }
-  
-  .MuiListItem-root:hover {
-    background-color: #f0f0f0; /* Couleur de fond au survol */
-  }
-  
-  .MuiIconButton-root {
-    color: black; /* Couleur du bouton de menu hamburger */
-  }
-  .nommairie{
-    display: flex;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  .nommairie h1{
-    font-size: 30px;
-    font-weight: bold;
-    color: #1B3D71;
-    text-align: center;
-    text-decoration: double;
-    align-items: center;
-    margin-top: 5px;
-    text-shadow: 1px 2px 2px #1B3D71;
-  }
-  
-  @media (max-width: 768px) {
-    .nommairie{
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-    }
-    .nommairie h1{
-      font-size: 14px;
-      font-weight: bold;
-      color: #1B3D71;
-      text-align: center;
-      text-decoration: double;
-      align-items: center;
-      text-shadow: 2px 1px 2px #1B3D71;
-      margin-top: 8px;
-    }
-    /* Style de la barre de navigation */
-.navbar {
-    background-color: white; /* Couleur de fond blanche */
-    box-shadow: none; /* Retirer l'ombre si besoin */
-    position: relative;
-    z-index: 1; /* S'assurer que la navbar est bien visible */
-    padding: 0 20px; /* Ajouter un padding pour éviter que les éléments touchent les bords */
-  }
-  }
-  
- 
-  
+  .navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+}
+
+/* LEFT */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 42px;
+}
+
+
+}
