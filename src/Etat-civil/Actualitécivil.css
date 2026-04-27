@@ -1,133 +1,104 @@
-.containeretc{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;    
-    margin-top:4%;
-    width:80%;
-    margin-right:auto;
-    margin-left:auto;
-}
-    .barreetc{
-        display: block;  
-        width: 10%;
-    }
-    .trait1etc{
-        width: 50%;
-        height: 5px;
-        margin-left: 14px;
-        background-color: #1B3D71;
-        margin-bottom: 5px;
-    }
-    .tiret2etc{
-        width: 75%;
-        height: 5px;
-        background-color: #1B3D71;
-    }
-    
-    .sous-titreetc h1{
-        color: #1B3D71;
-        font-weight: bold;
-        font-size: 30px;
-
-    }
-   
-    .tiretetc{
-        width: 72%;
-        margin-top: 14px;
-        height: 2px;
-        background-color: #1B3D71;
-    }
-    
-
-.civiltexte{
-    width:80%;
-    margin-right:auto;
-    margin-left:auto;
-    margin-top:2%;
-    text-align: start;
-    background-color: white;
-}
-.mereetc{
-    width: 100%;
-}
-.civiltexte p{
-    font-size:20px;
+/* SECTION */
+.etc-section {
+  padding: 0 20px;
+  background: #f5f8ff;
 }
 
-.civiltexte  li {
-   
-font-weight: bold;
-color: gray;
-margin-top:20px;
+/* CONTAINER */
+.etc-container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
-/* Responsive styles */
-@media (max-width: 576px) {
-  
-    .containeretc{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;    
-        margin-top:4%;
-        width:80%;
-        margin-right:auto;
-        margin-left:auto;
-    }
-        .barreetc{
-            display: block;  
-            width: 13%;
-        }
-        .trait1etc{
-            width: 30%;
-            height: 5px;
-            background-color: #1B3D71;
-            margin-bottom: 5px;
-            margin-left: 9px;
-        }
-        .tiret2etc{
-            width: 75%;
-            height: 5px;
-            background-color: #1B3D71;
-        }
-        .sous-titreetc{
-            color: #1B3D71;
-            font-weight: bold;
-        }
-        .sous-titreetc h1{
-            font-weight: bold;
-            font-size: 16px;
-            margin-right: 2px;
-            margin-top: 10px;
-        }
-        .tiretetc{
-            width: 52%;
-            margin-top: 14px;
-            height: 2px;
-            background-color: #1B3D71;
-        }
-        
-    
-    .civiltexte{
-        width:80%;
-        margin-right:auto;
-        margin-left:auto;
-        margin-top:2%;
-        text-align: center;
-        background-color: white;
-        padding:10px;
-        font-size: 12px;
-    
-    }
-    .civiltexte p{
-        text-align: justify;
-        font-size: 14px;
-    }
-    
-    .civiltexte  li {
-       
-    font-weight: bold;
-    color: gray;
-    margin-top:20px;
-    text-align: left;
-    font-size: 14px;
-    }
+
+/* HEADER */
+.etc-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.etc-badge {
+  display: inline-block;
+  background: rgba(200,16,46,0.1);
+  color: #C8102E;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  margin-bottom: 10px;
+}
+
+.etc-header h2 {
+  font-size: 32px;
+  color: #1B3D71;
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+}
+
+.etc-line {
+  width: 60px;
+  height: 3px;
+  background: #C8102E;
+  margin: 0 auto;
+}
+
+/* CARD */
+.etc-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* TEXT */
+.etc-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* LIST */
+.etc-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.etc-item {
+  background: #f9fbff;
+  padding: 20px;
+  border-left: 3px solid #1B3D71;
+}
+
+.etc-item h3 {
+  font-size: 16px;
+  color: #1B3D71;
+  margin-bottom: 8px;
+}
+
+.etc-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .etc-section {
+    padding: 50px 16px;
+  }
+
+  .etc-header h2 {
+    font-size: 22px;
+  }
+
+  .etc-card {
+    padding: 20px;
+  }
+
+  .etc-list {
+    grid-template-columns: 1fr;
+  }
 }

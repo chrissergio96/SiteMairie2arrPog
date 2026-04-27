@@ -1,118 +1,91 @@
-.main2 {
-  background-image: url('../Images/photo-main.jpg');
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.boutton-container1 {
-  display: flex;
-  justify-content: center;
-  text-align:center;
-  width: 40%;
-  background-color:white;
-  height: max-content;
-  border-radius: 8px;
-  opacity: 0.8;
-  overflow: hidden;
-}
-.buts h1{
-  font-size: 30px;
-  color:#1B3D71;
-  font-weight: bold;
-  margin: auto;
-  justify-content: center;
-}
-
-
-.boutton2 {
+.legal-hero {
+  position: relative;
+  height: 65vh;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espace entre le texte et l'icône */
-  height: 40px;
-  margin: 10px 8px;
-  padding: 0 10px;
-  background-color: #1B3D71;
-  color:white ;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  text-align: center;
-  width: 35VW; /* Largeur fixe pour aligner les boutons */
-  font-weight: bold;
-}
-
-.boutton2:hover {
-  background-color: #1B3D71;
-  color:white;
-}
-
-.arrow-icon1 {
-  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
-}
-
-
-/* Styles spécifiques pour la version mobile */
-@media (max-width: 768px) {
- 
-  .main2 {
-    background-image: url('../Images/photo-main.jpg');
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-  }
-.boutton-container1 {
-  display: flex;
   justify-content: center;
-  text-align:center;
+  background: url('../Images/photo-main.jpg') center/cover no-repeat;
+}
+
+.legal-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(10,22,40,0.85),
+    rgba(27,61,113,0.75)
+  );
+}
+
+.legal-content {
+  position: relative;
   width: 90%;
-  background-color:white;
-  height: max-content;
-  border-radius: 8px;
-  opacity: 0.8;
-  padding: 10px;
-}
-.buts h1{
-  font-size: 20px;
-  color:#1B3D71;
-  font-weight: bold;
+  max-width: 1000px;
 }
 
+.legal-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 40px;
+  border-radius: 12px;
+  color: white;
+  max-width: 600px;
+}
 
-.boutton2 {
+/* breadcrumb */
+.legal-breadcrumb {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espace entre le texte et l'icône */
-  height: 40px;
-  margin: 10px 8px;
-  padding: 0 10px;
-  background-color: #1B3D71;
-  color:white ;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* title */
+.legal-card h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+}
+
+/* text */
+.legal-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 25px;
+}
+
+/* button */
+.legal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #C8102E;
+  color: white;
   border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  text-align: center;
-  width: 75VW; /* Largeur fixe pour aligner les boutons */
+  padding: 12px 18px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.boutton2:hover {
-  background-color: #1B3D71;
-  color:white;
+.legal-btn:hover {
+  background: #a00d24;
+  transform: translateY(-2px);
 }
 
-.arrow-icon1 {
-  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
-}
+/* responsive */
+@media (max-width: 768px) {
+  .legal-card {
+    padding: 25px;
+  }
 
+  .legal-card h1 {
+    font-size: 24px;
+  }
 }

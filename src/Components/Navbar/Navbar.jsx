@@ -1,89 +1,75 @@
-import React from 'react';
-import './Navbar.css'; // Fichier CSS pour le style
-import logo from '../../Images/logo Mairie.jpg'; // Chemin vers ton logo
-import { AppBar, Toolbar, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu'; // Icône de menu hamburger
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {Link} from 'react-router-dom'
-
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#ffffff',       // Couleur principale (ex : bleu)
-      light: '#63a4ff',      // Teinte plus claire de la couleur principale
-      dark: '#004ba0',       // Teinte plus foncée de la couleur principale
-      contrastText: '#fff',  // Couleur du texte contrastant (ex : blanc)
-    },
-    secondary: {
-      main: '#1B3D71',       // Couleur secondaire (ex : rose)
-      light: '#ff79b0',      // Teinte plus claire de la couleur secondaire
-      dark: '#c60055',       // Teinte plus foncée de la couleur secondaire
-      contrastText: '#000',  // Couleur du texte contrastant (ex : noir)
-    },
-  },
-});
-
+import React, { useState } from 'react';
+import './Navbar.css';
+import logo from '../../Images/logo Mairie.jpg';
+import { Link } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import { Drawer, List, ListItem, ListItemText, IconButton } from '@mui/material';
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(false); // État pour contrôler l'ouverture du menu
+  const [open, setOpen] = useState(false);
 
-  const toggleDrawer = (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
+  const toggleDrawer = () => {
     setOpen(!open);
   };
 
-  const list = () => (
-    <div
-      role="presentation"
-      onClick={toggleDrawer}
-      onKeyDown={toggleDrawer}
-    >
-      <List>
-        <ListItem button>
-          <ListItemText primary={<Link to='/'>Accueil</Link>} />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary={<Link to='/apropos'>À propos</Link>} />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary={<Link to='/projet'>Projets</Link>} />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary={<Link to='/numerosutiles'>Numéros utiles</Link>} />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary={<Link to='/faq'>FAQ</Link>} />
-        </ListItem>
-      </List>
-    </div>
-  );
-
   return (
-    <ThemeProvider theme={theme}>
-    <AppBar position="static" className="navbar">
-      <Toolbar className='navbar-container'>
-        <div className="navbar-logo">
-          <Link to='/accueil'>
-          <img src={logo} alt="Logo Mairie" />
+    <>
+      <div className="navbar">
+
+        {/* LEFT */}
+        <div className="navbar-left">
+          <Link to="/">
+            <img src={logo} alt="Logo Mairie" className="navbar-logo" />
           </Link>
+
+          
         </div>
-        <div className='nommairie'><h1>MAIRIE DU 2E ARRONDISSEMENT DE PORT-GENTIL</h1></div>
 
-        {/* Icône de menu hamburger */}
-        <IconButton edge="end" color="inherit" style={{marginRight:'-30px'}} onClick={toggleDrawer}>
-          <MenuIcon color="secondary" />
-        </IconButton>
-      </Toolbar>
+        {/* CENTER MENU (desktop) */}
+        <div className="navbar-links">
+          <Link to="/">Accueil</Link>
+          <Link to="/agenda">Agenda</Link>
+          <Link to="/galerie">Galerie</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
 
-      {/* Drawer pour le menu */}
+        {/* RIGHT */}
+        <div className="navbar-right">
+          <a
+            href="https://calendly.com/safou-christiansergio/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="audience-btn"
+          >
+            Allo 2e
+          </a>
+
+          <IconButton onClick={toggleDrawer} className="menu-btn">
+            <MenuIcon />
+          </IconButton>
+        </div>
+      </div>
+
+      {/* MOBILE DRAWER */}
       <Drawer anchor="right" open={open} onClose={toggleDrawer}>
-        {list()}
+        <div className="drawer-content">
+          <List>
+            {[
+              { label: 'Accueil', path: '/' },
+              { label: 'Agenda', path: '/agenda' },
+              { label: 'Galerie', path: '/galerie' },
+              { label: 'Contact', path: '/contact' },
+            ].map((item, i) => (
+              <ListItem button key={i} onClick={toggleDrawer}>
+                <ListItemText>
+                  <Link to={item.path}>{item.label}</Link>
+                </ListItemText>
+              </ListItem>
+            ))}
+          </List>
+        </div>
       </Drawer>
-    </AppBar>
-    </ThemeProvider>
+    </>
   );
 };
 

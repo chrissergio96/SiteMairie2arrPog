@@ -1,1 +1,32 @@
+.page-avec-pub {
+  display: flex;
+  gap: 20px;
+  width: 95%;
+  margin: auto;
+  align-items: flex-start;
+}
 
+/* CONTENU PRINCIPAL */
+.page-contenu {
+  flex: 3;
+}
+
+/* PUB SIDEBAR */
+.page-avec-pub > div:last-child {
+  flex: 1;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .page-avec-pub {
+    flex-direction: column;
+  }
+
+  .page-avec-pub > div:last-child {
+    position: relative;
+    top: 0;
+  }
+}

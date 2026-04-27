@@ -1,121 +1,91 @@
-.main10 {
-  background-image: url('../Images/photo-main.jpg');
-  height: 80vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.boutton-container10 {
-  display: flex;
-  justify-content: center;
-  text-align:center;
-  width: 40%;
-  background-color:white;
-  height: max-content;
-  border-radius: 8px;
-  opacity: 0.8;
-  overflow: hidden;
-}
-.butts h1{
-  font-size: 30px;
-  color:#1B3D71;
-  font-weight: bold;
-  margin: auto;
-  text-align: center;
-  justify-content: center;
-}
-
-
-.boutton10 {
+/* HERO */
+.civ-hero {
+  position: relative;
+  height: 70vh;
+  background: url('../Images/photo-main.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Espace entre le texte et l'icône */
-  height: 40px;
-  margin: 10px 8px;
-  padding: 0 10px;
-  background-color: #1B3D71;
-  color:white ;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
+  justify-content: center;
+}
+
+/* OVERLAY */
+.civ-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(10,22,40,0.75),
+    rgba(27,61,113,0.65),
+    rgba(13,34,68,0.75)
+  );
+}
+
+/* CONTENT */
+.civ-content {
+  position: relative;
+  z-index: 2;
   text-align: center;
-  width: 35VW; /* Largeur fixe pour aligner les boutons */
-  font-weight: bold;
+  padding: 20px;
 }
 
-.boutton10:hover {
-  background-color: #1B3D71;
-  color:white;
+/* BREADCRUMB */
+.civ-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 6px 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 20px;
+  backdrop-filter: blur(6px);
 }
 
-.arrow-icon {
-  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
+.civ-breadcrumb a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
 }
 
+.civ-breadcrumb a:hover {
+  color: #fff;
+}
 
-/* Styles spécifiques pour la version mobile */
+.civ-arrow {
+  font-size: 14px !important;
+  color: #C8102E;
+}
+
+/* TITLE */
+.civ-title {
+  color: #fff;
+  font-size: 42px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* SUBTITLE */
+.civ-subtitle {
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
- 
-  .main10 {
-    background-image: url('../Images/photo-main.jpg');
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
+  .civ-title {
+    font-size: 26px;
   }
 
-.boutton-container10 {
-  display: flex;
-  justify-content: center;
-  text-align:center;
-  width: 80%;
-  background-color:white;
-  height: max-content;
-  border-radius: 8px;
-  opacity: 0.8;
-}
-.butts h1{
-  font-size: 20px;
-  color:#1B3D71;
-  text-align: center;
+  .civ-subtitle {
+    font-size: 12px;
+  }
 
-  font-weight: bold;
-}
-
-
-.boutton10 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Espace entre le texte et l'icône */
-  height: 40px;
-  margin: 10px 8px;
-  padding: 0 10px;
-  background-color: #1B3D71;
-  color:white ;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  text-align: center;
-  width: 60VW; /* Largeur fixe pour aligner les boutons */
-  font-weight: bold;
-}
-
-.boutton10:hover {
-  background-color: #1B3D71;
-  color:white;
-}
-
-.arrow-icon1 {
-  margin-left: 8px; /* Espace entre le texte du bouton et l'icône */
-}
-
+  .civ-hero {
+    height: 50vh;
+  }
 }

@@ -1,0 +1,31 @@
+.quick-actions {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.quick-actions h3 {
+  color: #1B3D71;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.quick-actions button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  background: #1B3D71;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quick-actions button:hover {
+  background: #d9b847;
+  color: #1B3D71;
+}
