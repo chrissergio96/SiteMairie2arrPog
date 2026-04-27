@@ -10,9 +10,9 @@ const Footerbas = () => {
           © 2025 <strong>Mairie du 2ème Arrondissement de Port-Gentil</strong> · République Gabonaise
         </span>
         <div className="footerbas-links">
-          <a href="#">Mentions légales</a>
+          <a href="https://gouvernement.ga/mentions-legales/">Mentions légales</a>
           <span className="footerbas-sep">·</span>
-          <a href="#">Confidentialité</a>
+          <a href="https://africa24tv.com/politique-de-confidentialite/">Confidentialité</a>
           <span className="footerbas-sep">·</span>
           <Link to="/contact">Contact</Link>
         </div>
